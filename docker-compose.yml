@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: research_app
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./app:/app
+    tty: true
+    env_file:
+      - .env
