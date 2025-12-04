@@ -1,0 +1,1202 @@
+[
+    {
+        "question": "ベクトル $\\mathbf{a}=(2,-1)$, $\\mathbf{b}=(1,3)$ の内積 $\\mathbf{a}\\cdot\\mathbf{b}$ を計算せよ。",
+        "answer": "以下の手順で計算します。\n\n1) 内積の定義\n\\[\n\\mathbf{a}\\cdot\\mathbf{b} = a_1 b_1 + a_2 b_2\n\\]\n\n2) 成分を代入\n\\[\n(2,-1)\\cdot(1,3) = 2\\cdot 1 + (-1)\\cdot 3\n\\]\n\n3) 計算\n\\[\n2 - 3 = -1\n\\]\n\n最終回答：\n\\[\n\\boxed{-1}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\mathbf{u}=(3,4)$ と $\\mathbf{v}=(-4,3)$ のなす角 $\\theta$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 内積を計算する\n\\[\n\\mathbf{u}\\cdot\\mathbf{v} = 3\\cdot(-4) + 4\\cdot 3 = -12 + 12 = 0\n\\]\n\n2) 各ベクトルの大きさを求める\n\\[\n\\|\\mathbf{u}\\| = \\sqrt{3^2 + 4^2} = 5, \\quad \\|\\mathbf{v}\\| = \\sqrt{(-4)^2 + 3^2} = 5\n\\]\n\n3) なす角の余弦を求める\n\\[\n\\cos\\theta = \\frac{\\mathbf{u}\\cdot\\mathbf{v}}{\\|\\mathbf{u}\\|\\,\\|\\mathbf{v}\\|} = \\frac{0}{5\\cdot 5} = 0\n\\]\n\n4) 角度を求める\n\\[\n\\theta = \\arccos 0 = \\frac{\\pi}{2} = 90^\\circ\n\\]\n\n\\[\n\\boxed{\\theta = \\frac{\\pi}{2}\\ \\text{（または }90^\\circ\\text{）}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\mathbf{w}=(5,2)$ の $\\mathbf{v}=(1,-2)$ への正射影 $\\mathrm{proj}_{\\mathbf{v}}\\mathbf{w}$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1. 正射影の公式を用いる  \n   \\[\n   \\mathrm{proj}_{\\mathbf{v}}\\mathbf{w} \\;=\\; \\frac{\\mathbf{w}\\cdot \\mathbf{v}}{\\mathbf{v}\\cdot \\mathbf{v}}\\,\\mathbf{v}\n   \\]\n\n2. 内積を計算する  \n   \\[\n   \\mathbf{w}\\cdot \\mathbf{v} \\;=\\; 5\\cdot 1 + 2\\cdot(-2) \\;=\\; 5 - 4 \\;=\\; 1\n   \\]\n   \\[\n   \\mathbf{v}\\cdot \\mathbf{v} \\;=\\; 1^2 + (-2)^2 \\;=\\; 1 + 4 \\;=\\; 5\n   \\]\n\n3. 公式に代入して計算する  \n   \\[\n   \\mathrm{proj}_{\\mathbf{v}}\\mathbf{w} \\;=\\; \\frac{1}{5}\\,(1,-2) \\;=\\; \\left(\\frac{1}{5}, -\\frac{2}{5}\\right)\n   \\]\n\n最終回答：\n\\[\n\\boxed{\\left(\\frac{1}{5}, -\\frac{2}{5}\\right)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "実数 $t$ を求めよ。ベクトル $(1,t)$ が $\\mathbf{a}=(2,-3)$ と直交する。",
+        "answer": "以下の手順で求めます。\n\n1. 直交条件は内積が 0 になること：\n\\[\n(1,t)\\cdot(2,-3)=0\n\\]\n\n2. 内積を計算：\n\\[\n1\\cdot 2 + t\\cdot(-3) = 0\n\\]\n\\[\n2 - 3t = 0\n\\]\n\n3. 方程式を解く：\n\\[\n-3t = -2 \\quad \\Rightarrow \\quad t = \\frac{2}{3}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\frac{2}{3}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $A(1,2)$, $B(4,-1)$, $C(-2,3)$ からなる三角形の面積を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 面積の公式（行列式を用いる）\n\\[ S = \\frac{1}{2}\\left| \\det\\big( \\vec{QB}, \\vec{QC} \\big) \\right| = \\frac{1}{2}\\left| \\det\\big( \\overrightarrow{AB}, \\overrightarrow{AC} \\big) \\right| \\]\n\n2) ベクトルを求める\n\\[\n\\overrightarrow{AB} = B - A = (4-1,\\,-1-2) = (3,\\,-3),\\quad\n\\overrightarrow{AC} = C - A = (-2-1,\\;3-2) = (-3,\\;1)\n\\]\n\n3) 行列式を計算\n\\[\n\\det\\big( \\overrightarrow{AB}, \\overrightarrow{AC} \\big)\n= \n\\begin{vmatrix}\n3 & -3\\\\\n-3 & 1\n\\end{vmatrix}\n= 3\\cdot 1 - (-3)\\cdot(-3) = 3 - 9 = -6\n\\]\n\n4) 面積を求める\n\\[\nS = \\frac{1}{2}\\,|{-6}| = \\frac{1}{2}\\cdot 6 = 3\n\\]\n\n最終回答：\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\mathbf{x}=(3,1)$ を原点まわりに反時計回りに $90^\\circ$ 回転したベクトルを求めよ。",
+        "answer": "以下の手順で求めます。\n\n1. 回転行列を用意する。角度 $\\theta$ の反時計回り回転は\n\\[\nR(\\theta)=\\begin{pmatrix}\n\\cos\\theta & -\\sin\\theta\\\\\n\\sin\\theta & \\cos\\theta\n\\end{pmatrix}\n\\]\nで表される。\n\n2. 今回は $\\theta=90^\\circ$ なので、$\\cos 90^\\circ=0,\\ \\sin 90^\\circ=1$ より\n\\[\nR(90^\\circ)=\\begin{pmatrix}\n0 & -1\\\\\n1 & \\ 0\n\\end{pmatrix}.\n\\]\n\n3. ベクトル $\\mathbf{x}=(3,1)$ に作用させると\n\\[\nR(90^\\circ)\\,\\mathbf{x}\n=\\begin{pmatrix}\n0 & -1\\\\\n1 & \\ 0\n\\end{pmatrix}\n\\begin{pmatrix}\n3\\\\\n1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n0\\cdot 3 + (-1)\\cdot 1\\\\\n1\\cdot 3 + 0\\cdot 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n-1\\\\\n3\n\\end{pmatrix}.\n\\]\n\nしたがって、求める回転後のベクトルは\n\\[\n\\boxed{(-1,\\,3)}.\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "基底 $\\mathbf{e}_1=(1,1)$, $\\mathbf{e}_2=(2,-1)$ に対し、$\\mathbf{x}=(3,0)$ を $\\mathbf{x}=\\alpha\\mathbf{e}_1+\\beta\\mathbf{e}_2$ と表すときの $(\\alpha,\\beta)$ を求めよ。",
+        "answer": "以下の連立方程式を立てて解きます。\n\n1) ベクトル等式を成分ごとに分解\n\\[\n\\alpha(1,1)+\\beta(2,-1)=(3,0)\n\\]\n\\[\n\\Rightarrow\n\\begin{cases}\n\\alpha+2\\beta=3 \\\\\n\\alpha-\\beta=0\n\\end{cases}\n\\]\n\n2) 代入法で解く\n\\[\n\\alpha=\\beta \\quad (\\text{下式より})\n\\]\n\\[\n\\Rightarrow \\alpha+2\\alpha=3 \\;\\Rightarrow\\; 3\\alpha=3 \\;\\Rightarrow\\; \\alpha=1\n\\]\n\\[\n\\beta=\\alpha=1\n\\]\n\n3) 確認\n\\[\n1\\cdot(1,1)+1\\cdot(2,-1)=(3,0)\n\\]\n\n最終答案：\n\\[\n\\boxed{(\\alpha,\\beta)=(1,1)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $P(2,-1)$ から直線 $\\ell: 3x-4y+5=0$ への距離を求めよ。",
+        "answer": "求める距離は、点と直線の距離公式を用いて求めます。\n\n1. 距離公式\n\\[\nd=\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}\n\\]\n\n2. 与えられた直線と点から、$A=3,\\ B=-4,\\ C=5,\\ (x_0,y_0)=(2,-1)$。よって分子は\n\\[\n|3\\cdot2+(-4)\\cdot(-1)+5|=|6+4+5|=|15|=15\n\\]\n\n3. 分母は\n\\[\n\\sqrt{3^2+(-4)^2}=\\sqrt{9+16}=\\sqrt{25}=5\n\\]\n\n4. よって距離は\n\\[\nd=\\frac{15}{5}=3\n\\]\n\n最終回答：\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\mathbf{a}=(-1,2)$ と同じ方向の単位ベクトルを求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 与えられたベクトルは $\\mathbf{a}=(-1,\\,2)$。\n\n2) 長さ（ノルム）を求める：\n\\[\n\\|\\mathbf{a}\\|=\\sqrt{(-1)^2+2^2}=\\sqrt{1+4}=\\sqrt{5}\n\\]\n\n3) 同じ方向の単位ベクトルは、$\\mathbf{a}$ をその長さで割る：\n\\[\n\\hat{\\mathbf{a}}=\\frac{\\mathbf{a}}{\\|\\mathbf{a}\\|}=\\left(\\frac{-1}{\\sqrt{5}},\\,\\frac{2}{\\sqrt{5}}\\right)\n\\]\n\n最終答案：\n\\[\n\\boxed{\\left(-\\frac{1}{\\sqrt{5}},\\,\\frac{2}{\\sqrt{5}}\\right)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\mathbf{a}=(2,1)$, $\\mathbf{b}=(-1,4)$ に対し、対角線ベクトル $\\mathbf{d}=\\mathbf{a}+\\mathbf{b}$ の長さ $|\\mathbf{d}|$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 対角線ベクトルの計算\n与えられたベクトルは $\\mathbf{a}=(2,1)$、$\\mathbf{b}=(-1,4)$。対角線ベクトルは\n\\[\n\\mathbf{d}=\\mathbf{a}+\\mathbf{b}=(2+(-1),\\,1+4)=(1,5).\n\\]\n\n2) ベクトルの長さの公式\n2次元ベクトル $\\mathbf{d}=(x,y)$ の長さは\n\\[\n|\\mathbf{d}|=\\sqrt{x^2+y^2}.\n\\]\n\n3) 具体的な計算\n\\[\n|\\mathbf{d}|=\\sqrt{1^2+5^2}=\\sqrt{1+25}=\\sqrt{26}.\n\\]\n\n最終答案：\n\\[\n\\boxed{\\sqrt{26}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\\\mathbf{a}=(2,-1,3)$, $\\\\mathbf{b}=(4,0,-2)$ の内積 $\\\\mathbf{a}\\\\cdot\\\\mathbf{b}$ を求めよ。",
+        "answer": "以下の手順で計算します。\n\n1. 内積の定義を用いる：\n\\[\n\\mathbf{a}\\cdot\\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3\n\\]\n\n2. 成分を代入する：\n\\[\n(2)(4) + (-1)(0) + (3)(-2)\n\\]\n\n3. 各項を計算する：\n\\[\n8 + 0 - 6\n\\]\n\n4. 合計する：\n\\[\n2\n\\]\n\n最終回答：\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\\\mathbf{u}=(1,2,3)$, $\\\\mathbf{v}=(2,-1,1)$ の外積 $\\\\mathbf{u}\\\\times\\\\mathbf{v}$ を求めよ。",
+        "answer": "与えられたベクトルは $\\\\mathbf{u}=(1,2,3)$, $\\\\mathbf{v}=(2,-1,1)$ です。\n\n1. 外積の定義（行列式展開）を用いる：\n\\[\n\\mathbf{u}\\times\\mathbf{v}\n=\\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n1 & 2 & 3 \\\\\n2 & -1 & 1\n\\end{vmatrix}\n= \\mathbf{i}(2\\cdot 1 - 3\\cdot(-1)) - \\mathbf{j}(1\\cdot 1 - 3\\cdot 2) + \\mathbf{k}(1\\cdot(-1) - 2\\cdot 2).\n\\]\n\n2. 各成分を計算する：\n\\[\n\\mathbf{i}(2+3) - \\mathbf{j}(-5) + \\mathbf{k}(-1-4)\n= 5\\mathbf{i} + 5\\mathbf{j} - 5\\mathbf{k}.\n\\]\n\nしたがって、\n\\[\n\\boxed{(5,\\,5,\\,-5)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\\\mathbf{a}=(1,1,0)$ と $\\\\mathbf{b}=(2,-2,0)$ のなす角 $\\\\theta$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1. 内積を計算する\n\\[\n\\mathbf{a}\\cdot\\mathbf{b} = 1\\cdot 2 + 1\\cdot(-2) + 0\\cdot 0 = 2 - 2 + 0 = 0\n\\]\n\n2. ベクトルの大きさを求める\n\\[\n\\|\\mathbf{a}\\| = \\sqrt{1^2 + 1^2 + 0^2} = \\sqrt{2}, \\quad \\|\\mathbf{b}\\| = \\sqrt{2^2 + (-2)^2 + 0^2} = \\sqrt{8} = 2\\sqrt{2}\n\\]\n\n3. 角度の余弦を求める\n\\[\n\\cos\\theta = \\frac{\\mathbf{a}\\cdot\\mathbf{b}}{\\|\\mathbf{a}\\|\\|\\mathbf{b}\\|} = \\frac{0}{\\sqrt{2}\\cdot 2\\sqrt{2}} = 0\n\\]\n\n4. 角度を求める\n\\[\n\\theta = \\arccos(0) = \\frac{\\pi}{2} \\quad (90^\\circ)\n\\]\n\n\\[\n\\boxed{\\theta = \\frac{\\pi}{2}\\ (90^\\circ)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\\\mathbf{a}=(3,1,2)$ の $\\\\mathbf{b}=(1,1,0)$ への正射影 $\\\\mathrm{proj}_{\\\\mathbf{b}}\\\\mathbf{a}$ を求めよ。",
+        "answer": "以下の手順で計算します。\n\n1. 正射影の公式を用いる：\n\\[\n\\mathrm{proj}_{\\mathbf{b}}\\mathbf{a} = \\frac{\\mathbf{a}\\cdot \\mathbf{b}}{\\mathbf{b}\\cdot \\mathbf{b}}\\,\\mathbf{b}\n\\]\n\n2. 内積を計算する：\n\\[\n\\mathbf{a}\\cdot \\mathbf{b} = 3\\cdot 1 + 1\\cdot 1 + 2\\cdot 0 = 4\n\\]\n\\[\n\\mathbf{b}\\cdot \\mathbf{b} = 1\\cdot 1 + 1\\cdot 1 + 0\\cdot 0 = 2\n\\]\n\n3. 係数を求める：\n\\[\n\\frac{\\mathbf{a}\\cdot \\mathbf{b}}{\\mathbf{b}\\cdot \\mathbf{b}} = \\frac{4}{2} = 2\n\\]\n\n4. ベクトルを掛ける：\n\\[\n\\mathrm{proj}_{\\mathbf{b}}\\mathbf{a} = 2\\,\\mathbf{b} = 2\\,(1,1,0) = (2,2,0)\n\\]\n\n\\[\n\\boxed{(2,\\,2,\\,0)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\\\mathbf{u}=(2,1,0)$ と $\\\\mathbf{v}=(1,-1,2)$ が張る平行四辺形の面積を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 面積の公式  \n平行四辺形の面積は、2 本のベクトルの外積の大きさで与えられる。  \n\\[ S = \\|\\mathbf{u} \\times \\mathbf{v}\\| \\]\n\n2) 外積の計算  \n\\[\n\\mathbf{u} \\times \\mathbf{v}\n= \n\\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n2 & 1 & 0 \\\\\n1 & -1 & 2\n\\end{vmatrix}\n=\n\\left(1\\cdot 2 - 0\\cdot (-1)\\right)\\mathbf{i}\n-\n\\left(2\\cdot 2 - 0\\cdot 1\\right)\\mathbf{j}\n+\n\\left(2\\cdot (-1) - 1\\cdot 1\\right)\\mathbf{k}\n=\n(2,\\,-4,\\,-3)\n\\]\n\n3) 大きさ（ノルム）  \n\\[\n\\|\\mathbf{u} \\times \\mathbf{v}\\|\n=\n\\sqrt{2^2 + (-4)^2 + (-3)^2}\n=\n\\sqrt{4 + 16 + 9}\n=\n\\sqrt{29}\n\\]\n\n4) 結論  \n\\[\n\\boxed{\\sqrt{29}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $A(1,0,1)$, $B(3,1,2)$, $C(0,2,1)$ で張られる三角形の面積を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1. ベクトルを求める\n\\[\n\\vec{AB} = B - A = (3-1,\\,1-0,\\,2-1) = (2,\\,1,\\,1), \\quad\n\\vec{AC} = C - A = (0-1,\\,2-0,\\,1-1) = (-1,\\,2,\\,0)\n\\]\n\n2. 外積を計算する\n\\[\n\\vec{AB} \\times \\vec{AC}\n=\n\\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n2 & 1 & 1 \\\\\n-1 & 2 & 0\n\\end{vmatrix}\n=\n(-2,\\,-1,\\,5)\n\\]\n\n3. 外積の大きさを求める\n\\[\n\\|\\vec{AB} \\times \\vec{AC}\\| = \\sqrt{(-2)^2+(-1)^2+5^2} = \\sqrt{4+1+25} = \\sqrt{30}\n\\]\n\n4. 三角形の面積（平行四辺形の半分）\n\\[\nS = \\frac{1}{2}\\,\\|\\vec{AB} \\times \\vec{AC}\\| = \\frac{\\sqrt{30}}{2}\n\\]\n\n\\[\n\\boxed{\\frac{\\sqrt{30}}{2}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\\\mathbf{a}=(1,2,3)$, $\\\\mathbf{b}=(2,1,0)$, $\\\\mathbf{c}=(0,1,1)$ によって張られる平行六面体の体積を求めよ。",
+        "answer": "平行六面体の体積は、スカラー三重積の絶対値で与えられます。\n\\[\nV = \\left| \\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c}) \\right|\n\\]\n\n1) まず、外積 $\\mathbf{b} \\times \\mathbf{c}$ を求めます。\n\\[\n\\mathbf{b} \\times \\mathbf{c}\n=\n\\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n2 & 1 & 0 \\\\\n0 & 1 & 1\n\\end{vmatrix}\n=\n(1)\\,\\mathbf{i} - (2)\\,\\mathbf{j} + (2)\\,\\mathbf{k}\n=\n(1,-2,2)\n\\]\n\n2) 次に、内積 $\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})$ を計算します。\n\\[\n\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})\n= (1,2,3) \\cdot (1,-2,2)\n= 1 \\cdot 1 + 2 \\cdot (-2) + 3 \\cdot 2\n= 1 - 4 + 6\n= 3\n\\]\n\n3) 体積はその絶対値：\n\\[\nV = |3| = 3\n\\]\n\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $P(1,0,2)$, $Q(0,1,1)$, $R(2,-1,3)$ を通る平面の方程式を求めよ。",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "点 $S(1,2,0)$ から平面 $2x - y + 2z - 5 = 0$ までの距離を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1. 平面の係数を確認する  \n   与えられた平面は $2x - y + 2z - 5 = 0$ なので、$a=2,\\ b=-1,\\ c=2,\\ d=-5$。\n\n2. 点と平面の距離公式  \n   点 $(x_0,y_0,z_0)$ と平面 $ax+by+cz+d=0$ の距離は\n   \\[\n   D=\\frac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^2+b^2+c^2}}.\n   \\]\n\n3. 分子の計算（点 $S(1,2,0)$ を代入）\n   \\[\n   |2\\cdot 1 + (-1)\\cdot 2 + 2\\cdot 0 - 5| = |2 - 2 + 0 - 5| = |-5| = 5.\n   \\]\n\n4. 分母の計算\n   \\[\n   \\sqrt{2^2 + (-1)^2 + 2^2} = \\sqrt{4 + 1 + 4} = \\sqrt{9} = 3.\n   \\]\n\n5. 距離\n   \\[\n   D = \\frac{5}{3}.\n   \\]\n\n最終答案：\\boxed{\\frac{5}{3}}",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線 $\\\\mathbf{r}=(1,0,1)+t(2,1,-1)$ と平面 $x+y+z=4$ の交点を求めよ。",
+        "answer": "以下の直線と平面の交点を求めます。\n\n直線: $\\mathbf{r}=(1,0,1)+t(2,1,-1)$  \n平面: $x+y+z=4$\n\n1) 直線のパラメータ表示\n\\[\n\\begin{cases}\nx = 1 + 2t\\\\\ny = t\\\\\nz = 1 - t\n\\end{cases}\n\\]\n\n2) 平面方程式に代入\n\\[\n(1+2t) + t + (1 - t) = 4\n\\]\n\\[\n2 + 2t = 4\n\\]\n\n3) $t$ を求める\n\\[\n2t = 2 \\Rightarrow t = 1\n\\]\n\n4) 交点の座標を計算\n\\[\nx = 1 + 2\\cdot 1 = 3,\\quad y = 1,\\quad z = 1 - 1 = 0\n\\]\n\nしたがって、交点は\n\\[\n\\boxed{(3,\\,1,\\,0)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "写像 $T:\\mathbb{R}^2\\to\\mathbb{R}^2$ を $T(x,y)=(2x+3y,\\;x-4y)$ と定める。標準基底に関する行列表現 $A$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 標準基底をとる：$e_1=(1,0),\\ e_2=(0,1)$\n\n2) 基底ベクトルの像を計算する：\n\\[\nT(e_1)=T(1,0)=(2\\cdot1+3\\cdot0,\\ 1-4\\cdot0)=(2,1)\n\\]\n\\[\nT(e_2)=T(0,1)=(2\\cdot0+3\\cdot1,\\ 0-4\\cdot1)=(3,-4)\n\\]\n\n3) 行列表現は列に $T(e_1),T(e_2)$ を並べる：\n\\[\nA=\\begin{pmatrix}2 & 3 \\\\ 1 & -4\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}2 & 3 \\\\ 1 & -4\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "写像 $S:\\mathbb{R}^2\\to\\mathbb{R}^2$ を $S(x,y)=(x^2,\\;x+y)$ と定める。この写像が線形写像かどうか判定せよ。",
+        "answer": "以下の写像を考える:\n\\[ S:\\mathbb{R}^2\\to\\mathbb{R}^2,\\quad S(x,y)=(x^2,\\;x+y). \\]\n\nステップ1：線形性の定義\n- 写像 $T$ が線形であるためには、任意のベクトル $u,v$ とスカラー $\\lambda$ について\n  \\[ T(u+v)=T(u)+T(v),\\quad T(\\lambda u)=\\lambda T(u) \\]\n  が成り立つ必要がある。\n\nステップ2：斉次性（$T(\\lambda u)=\\lambda T(u)$）の検証\n- ベクトル $v=(1,0)$ とスカラー $\\lambda=2$ を取る。\n  \\[ S(\\lambda v)=S(2,0)=(2^2,\\;2+0)=(4,2). \\]\n  \\[ \\lambda S(v)=2\\,S(1,0)=2\\,(1^2,\\;1+0)=2\\,(1,1)=(2,2). \\]\n- 比較すると\n  \\[ S(2v)=(4,2)\\neq(2,2)=2S(v). \\]\n- よって斉次性が成り立たない。\n\n結論：\n\\[\\boxed{\\text{この写像 }S(x,y)=(x^2,\\;x+y)\\text{ は線形写像ではない。}}\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:\\mathbb{R}^3\\to\\mathbb{R}^2$ は標準基底 $e_1,e_2,e_3$ に対して $T(e_1)=(1,2),\\ T(e_2)=(0,-1),\\ T(e_3)=(3,0)$ を満たす。標準基底に関する行列表現 $A$ を求めよ。",
+        "answer": "以下、step by stepで説明します。\n\n1) 定義の確認  \n標準基底に関する行列表現 $A$ は、各列が $T(e_i)$ で与えられる。  \nつまり、\n\\[\nA=\\begin{bmatrix} T(e_1) & T(e_2) & T(e_3) \\end{bmatrix}.\n\\]\n\n2) 与えられた像を列に並べる  \n$T(e_1)=(1,2),\\ T(e_2)=(0,-1),\\ T(e_3)=(3,0)$ より、\n\\[\nA=\\begin{bmatrix}\n1 & 0 & 3\\\\\n2 & -1 & 0\n\\end{bmatrix}.\n\\]\n\n3) 確認（任意）  \n任意の $x=(x_1,x_2,x_3)^\\top$ に対し、\n\\[\nA x = \\begin{bmatrix}\n1 & 0 & 3\\\\\n2 & -1 & 0\n\\end{bmatrix}\n\\begin{bmatrix}\nx_1\\\\ x_2\\\\ x_3\n\\end{bmatrix}\n=\n\\begin{bmatrix}\nx_1+3x_3\\\\ 2x_1 - x_2\n\\end{bmatrix}\n=\nx_1 T(e_1)+x_2 T(e_2)+x_3 T(e_3),\n\\]\nとなり定義と一致する。\n\n最終結果：\n\\[\n\\boxed{\nA=\\begin{bmatrix}\n1 & 0 & 3\\\\\n2 & -1 & 0\n\\end{bmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A=\\begin{pmatrix}1&-2&3\\\\4&1&0\\\\0&2&-1\\end{pmatrix}$ により定まる線形写像 $T:\\mathbb{R}^3\\to\\mathbb{R}^3$ に対し、核 $\\ker T$ の次元を求めよ。",
+        "answer": "ステップ1：行列式を計算して階数を調べる\n\\[\n\\det(A)=\n\\begin{vmatrix}\n1 & -2 & 3\\\\\n4 & 1 & 0\\\\\n0 & 2 & -1\n\\end{vmatrix}\n= 1\\begin{vmatrix}1 & 0\\\\ 2 & -1\\end{vmatrix}\n-(-2)\\begin{vmatrix}4 & 0\\\\ 0 & -1\\end{vmatrix}\n+ 3\\begin{vmatrix}4 & 1\\\\ 0 & 2\\end{vmatrix}\n\\]\n\\[\n= 1(-1) + 2(-4) + 3(8) = -1 - 8 + 24 = 15 \\neq 0\n\\]\n\nステップ2：行列式が 0 でないので $A$ は可逆、よって $\\operatorname{rank}(A)=3$。\n\nステップ3：階数・零化次数定理より\n\\[\n\\dim(\\ker T) = 3 - \\operatorname{rank}(A) = 3 - 3 = 0.\n\\]\n\n\\[\n\\boxed{0}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:\\mathbb{R}^3\\to\\mathbb{R}^2$ を $T(x,y,z)=(x-2y+z,\\;3x+y-4z)$ とする。$v=(2,-1,3)$ に対する像 $T(v)$ を求めよ。",
+        "answer": "以下の線形写像が与えられています：\n$T(x,y,z)=(x-2y+z,\\;3x+y-4z)$，$v=(2,-1,3)$。\n\nステップ1：第1成分を計算\n\\[ x-2y+z = 2 - 2(-1) + 3 = 2 + 2 + 3 = 7. \\]\n\nステップ2：第2成分を計算\n\\[ 3x + y - 4z = 3\\cdot 2 + (-1) - 4\\cdot 3 = 6 - 1 - 12 = -7. \\]\n\nしたがって、\n\\[\\boxed{T(v)=(7,\\,-7)}\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$ により定まる線形写像 $T:\\mathbb{R}^2\\to\\mathbb{R}^2$ が全単射かどうか判定せよ。",
+        "answer": "ステップ1（行列式の計算）:\n\\[\n\\det A=\\begin{vmatrix}2&1\\\\1&2\\end{vmatrix}=2\\cdot2-1\\cdot1=3\\neq 0\n\\]\n\nステップ2（判定基準）:\n$T:\\mathbb{R}^2\\to\\mathbb{R}^2$ が全単射であることは、対応する正方行列 $A$ が可逆であることと同値。さらに $A$ が可逆であることは $\\det A\\neq 0$ と同値。\n\nステップ3（結論）:\n$\\det A\\neq 0$ なので $A$ は可逆。参考までに\n\\[\nA^{-1}=\\frac{1}{3}\\begin{pmatrix}2&-1\\\\-1&2\\end{pmatrix}.\n\\]\nしたがって $T$ は単射かつ全射、すなわち全単射である。\n\n\\[\n\\boxed{T \\text{ は全単射である}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:\\mathbb{R}^2\\to\\mathbb{R}^2,\\ S:\\mathbb{R}^2\\to\\mathbb{R}^2$ を $T(x,y)=(x+y,\\;y)$、$S(u,v)=(u-2v,\\;3u+v)$ とする。合成 $S\\circ T$ の行列表現を標準基底に関して求めよ。",
+        "answer": "以下の手順で求めます。\n\nステップ1：標準基底に関する各写像の行列を求める  \n- $T(x,y)=(x+y,\\;y)$ より、標準基底 $e_1=(1,0), e_2=(0,1)$ に対して\n  \\[\n  T(e_1)=(1,0),\\quad T(e_2)=(1,1)\n  \\]\n  よって\n  \\[\n  [T]_{\\text{std}}=\n  \\begin{pmatrix}\n  1 & 1\\\\\n  0 & 1\n  \\end{pmatrix}.\n  \\]\n- $S(u,v)=(u-2v,\\;3u+v)$ より\n  \\[\n  S(e_1)=(1,3),\\quad S(e_2)=(-2,1)\n  \\]\n  よって\n  \\[\n  [S]_{\\text{std}}=\n  \\begin{pmatrix}\n  1 & -2\\\\\n  3 & 1\n  \\end{pmatrix}.\n  \\]\n\nステップ2：合成の行列は積で与えられる  \n\\[\n[S\\circ T]_{\\text{std}}=[S]_{\\text{std}}\\,[T]_{\\text{std}}\n=\n\\begin{pmatrix}\n1 & -2\\\\\n3 & 1\n\\end{pmatrix}\n\\begin{pmatrix}\n1 & 1\\\\\n0 & 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1 & -1\\\\\n3 & 4\n\\end{pmatrix}.\n\\]\n\n確認：直接合成しても一致  \n\\[\n(S\\circ T)(x,y)=S(x+y,y)=\\big((x+y)-2y,\\;3(x+y)+y\\big)=(x-y,\\;3x+4y),\n\\]\nしたがって行列は\n\\[\n\\begin{pmatrix}\n1 & -1\\\\\n3 & 4\n\\end{pmatrix}.\n\\]\n\n最終回答：\n\\[\n\\boxed{\n\\begin{pmatrix}\n1 & -1\\\\\n3 & 4\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "多項式空間 $P_2$ 上の写像 $T:P_2\\to P_2$ を $T(p(x))=p'(x)+2p(x)$ と定める。基底 $\\{1,x,x^2\\}$ に関する行列表現を求めよ。",
+        "answer": "以下、基底 B = {1, x, x^2} に関して、各基底ベクトルの像を求め、その座標を列ベクトルとして並べて行列表現を作ります。\n\n1) 各基底多項式への作用\n\\[\nT(1) = (1)' + 2\\cdot 1 = 0 + 2 = 2\n\\]\n\\[\nT(x) = (x)' + 2x = 1 + 2x\n\\]\n\\[\nT(x^2) = (x^2)' + 2x^2 = 2x + 2x^2\n\\]\n\n2) 基底 B による座標表示（列ベクトル）\n\\[\n[T(1)]_B = \\begin{pmatrix}2\\\\0\\\\0\\end{pmatrix},\\quad\n[T(x)]_B = \\begin{pmatrix}1\\\\2\\\\0\\end{pmatrix},\\quad\n[T(x^2)]_B = \\begin{pmatrix}0\\\\2\\\\2\\end{pmatrix}\n\\]\n\n3) 行列表現（列に順に並べる）\n\\[\n[T]_B = \\begin{pmatrix}\n2 & 1 & 0 \\\\\n0 & 2 & 2 \\\\\n0 & 0 & 2\n\\end{pmatrix}\n\\]\n\n\\[\n\\boxed{\n\\begin{pmatrix}\n2 & 1 & 0 \\\\\n0 & 2 & 2 \\\\\n0 & 0 & 2\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:M_2(\\mathbb{R})\\to\\mathbb{R}^2$ を $T\\!\\left(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\right)=(a+d,\\;b-c)$ とする。核 $\\ker T$ の次元を求めよ。",
+        "answer": "次の線形写像を考える：\n\\[ T\\!\\left(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\right)=(a+d,\\;b-c). \\]\n\nステップ1：核の定義\n\\[ \\ker T=\\left\\{\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\in M_2(\\mathbb{R})\\;\\middle|\\;T\\!\\left(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\right)=(0,0)\\right\\}. \\]\n\nステップ2：条件式の導出\n\\[ T\\!\\left(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\right)=(0,0) \\iff \\begin{cases} a+d=0, \\\\ b-c=0. \\end{cases} \\]\n\nステップ3：解の一般形\n\\[ d=-a,\\quad c=b \\]\nより、$a,b$ を自由変数として\n\\[ \\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=\\begin{pmatrix}a&b\\\\b&-a\\end{pmatrix}. \\]\n\nステップ4：次元の判定\n自由パラメータは $a,b$ の2つなので、\n\\[ \\dim(\\ker T)=2. \\]\n\n別解（確認）：$\\dim M_2(\\mathbb{R})=4$、$T$ の値は2成分で独立な線形汎関数 $(a+d)$ と $(b-c)$ からなるので $\\operatorname{rank} T=2$。よって階数・退化次元定理より\n\\[ \\dim(\\ker T)=4-2=2. \\]\n\n最終回答：\n\\[\\boxed{2}\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:\\mathbb{R}^2\\to\\mathbb{R}^2$ を $T(x,y)=(3x-y,\\;2x+y)$ とする。$w=(1,0)$ に対して逆像 $T^{-1}(w)$ を求めよ。",
+        "answer": "以下の線形写像を考える: $T(x,y)=(3x-y,\\;2x+y)$。$w=(1,0)$ に対して $T^{-1}(w)$ を求める。\n\n1) 方程式を立てる  \n$T(x,y)=(1,0)$ より、連立方程式\n\\[\n\\begin{cases}\n3x - y = 1\\\\\n2x + y = 0\n\\end{cases}\n\\]\nを解く。\n\n2) 消去法で解く  \n両式を加えると\n\\[\n(3x - y) + (2x + y) = 1 + 0 \\;\\Rightarrow\\; 5x = 1 \\;\\Rightarrow\\; x = \\frac{1}{5}.\n\\]\n\n3) $y$ を求める  \n$2x + y = 0$ に代入して\n\\[\ny = -2x = -\\frac{2}{5}.\n\\]\n\n4) 逆像  \n行列式は $3\\cdot 1 - (-1)\\cdot 2 = 5 \\neq 0$ なので解は一意。したがって\n\\[\nT^{-1}(w)=\\{(x,y)\\}=\\left\\{\\left(\\frac{1}{5},-\\frac{2}{5}\\right)\\right\\}.\n\\]\n\n\\boxed{T^{-1}(w)=\\left\\{\\left(\\frac{1}{5},-\\frac{2}{5}\\right)\\right\\}}",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "2点 $A(1,2,3)$ と $B(4,-1,5)$ を通る直線のベクトル方程式と対称形を求めよ。",
+        "answer": "次の手順で求めます。\n\n1. 方向ベクトルを求める  \n   点A, Bを通る直線の方向ベクトルは\n   \\[\n   \\vec{AB} = B - A = (4-1,\\,-1-2,\\;5-3) = (3,\\,-3,\\;2)\n   \\]\n\n2. ベクトル方程式（媒介変数表示）  \n   直線上の一般点を $P(x,y,z)$、媒介変数を $t\\in\\mathbb{R}$ とすると\n   \\[\n   (x,y,z) = (1,2,3) + t\\,(3,-3,2)\n   \\]\n\n3. 対称形  \n   上の式を成分ごとに表すと\n   \\[\n   x = 1 + 3t,\\quad y = 2 - 3t,\\quad z = 3 + 2t\n   \\]\n   これより $t$ を消去して\n   \\[\n   \\frac{x-1}{3} = \\frac{y-2}{-3} = \\frac{z-3}{2}\n   \\]\n\n最終回答：\n\\[\n\\boxed{\\,\\text{ベクトル方程式}\\;:\\;(x,y,z)=(1,2,3)+t(3,-3,2)\\;(t\\in\\mathbb{R})\\,}\n\\]\n\\[\n\\boxed{\\,\\text{対称形}\\;:\\;\\dfrac{x-1}{3}=\\dfrac{y-2}{-3}=\\dfrac{z-3}{2}\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $P(4,2,-1)$ から直線 $L: (x,y,z) = (2,-1,0) + t(1,3,-2)$ までの距離を求めよ。",
+        "answer": "以下の手順で計算します。\n\n1) 直線の通る点と方向ベクトルをとる。\n\\[ A=(2,-1,0), \\quad \\vec v=(1,3,-2) \\]\n\n2) 点PからAへのベクトルをとる。\n\\[ \\vec{AP}=P-A=(4-2,\\,2-(-1),\\,-1-0)=(2,3,-1) \\]\n\n3) 距離は\n\\[ d=\\frac{\\|\\vec{AP}\\times \\vec v\\|}{\\|\\vec v\\|} \\]\nで与えられる。外積を計算する。\n\\[\n\\vec{AP}\\times \\vec v=\n\\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k}\\\\\n2 & 3 & -1\\\\\n1 & 3 & -2\n\\end{vmatrix}\n=(-3,\\,3,\\,3)\n\\]\nよって\n\\[\n\\|\\vec{AP}\\times \\vec v\\|=\\sqrt{(-3)^2+3^2+3^2}=\\sqrt{27}=3\\sqrt{3}.\n\\]\n\n4) 方向ベクトルの大きさは\n\\[\n\\|\\vec v\\|=\\sqrt{1^2+3^2+(-2)^2}=\\sqrt{14}.\n\\]\n\n5) よって距離は\n\\[\nd=\\frac{3\\sqrt{3}}{\\sqrt{14}}=\\frac{3\\sqrt{42}}{14}.\n\\]\n\n最終答え\n\\[\n\\boxed{\\frac{3\\sqrt{42}}{14}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線 $L_1: (x,y,z) = (1,0,2) + s(2,-1,1)$ と $L_2: (x,y,z) = (3,-1,3) + t(1,2,0)$ の交点の座標を求めよ。",
+        "answer": "以下の2直線の交点を求めます。\n- $L_1: (x,y,z) = (1,0,2) + s(2,-1,1)$ すなわち\n  \\[\n  x=1+2s,\\quad y=-s,\\quad z=2+s\n  \\]\n- $L_2: (x,y,z) = (3,-1,3) + t(1,2,0)$ すなわち\n  \\[\n  x=3+t,\\quad y=-1+2t,\\quad z=3\n  \\]\n\n交点では対応する座標が等しいので，\n\\[\n\\begin{cases}\n1+2s = 3+t\\\\\n-s = -1+2t\\\\\n2+s = 3\n\\end{cases}\n\\]\n\nまず $z$ 成分から\n\\[\n2+s=3 \\ \\Rightarrow\\ s=1.\n\\]\n\nこれを $x$ 成分に代入して\n\\[\n1+2(1)=3+t \\ \\Rightarrow\\ 3=3+t \\ \\Rightarrow\\ t=0.\n\\]\n\n$y$ 成分で確認すると\n\\[\n-s=-1 \\ (\\text{左辺}),\\quad -1+2t=-1 \\ (\\text{右辺})\n\\]\nで一致するので整合的です。\n\nしたがって交点は\n\\[\n\\boxed{(3,\\,-1,\\,3)}.\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線 $L_1: (x,y,z) = (0,0,0) + s(1,-2,2)$ と $L_2: (x,y,z) = (1,1,1) + t(2,1,-1)$ のなす角 $\\theta$ を求めよ（ただし $0 \\le \\theta \\le \\pi/2$）。",
+        "answer": "以下の手順で求めます。\n\n1) 方向ベクトルを取り出す  \n- $L_1$ の方向ベクトル：$\\vec{a}=(1,-2,2)$  \n- $L_2$ の方向ベクトル：$\\vec{b}=(2,1,-1)$\n\n2) 直線同士のなす角は方向ベクトルのなす角に等しい  \n角度 $\\theta$ は次で与えられる（鋭角をとるため内積は絶対値）:\n\\[\n\\cos\\theta=\\frac{|\\vec{a}\\cdot\\vec{b}|}{\\|\\vec{a}\\|\\,\\|\\vec{b}\\|}\n\\]\n\n3) 内積とノルムを計算\n\\[\n\\vec{a}\\cdot\\vec{b}=1\\cdot2+(-2)\\cdot1+2\\cdot(-1)=2-2-2=-2\n\\]\n\\[\n\\|\\vec{a}\\|=\\sqrt{1^2+(-2)^2+2^2}=\\sqrt{9}=3,\\quad\n\\|\\vec{b}\\|=\\sqrt{2^2+1^2+(-1)^2}=\\sqrt{6}\n\\]\n\n4) 代入して角度を求める\n\\[\n\\cos\\theta=\\frac{|{-2}|}{3\\sqrt{6}}=\\frac{2}{3\\sqrt{6}}=\\frac{\\sqrt{6}}{9}\n\\]\n\\[\n\\theta=\\arccos\\!\\left(\\frac{\\sqrt{6}}{9}\\right)\n\\]\n\n最終回答：\n\\[\n\\boxed{\\theta=\\arccos\\!\\left(\\frac{\\sqrt{6}}{9}\\right)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $P(3,2,0)$ から直線 $L: (x,y,z) = (0,1,-1) + t(2,0,1)$ に下ろした垂線の足 $H$ の座標を求めよ。",
+        "answer": "ステップ1: 直線と点のデータを整理する\n- 点 P は $P(3,2,0)$\n- 直線 $L$ は基点 $A=(0,1,-1)$、方向ベクトル $\\vec v=(2,0,1)$\n- 垂足 $H$ は $H=A+t\\vec v$ の形で表せる\n\nステップ2: ベクトルを計算する\n\\[\n\\overrightarrow{AP}=P-A=(3-0,\\ 2-1,\\ 0-(-1))=(3,1,1)\n\\]\n\nステップ3: 垂足のパラメータ t を内積で求める\n\\[\nt=\\frac{\\vec v\\cdot \\overrightarrow{AP}}{\\vec v\\cdot \\vec v}\n=\\frac{(2,0,1)\\cdot(3,1,1)}{(2,0,1)\\cdot(2,0,1)}\n=\\frac{2\\cdot 3+0\\cdot 1+1\\cdot 1}{2^2+0^2+1^2}\n=\\frac{7}{5}\n\\]\n\nステップ4: 垂足 H の座標を求める\n\\[\nH=A+t\\vec v=(0,1,-1)+\\frac{7}{5}(2,0,1)\n=\\left(\\frac{14}{5},\\ 1,\\ -1+\\frac{7}{5}\\right)\n=\\left(\\frac{14}{5},\\ 1,\\ \\frac{2}{5}\\right)\n\\]\n\nステップ5:（確認）直交性チェック\n\\[\n\\overrightarrow{PH}=H-P=\\left(\\frac{14}{5}-3,\\ 1-2,\\ \\frac{2}{5}-0\\right)=\\left(-\\frac{1}{5},\\ -1,\\ \\frac{2}{5}\\right)\n\\]\n\\[\n\\vec v\\cdot \\overrightarrow{PH}=(2,0,1)\\cdot\\left(-\\frac{1}{5},-1,\\frac{2}{5}\\right)\n=-\\frac{2}{5}+0+\\frac{2}{5}=0\n\\]\nよって確かに直交している。\n\n最終答案:\n\\[\n\\boxed{\\left(\\frac{14}{5},\\ 1,\\ \\frac{2}{5}\\right)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線 $L: (x,y,z) = (1,2,0) + t(1,-1,2)$ と平面 $2x - y + z = 5$ の交点の座標を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 直線の成分表示\n- $x = 1 + t,\\ y = 2 - t,\\ z = 2t$\n\n2) 平面に代入して$t$を求める\n\\[\n2(1+t) - (2 - t) + 2t = 5\n\\]\n\\[\n2 + 2t - 2 + t + 2t = 5 \\;\\Rightarrow\\; 5t = 5 \\;\\Rightarrow\\; t = 1\n\\]\n\n3) $t=1$ を直線に代入して交点の座標を得る\n- $x = 1 + 1 = 2,\\ y = 2 - 1 = 1,\\ z = 2\\cdot 1 = 2$\n\nよって、交点は\n\\[\n\\boxed{(2,\\,1,\\,2)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線 $L_1: (x,y,z) = (0,0,0) + s(1,2,3)$ と $L_2: (x,y,z) = (1,-1,2) + t(2,1,0)$ の最短距離を求めよ。",
+        "answer": "以下の直線の最短距離を求めます。\nL1: 点 A = (0,0,0), 方向ベクトル $\\mathbf{a}=(1,2,3)$\nL2: 点 B = (1,-1,2), 方向ベクトル $\\mathbf{b}=(2,1,0)$\n\nステップ1：交差しないことの確認（任意）\nL1 と L2 が交わるなら、ある $s,t$ が存在して\n\\[\n(0,0,0)+s(1,2,3)=(1,-1,2)+t(2,1,0)\n\\]\nの連立方程式が成り立つ。$z$ 成分から $3s=2 \\Rightarrow s=\\frac{2}{3}$。$x$ 成分から $\\frac{2}{3}=1+2t \\Rightarrow t=-\\frac{1}{6}$。$y$ 成分は $2s=\\frac{4}{3}$ だが、右辺は $-1+t=-\\frac{7}{6}$ で一致しない。よって交差しない（しかも $\\mathbf{a},\\mathbf{b}$ は平行でない）ので、直交距離の公式が使える。\n\nステップ2：最短距離の公式\n2直線の最短距離は\n\\[\nd=\\frac{|(\\overrightarrow{AB})\\cdot(\\mathbf{a}\\times\\mathbf{b})|}{\\|\\mathbf{a}\\times\\mathbf{b}\\|}\n\\]\nただし $\\overrightarrow{AB}=B-A=(1,-1,2)$。\n\nステップ3：外積と各種量の計算\n\\[\n\\mathbf{a}\\times\\mathbf{b}\n=\n\\begin{vmatrix}\n\\mathbf{i}&\\mathbf{j}&\\mathbf{k}\\\\\n1&2&3\\\\\n2&1&0\n\\end{vmatrix}\n=(-3,\\,6,\\,-3),\n\\quad\n\\|\\mathbf{a}\\times\\mathbf{b}\\|=\\sqrt{(-3)^2+6^2+(-3)^2}=3\\sqrt{6}.\n\\]\n\\[\n(\\overrightarrow{AB})\\cdot(\\mathbf{a}\\times\\mathbf{b})=(1,-1,2)\\cdot(-3,6,-3)=-3-6-6=-15.\n\\]\n\nステップ4：距離の計算\n\\[\nd=\\frac{|{-15}|}{3\\sqrt{6}}=\\frac{15}{3\\sqrt{6}}=\\frac{5}{\\sqrt{6}}=\\frac{5\\sqrt{6}}{6}.\n\\]\n\n最終答案\n\\[\n\\boxed{\\frac{5\\sqrt{6}}{6}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線の対称形 $\\dfrac{x-2}{1} = \\dfrac{y+1}{-2} = \\dfrac{z-3}{3}$ をパラメータ表示に直せ。",
+        "answer": "与えられた直線の対称形\n\\[\n\\dfrac{x-2}{1} = \\dfrac{y+1}{-2} = \\dfrac{z-3}{3}\n\\]\nを、共通の値をパラメータ $t$ とおく。\n\n- 共通値を $t$ とすると、\n  \\[\n  \\frac{x-2}{1} = t,\\quad \\frac{y+1}{-2} = t,\\quad \\frac{z-3}{3} = t\n  \\]\n- それぞれ解いて、\n  \\[\n  x = 2 + t,\\quad y = -1 - 2t,\\quad z = 3 + 3t\n  \\]\n\nしたがって、パラメータ表示は\n\\[\n\\boxed{\\, (x, y, z) = (2, -1, 3) + t(1, -2, 3)\\ \\ (t \\in \\mathbb{R}) \\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "2平面 $x + y + z = 6$ と $2x - y + 3z = 10$ の交線の方程式（パラメータ表示）を求めよ。",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "球 $x^2 + y^2 + z^2 = 9$ と直線 $(x,y,z) = (1,-2,0) + t(2,1,2)$ の交点の座標を求めよ。",
+        "answer": "以下の直線を球に代入して交点を求めます。\n\n1) 直線のパラメータ表示\n\\[ x = 1 + 2t,\\quad y = -2 + t,\\quad z = 2t \\]\n\n2) 球の方程式に代入\n\\[\n(1+2t)^2 + (-2+t)^2 + (2t)^2 = 9\n\\]\n\n3) 展開・整理\n\\[\n(1+4t+4t^2) + (4-4t+t^2) + 4t^2 = 9\n\\]\n\\[\n9t^2 + 5 = 9 \\;\\;\\Rightarrow\\;\\; 9t^2 = 4 \\;\\;\\Rightarrow\\;\\; t = \\pm \\frac{2}{3}\n\\]\n\n4) 各 t に対する座標\n- $t=\\frac{2}{3}$ のとき\n\\[\nx = 1 + 2\\cdot\\frac{2}{3} = \\frac{7}{3},\\quad\ny = -2 + \\frac{2}{3} = -\\frac{4}{3},\\quad\nz = 2\\cdot\\frac{2}{3} = \\frac{4}{3}\n\\]\n- $t=-\\frac{2}{3}$ のとき\n\\[\nx = 1 - \\frac{4}{3} = -\\frac{1}{3},\\quad\ny = -2 - \\frac{2}{3} = -\\frac{8}{3},\\quad\nz = 2\\cdot\\left(-\\frac{2}{3}\\right) = -\\frac{4}{3}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\left(\\frac{7}{3},-\\frac{4}{3},\\frac{4}{3}\\right),\\ \\left(-\\frac{1}{3},-\\frac{8}{3},-\\frac{4}{3}\\right)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の3点 $A(1,2,3),\\\\ B(2,-1,0),\\\\ C(0,1,4)$ を通る平面の方程式を求めよ。",
+        "answer": "求める平面は、3点 A, B, C を通るので、ベクトル $\\overrightarrow{AB}$ と $\\overrightarrow{AC}$ に直交する法線ベクトルを用いて求めます。\n\n1) ベクトルの計算\n\\[\n\\overrightarrow{AB} = B - A = (2-1,\\,-1-2,\\,0-3) = (1,\\,-3,\\,-3)\n\\]\n\\[\n\\overrightarrow{AC} = C - A = (0-1,\\,1-2,\\,4-3) = (-1,\\,-1,\\,1)\n\\]\n\n2) 法線ベクトル（外積）\n\\[\n\\vec{n} = \\overrightarrow{AB} \\times \\overrightarrow{AC}\n= \\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n1 & -3 & -3 \\\\\n-1 & -1 & 1\n\\end{vmatrix}\n= (-6,\\, 2,\\,-4)\n\\]\nスカラー倍して簡単にすると\n\\[\n\\vec{n} = (3,\\,-1,\\,2)\n\\]\n\n3) 点法線形式で平面の方程式\n\\[\n3(x-1) -1(y-2) + 2(z-3) = 0\n\\]\n\n4) 展開・整理\n\\[\n3x - y + 2z - 7 = 0\n\\]\n\n最終回答：\n\\[\n\\boxed{\\,3x - y + 2z - 7 = 0\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $P(1,-2,3)$ を通り、法線ベクトルが $\\\\vec n=(2,-1,5)$ である平面の方程式を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 法線ベクトルが $\\vec n=(2,-1,5)$、通る点が $P(1,-2,3)$ のとき、平面の方程式は\n\\[\n\\vec n \\cdot \\bigl((x,y,z)-P\\bigr)=0\n\\]\nすなわち\n\\[\n(2,-1,5)\\cdot(x-1,\\,y+2,\\,z-3)=0\n\\]\nとなる。\n\n2) 展開する：\n\\[\n2(x-1) - (y+2) + 5(z-3) = 0\n\\]\n\n3) 整理する：\n\\[\n2x - 2 - y - 2 + 5z - 15 = 0\n\\]\n\\[\n2x - y + 5z - 19 = 0\n\\]\n\n最終回答：\n\\[\n\\boxed{2x - y + 5z - 19 = 0}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $P(0,1,2)$ を通り、方向ベクトル $\\\\vec u=(1,0,-1)$ と $\\\\vec v=(2,1,3)$ を含む平面の方程式を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 平面の法線ベクトルを求める  \n平面は方向ベクトル $\\,\\vec u=(1,0,-1),\\ \\vec v=(2,1,3)\\,$ を含むので，法線ベクトルは外積\n\\[\n\\vec n=\\vec u\\times\\vec v=\n\\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k}\\\\\n1 & 0 & -1\\\\\n2 & 1 & 3\n\\end{vmatrix}\n= \\left(0\\cdot 3-(-1)\\cdot 1,\\ -\\bigl(1\\cdot 3-(-1)\\cdot 2\\bigr),\\ 1\\cdot 1-0\\cdot 2\\right)\n=(1,-5,1)\n\\]\nとなる。\n\n2) 点法線形式で平面の方程式を書く  \n点 $P(0,1,2)$ を通るので，点法線形式\n\\[\n\\vec n\\cdot\\bigl((x,y,z)-(0,1,2)\\bigr)=0\n\\]\nすなわち\n\\[\n(1,-5,1)\\cdot(x-0,\\ y-1,\\ z-2)=0\n\\]\nより\n\\[\nx-5(y-1)+z-2=0\n\\]\nこれを整理して\n\\[\nx-5y+z+3=0\n\\]\n\n最終答案：\n\\[\n\\boxed{x-5y+z+3=0}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $Q(-1,4,2)$ を通り、平面 $2x - y + 3z - 5 = 0$ に平行な平面の方程式を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 与えられた平面は $2x - y + 3z - 5 = 0$。この平面の法線ベクトルは\n\\[\n\\vec{n} = (2,\\,-1,\\,3).\n\\]\n\n2) 平行な平面は同じ法線ベクトルをもつ。点 $Q(-1,4,2)$ を通る平面の点・法線形式は\n\\[\n2(x - (-1)) - 1(y - 4) + 3(z - 2) = 0.\n\\]\n\n3) 展開して標準形に直す：\n\\[\n2(x+1) - (y-4) + 3(z-2) = 0\n\\]\n\\[\n2x + 2 - y + 4 + 3z - 6 = 0\n\\]\n\\[\n2x - y + 3z = 0.\n\\]\n\nよって、求める平面の方程式は\n\\[\n\\boxed{2x - y + 3z = 0}.\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "2点 $A(1,0,2)$ と $B(3,-1,1)$ を通り、平面 $\\\\pi:\\\\ x + 2y - 2z + 7 = 0$ に垂直な平面の方程式を求めよ。",
+        "answer": "方針\n- 平面 π: x + 2y − 2z + 7 = 0 の法線ベクトルは $\\mathbf{n}_\\pi=(1,2,-2)$。\n- 点A, Bを通る平面は直線ABを含むので、その法線ベクトルは $\\overrightarrow{AB}$ に垂直。\n- さらに π に垂直なので、その法線ベクトルは $\\mathbf{n}_\\pi$ にも垂直。\n- よって求める平面の法線ベクトルは $\\overrightarrow{AB} \\times \\mathbf{n}_\\pi$ に平行。\n\nステップ\n1) 直線ABの方向ベクトル\n\\[\n\\overrightarrow{AB}=B-A=(3-1,\\,-1-0,\\,1-2)=(2,\\,-1,\\,-1).\n\\]\n\n2) 法線ベクトルの決定（外積）\n\\[\n\\mathbf{n}=\\overrightarrow{AB}\\times \\mathbf{n}_\\pi=\n\\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k}\\\\\n2 & -1 & -1\\\\\n1 & 2 & -2\n\\end{vmatrix}\n=(4,\\,3,\\,5).\n\\]\n\n3) 点Aを通る平面の方程式\n\\[\n4(x-1)+3(y-0)+5(z-2)=0\n\\;\\;\\Longrightarrow\\;\\;\n4x+3y+5z-14=0.\n\\]\n\n最終回答\n\\[\n\\boxed{\\,4x+3y+5z-14=0\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線 $L:\\\\ x=1+2t,\\\\ y=-1+t,\\\\ z=3-t$ を含み、点 $P(0,1,0)$ を通る平面の方程式を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 直線Lの方向ベクトルをとる\n直線 $L:\\ x=1+2t,\\ y=-1+t,\\ z=3-t$ の方向ベクトルは\n\\[\n\\vec{v}=(2,\\,1,\\,-1)\n\\]\nである。\n\n2) 直線上の1点と、与えられた点Pをとる\n$t=0$ をとると直線上の点は $A(1,-1,3)$。与えられた点は $P(0,1,0)$。よって\n\\[\n\\overrightarrow{AP}=P-A=(-1,\\,2,\\,-3)\n\\]\n\n3) 平面の法線ベクトルを求める\n平面は直線の方向 $\\vec{v}$ と $\\overrightarrow{AP}$ を含むので，その法線は\n\\[\n\\vec{n}=\\vec{v}\\times \\overrightarrow{AP}\n= \\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k}\\\\\n2 & 1 & -1\\\\\n-1 & 2 & -3\n\\end{vmatrix}\n= (-1,\\,7,\\,5)\n\\]\n\n4) 点Pを通る平面の方程式を書く\n法線 $\\vec{n}=(-1,7,5)$，点 $P(0,1,0)$ を用いると\n\\[\n-1\\,(x-0)+7\\,(y-1)+5\\,(z-0)=0\n\\]\n\\[\n-x+7y-7+5z=0\n\\]\n両辺に $-1$ をかけて整えると\n\\[\nx-7y-5z+7=0\n\\]\n\nよって求める平面の方程式は\n\\[\n\\boxed{x-7y-5z+7=0}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "点 $P(2,-1,4)$ から平面 $3x - 6y + 2z + 1 = 0$ までの距離を求めよ。",
+        "answer": "以下の手順で計算します。\n\n1) 距離の公式\n点 $P(x_0,y_0,z_0)$ から平面 $ax+by+cz+d=0$ までの距離 $D$ は\n\\[\nD=\\frac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^2+b^2+c^2}}\n\\]\n\n2) 係数と点を代入\n平面は $3x-6y+2z+1=0$ より $a=3,\\ b=-6,\\ c=2,\\ d=1$、点は $P(2,-1,4)$。\n分子は\n\\[\n|3\\cdot 2 + (-6)\\cdot(-1) + 2\\cdot 4 + 1|\n= |6 + 6 + 8 + 1|\n= |21|\n= 21\n\\]\n\n3) 分母の計算\n\\[\n\\sqrt{3^2 + (-6)^2 + 2^2}=\\sqrt{9+36+4}=\\sqrt{49}=7\n\\]\n\n4) 距離\n\\[\nD=\\frac{21}{7}=3\n\\]\n\n最終回答：\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線 $(x,y,z)=(1,2,-1)+s(2,-1,2)$ と平面 $2x + y - 2z - 3 = 0$ の成す角 $\\\\theta$ を求めよ（$0 \\\\le \\\\theta \\\\le \\\\pi/2$ とする）。",
+        "answer": "次の手順で求めます。\n\n1) 直線の方向ベクトルと平面の法線ベクトルをとる  \n直線の方向ベクトルは\n\\[\n\\mathbf{v} = (2,-1,2)\n\\]\n平面 \\(2x + y - 2z - 3 = 0\\) の法線ベクトルは\n\\[\n\\mathbf{n} = (2,1,-2)\n\\]\n\n2) 直線と平面の成す角 \\(\\theta\\) と、\\(\\mathbf{v}\\) と \\(\\mathbf{n}\\) のなす角 \\(\\varphi\\) は\n\\[\n\\theta = \\frac{\\pi}{2} - \\varphi\n\\]\nよって\n\\[\n\\sin\\theta = \\cos\\varphi = \\frac{|\\mathbf{v}\\cdot \\mathbf{n}|}{\\|\\mathbf{v}\\|\\,\\|\\mathbf{n}\\|}\n\\]\n\n3) 内積とノルムを計算\n\\[\n\\mathbf{v}\\cdot \\mathbf{n} = 2\\cdot 2 + (-1)\\cdot 1 + 2\\cdot(-2) = 4 - 1 - 4 = -1\n\\]\n\\[\n\\|\\mathbf{v}\\| = \\sqrt{2^2 + (-1)^2 + 2^2} = \\sqrt{9} = 3,\\quad\n\\|\\mathbf{n}\\| = \\sqrt{2^2 + 1^2 + (-2)^2} = \\sqrt{9} = 3\n\\]\n\n4) したがって\n\\[\n\\sin\\theta = \\frac{|{-1}|}{3\\cdot 3} = \\frac{1}{9}\n\\]\n\\[\n\\theta = \\arcsin\\!\\left(\\frac{1}{9}\\right)\n\\]\n\n最終答案：\n\\[\n\\boxed{\\theta = \\arcsin\\!\\left(\\frac{1}{9}\\right)}\n\\]\n（参考：およそ \\(0.111\\ \\text{rad} \\approx 6.38^\\circ\\)）",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "平面 $\\\\pi_1:\\\\ x - 2y + 2z + 4 = 0$ と $\\\\pi_2:\\\\ 2x + y - 2z - 1 = 0$ のなす角 $\\\\theta$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 平面の法線ベクトルをとる\n- $\\pi_1: x-2y+2z+4=0$ の法線ベクトルは $\\,\\mathbf{n}_1=(1,-2,2)$\n- $\\pi_2: 2x+y-2z-1=0$ の法線ベクトルは $\\,\\mathbf{n}_2=(2,1,-2)$\n\n2) 平面のなす角は法線ベクトルのなす角（鋭角）に等しい\n- したがって\n\\[\n\\cos\\theta=\\frac{|\\mathbf{n}_1\\cdot\\mathbf{n}_2|}{\\|\\mathbf{n}_1\\|\\,\\|\\mathbf{n}_2\\|}\n\\]\n\n3) 内積とノルムを計算\n\\[\n\\mathbf{n}_1\\cdot\\mathbf{n}_2=1\\cdot2+(-2)\\cdot1+2\\cdot(-2)=2-2-4=-4\n\\]\n\\[\n\\|\\mathbf{n}_1\\|=\\sqrt{1^2+(-2)^2+2^2}=\\sqrt{9}=3,\\quad\n\\|\\mathbf{n}_2\\|=\\sqrt{2^2+1^2+(-2)^2}=\\sqrt{9}=3\n\\]\n\n4) 代入して角度を求める\n\\[\n\\cos\\theta=\\frac{|{-4}|}{3\\cdot3}=\\frac{4}{9}\n\\]\n\\[\n\\therefore\\ \\theta=\\arccos\\!\\left(\\frac{4}{9}\\right)\\approx 1.110\\ \\text{rad}\\approx 63.6^\\circ\n\\]\n\n最終回答:\n\\[\n\\boxed{\\theta=\\arccos\\!\\left(\\frac{4}{9}\\right)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "座標軸との切片が $x$ 軸で $2$, $y$ 軸で $-3$, $z$ 軸で $6$ である平面の方程式を求めよ。",
+        "answer": "- ステップ1: 平面の切片形を用いる。座標軸との切片がそれぞれ $a, b, c$ のとき、平面の方程式は\n\\[\n\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1\n\\]\nで表される。\n\n- ステップ2: 与えられた切片 $a=2,\\ b=-3,\\ c=6$ を代入する。\n\\[\n\\frac{x}{2} + \\frac{y}{-3} + \\frac{z}{6} = 1\n\\]\nすなわち\n\\[\n\\frac{x}{2} - \\frac{y}{3} + \\frac{z}{6} = 1\n\\]\n\n- ステップ3: 分母を払うために両辺に $6$ をかける。\n\\[\n6\\left(\\frac{x}{2} - \\frac{y}{3} + \\frac{z}{6}\\right) = 6\n\\]\n\\[\n3x - 2y + z = 6\n\\]\n\n\\[\n\\boxed{3x - 2y + z = 6}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "実数ベクトル空間 $\\mathbb{R}^3$ において、$v_1=\\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix}$, $v_2=\\begin{pmatrix}0\\\\1\\\\1\\end{pmatrix}$, $v_3=\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}$ と $v=\\begin{pmatrix}2\\\\3\\\\4\\end{pmatrix}$ が与えられている。$v=c_1 v_1 + c_2 v_2 + c_3 v_3$ となる係数 $\\begin{pmatrix}c_1\\\\c_2\\\\c_3\\end{pmatrix}$ を求めよ。",
+        "answer": "以下の連立方程式を満たす $c_1,c_2,c_3$ を求めます。\n\nステップ1：連立方程式の設定  \n$v=c_1v_1+c_2v_2+c_3v_3$ より、各成分に分解すると\n\\[\n\\begin{cases}\nc_1 + c_3 = 2,\\\\\nc_2 + c_3 = 3,\\\\\nc_1 + c_2 = 4.\n\\end{cases}\n\\]\n\nステップ2：解く  \n3本目から $c_2=4-c_1$。1本目から $c_3=2-c_1$。これを2本目に代入して\n\\[\n(4-c_1) + (2-c_1) = 3 \\;\\;\\Rightarrow\\;\\; 6 - 2c_1 = 3 \\;\\;\\Rightarrow\\;\\; c_1 = \\frac{3}{2}.\n\\]\nすると\n\\[\nc_2 = 4 - \\frac{3}{2} = \\frac{5}{2}, \\quad\nc_3 = 2 - \\frac{3}{2} = \\frac{1}{2}.\n\\]\n\nステップ3：検算  \n\\[\nc_1v_1 + c_2v_2 + c_3v_3\n= \\frac{3}{2}\\!\\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix}\n+ \\frac{5}{2}\\!\\begin{pmatrix}0\\\\1\\\\1\\end{pmatrix}\n+ \\frac{1}{2}\\!\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}\n= \\begin{pmatrix}2\\\\3\\\\4\\end{pmatrix}.\n\\]\n\n最終答案：\n\\[\n\\boxed{\\begin{pmatrix}c_1\\\\c_2\\\\c_3\\end{pmatrix}\n= \\begin{pmatrix}\\tfrac{3}{2}\\\\[4pt]\\tfrac{5}{2}\\\\[4pt]\\tfrac{1}{2}\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$\\mathbb{R}^2$ の基底 $B=\\left\\{\\begin{pmatrix}2\\\\1\\end{pmatrix},\\,\\begin{pmatrix}1\\\\1\\end{pmatrix}\\right\\}$ に関して、$x=\\begin{pmatrix}5\\\\4\\end{pmatrix}$ の座標ベクトル $[x]_B$ を求めよ。",
+        "answer": "次のようにおく。\n\\[\nx = c_1 \\begin{pmatrix}2\\\\1\\end{pmatrix} + c_2 \\begin{pmatrix}1\\\\1\\end{pmatrix}\n\\]\nすると成分比較より\n\\[\n\\begin{cases}\n2c_1 + c_2 = 5\\\\\nc_1 + c_2 = 4\n\\end{cases}\n\\]\n1つ目から2つ目を引いて\n\\[\n(2c_1 + c_2) - (c_1 + c_2) = 5 - 4 \\;\\Rightarrow\\; c_1 = 1\n\\]\nこれを $c_1 + c_2 = 4$ に代入して\n\\[\nc_2 = 4 - 1 = 3\n\\]\nよって\n\\[\n[x]_B = \\begin{pmatrix}c_1\\\\ c_2\\end{pmatrix} = \\begin{pmatrix}1\\\\3\\end{pmatrix}\n\\]\n\n\\[\n\\boxed{\\begin{pmatrix}1\\\\3\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$\\mathbb{R}^3$ において、$u=\\begin{pmatrix}1\\\\2\\\\2\\end{pmatrix}$ によって張られる直線への $v=\\begin{pmatrix}3\\\\1\\\\0\\end{pmatrix}$ の正射影 $\\operatorname{proj}_{\\operatorname{span}\\{u\\}}(v)$ を求めよ。",
+        "answer": "以下の手順で計算します。\n\n1. 正射影の公式を用いる：\n\\[\n\\operatorname{proj}_{\\operatorname{span}\\{u\\}}(v) \\;=\\; \\frac{u \\cdot v}{u \\cdot u}\\, u\n\\]\n\n2. 内積を計算する：\n\\[\nu \\cdot v \\;=\\; 1\\cdot 3 + 2\\cdot 1 + 2\\cdot 0 \\;=\\; 3 + 2 + 0 \\;=\\; 5\n\\]\n\\[\nu \\cdot u \\;=\\; 1^2 + 2^2 + 2^2 \\;=\\; 1 + 4 + 4 \\;=\\; 9\n\\]\n\n3. 係数を用いてベクトルを求める：\n\\[\n\\operatorname{proj}_{\\operatorname{span}\\{u\\}}(v) \\;=\\; \\frac{5}{9}\\, u \\;=\\; \\frac{5}{9}\\begin{pmatrix}1\\\\2\\\\2\\end{pmatrix}\n\\;=\\;\n\\begin{pmatrix}\n\\frac{5}{9}\\\\[2pt]\n\\frac{10}{9}\\\\[2pt]\n\\frac{10}{9}\n\\end{pmatrix}\n\\]\n\n\\[\n\\boxed{\n\\begin{pmatrix}\n\\frac{5}{9}\\\\[2pt]\n\\frac{10}{9}\\\\[2pt]\n\\frac{10}{9}\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$\\mathbb{R}^3$ において、$U=\\operatorname{span}\\left\\{\\begin{pmatrix}1\\\\0\\\\0\\end{pmatrix},\\,\\begin{pmatrix}0\\\\1\\\\1\\end{pmatrix}\\right\\}$ への $v=\\begin{pmatrix}2\\\\3\\\\4\\end{pmatrix}$ の直交射影ベクトルを求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 基底の直交性を確認\n与えられた\n\\[\nu_1=\\begin{pmatrix}1\\\\0\\\\0\\end{pmatrix},\\quad\nu_2=\\begin{pmatrix}0\\\\1\\\\1\\end{pmatrix}\n\\]\nは\n\\[\nu_1\\cdot u_2=1\\cdot 0+0\\cdot 1+0\\cdot 1=0\n\\]\nより直交している。\n\n2) 直交基底への射影公式\n直交基底に対して、射影は\n\\[\n\\operatorname{proj}_U(v)=\\sum_{i=1}^2 \\frac{v\\cdot u_i}{\\|u_i\\|^2}\\,u_i\n\\]\nで与えられる。\n\n3) 内積とノルムの計算\n\\[\n\\|u_1\\|^2=1,\\quad \\|u_2\\|^2=1^2+1^2=2\n\\]\n\\[\nv\\cdot u_1=2,\\quad v\\cdot u_2=3+4=7\n\\]\n\n4) 射影の計算\n\\[\n\\operatorname{proj}_U(v)=\\frac{2}{1}u_1+\\frac{7}{2}u_2\n=2\\begin{pmatrix}1\\\\0\\\\0\\end{pmatrix}\n+\\frac{7}{2}\\begin{pmatrix}0\\\\1\\\\1\\end{pmatrix}\n=\\begin{pmatrix}2\\\\ \\tfrac{7}{2}\\\\ \\tfrac{7}{2}\\end{pmatrix}\n\\]\n\n5) 検算（任意）\n残差\n\\[\nr=v-\\operatorname{proj}_U(v)=\\begin{pmatrix}0\\\\-\\tfrac{1}{2}\\\\\\tfrac{1}{2}\\end{pmatrix}\n\\]\nは\n\\[\nr\\cdot u_1=0,\\quad r\\cdot u_2=-\\tfrac{1}{2}+\\tfrac{1}{2}=0\n\\]\nより確かに U と直交。\n\n最終結果：\n\\[\n\\boxed{\\begin{pmatrix}2\\\\ \\tfrac{7}{2}\\\\ \\tfrac{7}{2}\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $v_1=\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}$, $v_2=\\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix}$ に対し Gram–Schmidt の手続きを用い、得られる正規直交系のうち2本目の単位ベクトル $e_2$ を求めよ。",
+        "answer": "以下、Gram–Schmidt の手続きに従い、段階的に計算します。\n\n1) まず $v_1$ を正規化して $e_1$ を作る\n\\[\n\\|v_1\\|=\\sqrt{1^2+1^2+0^2}=\\sqrt{2},\\quad\ne_1=\\frac{v_1}{\\|v_1\\|}=\\frac{1}{\\sqrt{2}}\\begin{pmatrix}1\\\\[2pt]1\\\\[2pt]0\\end{pmatrix}.\n\\]\n\n2) $v_2$ から $e_1$ 方向成分を除いて直交化\n\\[\n\\langle v_2,v_1\\rangle=1\\cdot1+0\\cdot1+1\\cdot0=1,\\quad\n\\langle v_1,v_1\\rangle=2,\n\\]\n\\[\nu_2=v_2-\\frac{\\langle v_2,v_1\\rangle}{\\langle v_1,v_1\\rangle}v_1\n=v_2-\\frac{1}{2}v_1\n=\\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix}-\\frac{1}{2}\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}\n=\\begin{pmatrix}\\tfrac{1}{2}\\\\[2pt]-\\tfrac{1}{2}\\\\[2pt]1\\end{pmatrix}.\n\\]\n\n3) $u_2$ を正規化して $e_2$ を得る\n\\[\n\\|u_2\\|=\\sqrt{\\left(\\tfrac{1}{2}\\right)^2+\\left(-\\tfrac{1}{2}\\right)^2+1^2}\n=\\sqrt{\\tfrac{1}{4}+\\tfrac{1}{4}+1}\n=\\sqrt{\\tfrac{3}{2}},\n\\]\n\\[\ne_2=\\frac{u_2}{\\|u_2\\|}=\\frac{1}{\\sqrt{3/2}}\\begin{pmatrix}\\tfrac{1}{2}\\\\[2pt]-\\tfrac{1}{2}\\\\[2pt]1\\end{pmatrix}\n=\\begin{pmatrix}\\tfrac{1}{\\sqrt{6}}\\\\[2pt]-\\tfrac{1}{\\sqrt{6}}\\\\[2pt]\\tfrac{2}{\\sqrt{6}}\\end{pmatrix}.\n\\]\n\n最終回答:\n\\[\n\\boxed{\\,e_2=\\begin{pmatrix}\\tfrac{1}{\\sqrt{6}}\\\\[2pt]-\\tfrac{1}{\\sqrt{6}}\\\\[2pt]\\tfrac{2}{\\sqrt{6}}\\end{pmatrix}\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次のベクトル集合が張る部分空間の次元を求めよ：$\\left\\{\\begin{pmatrix}1\\\\0\\\\1\\\\0\\end{pmatrix},\\,\\begin{pmatrix}0\\\\1\\\\0\\\\1\\end{pmatrix},\\,\\begin{pmatrix}1\\\\1\\\\1\\\\1\\end{pmatrix},\\,\\begin{pmatrix}1\\\\-1\\\\1\\\\-1\\end{pmatrix}\\right\\}\\subset \\mathbb{R}^4$。",
+        "answer": "与えられたベクトルを\n\\[\nv_1=\\begin{pmatrix}1\\\\0\\\\1\\\\0\\end{pmatrix},\\quad\nv_2=\\begin{pmatrix}0\\\\1\\\\0\\\\1\\end{pmatrix},\\quad\nv_3=\\begin{pmatrix}1\\\\1\\\\1\\\\1\\end{pmatrix},\\quad\nv_4=\\begin{pmatrix}1\\\\-1\\\\1\\\\-1\\end{pmatrix}\n\\]\nとおく。\n\nまず線形関係を調べる：\n\\[\nv_1+v_2=\\begin{pmatrix}1\\\\0\\\\1\\\\0\\end{pmatrix}+\\begin{pmatrix}0\\\\1\\\\0\\\\1\\end{pmatrix}\n=\\begin{pmatrix}1\\\\1\\\\1\\\\1\\end{pmatrix}=v_3,\n\\]\n\\[\nv_1-v_2=\\begin{pmatrix}1\\\\0\\\\1\\\\0\\end{pmatrix}-\\begin{pmatrix}0\\\\1\\\\0\\\\1\\end{pmatrix}\n=\\begin{pmatrix}1\\\\-1\\\\1\\\\-1\\end{pmatrix}=v_4.\n\\]\nしたがって\n\\[\n\\operatorname{span}\\{v_1,v_2,v_3,v_4\\}=\\operatorname{span}\\{v_1,v_2\\}.\n\\]\n\n次に $v_1, v_2$ の一次独立性を確認する。$av_1+bv_2=\\mathbf{0}$ とすると、\n\\[\na\\begin{pmatrix}1\\\\0\\\\1\\\\0\\end{pmatrix}+b\\begin{pmatrix}0\\\\1\\\\0\\\\1\\end{pmatrix}\n=\\begin{pmatrix}a\\\\b\\\\a\\\\b\\end{pmatrix}\n=\\begin{pmatrix}0\\\\0\\\\0\\\\0\\end{pmatrix}\n\\]\nより、$a=0$ かつ $b=0$ が従う。よって $v_1, v_2$ は一次独立である。\n\n以上より、張る部分空間の次元は\n\\[\n\\dim\\operatorname{span}\\{v_1,v_2,v_3,v_4\\}=2.\n\\]\n\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $a=\\begin{pmatrix}1\\\\2\\\\-2\\end{pmatrix}$ と $b=\\begin{pmatrix}2\\\\-1\\\\2\\end{pmatrix}$ のなす角 $\\theta$ を求めよ（$\\cos\\theta=\\dfrac{a\\cdot b}{\\|a\\|\\|b\\|}$ を用いて数値で答えよ）。",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:\\mathbb{R}^3\\to\\mathbb{R}^3$ を $T(x,y,z)=(x+2y-z,\\;3x-y+4z,\\;2y+z)$ で定める。標準基底に関する $T$ の行列 $A$ を求めよ。",
+        "answer": "以下の手順で標準基底に関する行列を求めます。\n\n1) 標準基底を $e_1=(1,0,0),\\ e_2=(0,1,0),\\ e_3=(0,0,1)$ とする。\n\n2) 各基底ベクトルの像を計算する。\n- $T(e_1)=T(1,0,0)=(1,\\;3,\\;0)$\n- $T(e_2)=T(0,1,0)=(2,\\;-1,\\;2)$\n- $T(e_3)=T(0,0,1)=(-1,\\;4,\\;1)$\n\n3) 標準基底に関する行列は、これらを列ベクトルとして並べる：\n\\[\nA=\\begin{pmatrix}\n1 & 2 & -1\\\\\n3 & -1 & 4\\\\\n0 & 2 & 1\n\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\n\\begin{pmatrix}\n1 & 2 & -1\\\\\n3 & -1 & 4\\\\\n0 & 2 & 1\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A=\\begin{pmatrix}1&0&1&2\\\\[2pt]0&1&1&1\\\\[2pt]1&1&2&3\\end{pmatrix}$ に対し、線形写像 $x\\mapsto Ax$ の核の次元（零化度）を求めよ。",
+        "answer": "以下の手順で零化度（核の次元）を求めます。\n\n1) 行列の階数を調べる  \n行列\n\\[\nA=\\begin{pmatrix}\n1&0&1&2\\\\\n0&1&1&1\\\\\n1&1&2&3\n\\end{pmatrix}\n\\]\nについて、第3行は\n\\[\n(1,1,2,3)=(1,0,1,2)+(0,1,1,1)\n\\]\nより、第1行と第2行の和になっています。したがって\n\\[\n\\mathrm{rank}(A)\\le 2.\n\\]\n第1行と第2行は明らかに一次独立なので\n\\[\n\\mathrm{rank}(A)=2.\n\\]\n\n2) 零化度の計算（次元の定理）  \n列数は 4 なので、次元の定理より\n\\[\n\\dim\\ker A = 4 - \\mathrm{rank}(A) = 4 - 2 = 2.\n\\]\n\n確認として、方程式 $Ax=0$ を解くと\n\\[\n\\begin{cases}\nx_1 + x_3 + 2x_4 = 0\\\\\nx_2 + x_3 + x_4 = 0\n\\end{cases}\n\\Rightarrow\n\\begin{cases}\nx_1 = -x_3 - 2x_4\\\\\nx_2 = -x_3 - x_4\n\\end{cases}\n\\]\n自由変数を $x_3=s,\\ x_4=t$ とすると\n\\[\nx = s\\,(-1,-1,1,0)^\\top + t\\,(-2,-1,0,1)^\\top,\n\\]\nよって核は2次元であることが分かります。\n\n最終答案：\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "直線 $L=\\operatorname{span}\\left\\{\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}\\right\\}\\subset\\mathbb{R}^3$ と点（ベクトル） $v=\\begin{pmatrix}2\\\\0\\\\1\\end{pmatrix}$ が与えられている。$v$ と $L$ の距離 $d(v,L)=\\left\\|v-\\operatorname{proj}_L(v)\\right\\|$ を求めよ。",
+        "answer": "以下、step by step で求めます。\n\n1) 直線 L は $u=\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}$ によって張られる。射影の公式は\n\\[\n\\operatorname{proj}_L(v)=\\frac{v\\cdot u}{u\\cdot u}\\,u\n\\]\nである。\n\n2) 内積を計算する：\n\\[\nv\\cdot u = \\begin{pmatrix}2\\\\0\\\\1\\end{pmatrix}\\cdot \\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix} = 2\\cdot 1 + 0\\cdot 1 + 1\\cdot 0 = 2,\n\\quad\nu\\cdot u = 1^2+1^2+0^2=2.\n\\]\n\n3) よって射影は\n\\[\n\\operatorname{proj}_L(v)=\\frac{2}{2}\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}=\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}.\n\\]\n\n4) 残差（垂直成分）は\n\\[\nv-\\operatorname{proj}_L(v)=\\begin{pmatrix}2\\\\0\\\\1\\end{pmatrix}-\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}\n=\\begin{pmatrix}1\\\\-1\\\\1\\end{pmatrix}.\n\\]\n\n5) 距離はそのノルム：\n\\[\nd(v,L)=\\left\\|v-\\operatorname{proj}_L(v)\\right\\|\n=\\left\\|\\begin{pmatrix}1\\\\-1\\\\1\\end{pmatrix}\\right\\|\n=\\sqrt{1^2+(-1)^2+1^2}=\\sqrt{3}.\n\\]\n\n\\[\n\\boxed{\\sqrt{3}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列 $A$ の逆行列 $A^{-1}$ を求めよ。\\\\[ A = \\\\begin{pmatrix} 3 & -1 \\\\\\\\ 2 & 5 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の2×2行列の逆行列を求めます。\n\n1. 2×2行列 $A=\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ の逆行列の公式：\n\\[\nA^{-1}=\\frac{1}{\\det(A)}\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}\n\\]\n\n2. 与えられた行列 $A=\\begin{pmatrix} 3 & -1 \\\\ 2 & 5 \\end{pmatrix}$ の行列式を計算：\n\\[\n\\det(A)=3\\cdot 5-(-1)\\cdot 2=15+2=17\n\\]\n\n3. 余因子行列（随伴行列）を求める：\n\\[\n\\operatorname{adj}(A)=\\begin{pmatrix} 5 & 1 \\\\ -2 & 3 \\end{pmatrix}\n\\]\n\n4. 公式に代入して逆行列を得る：\n\\[\nA^{-1}=\\frac{1}{17}\\begin{pmatrix} 5 & 1 \\\\ -2 & 3 \\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{A^{-1}=\\frac{1}{17}\\begin{pmatrix} 5 & 1 \\\\ -2 & 3 \\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列 $A$ の逆行列 $A^{-1}$ を求めよ。\\\\[ A = \\\\begin{pmatrix} 2 & 1 & 0 \\\\\\\\ 1 & 2 & 1 \\\\\\\\ 0 & 1 & 2 \\\\end{pmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の $2\\\\times 2$ 行列 $A, B$ に対して $(AB)^{-1}$ を求めよ。\\\\[ A = \\\\begin{pmatrix} 1 & 2 \\\\\\\\ 0 & 1 \\\\end{pmatrix},\\\\quad B = \\\\begin{pmatrix} 2 & -1 \\\\\\\\ 1 & 0 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の順で求めます。\n\n1) まず行列の積 $AB$ を計算する。\n\\[\nAB\n= \\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}\n  \\begin{pmatrix} 2 & -1 \\\\ 1 & 0 \\end{pmatrix}\n= \\begin{pmatrix}\n1\\cdot 2 + 2\\cdot 1 & 1\\cdot(-1) + 2\\cdot 0 \\\\\n0\\cdot 2 + 1\\cdot 1 & 0\\cdot(-1) + 1\\cdot 0\n\\end{pmatrix}\n= \\begin{pmatrix} 4 & -1 \\\\ 1 & 0 \\end{pmatrix}.\n\\]\n\n2) $2\\times 2$ 行列 $M=\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ の逆行列は\n\\[\nM^{-1}=\\frac{1}{ad-bc}\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}\n\\]\nで与えられる。$AB=\\begin{pmatrix} 4 & -1 \\\\ 1 & 0 \\end{pmatrix}$ の場合、\n\\[\n\\det(AB)=4\\cdot 0 - (-1)\\cdot 1 = 1\n\\]\nより、\n\\[\n(AB)^{-1} = \\begin{pmatrix} 0 & 1 \\\\ -1 & 4 \\end{pmatrix}.\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix} 0 & 1 \\\\ -1 & 4 \\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "実数 $t$ に対し、次の行列 $A(t)$ が正則となる $t$ をすべて求めよ。\\\\[ A(t) = \\\\begin{pmatrix} 1 & t & 0 \\\\\\\\ 0 & 1 & t \\\\\\\\ t & 0 & 1 \\\\end{pmatrix} \\\\]",
+        "answer": "次の手順で判定します。\n\n1) 正則かどうかは行列式で判定する。すなわち、$A(t)$ が正則であるための必要十分条件は $\\det A(t) \\neq 0$。\n\n2) 行列式を計算する。第1行で展開すると\n\\[\n\\det A(t)\n= 1\\cdot\\det\\begin{pmatrix}1 & t\\\\ 0 & 1\\end{pmatrix}\n- t\\cdot\\det\\begin{pmatrix}0 & t\\\\ t & 1\\end{pmatrix}\n+ 0\\cdot(\\cdots)\n\\]\n\\[\n= 1\\cdot(1\\cdot 1 - t\\cdot 0) - t\\cdot(0\\cdot 1 - t\\cdot t)\n= 1 - t\\cdot(-t^2)\n= 1 + t^3.\n\\]\n\n3) よって、$A(t)$ が正則となるのは\n\\[\n\\det A(t) = 1 + t^3 \\neq 0\n\\]\nすなわち $t^3 \\neq -1$、実数では $t \\neq -1$ のとき。\n\n最終回答:\n\\[\n\\boxed{\\,t \\in \\mathbb{R}\\setminus\\{-1\\}\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "実数 $x$ に対し、次の行列 $A(x)$ が正則となる $x$ をすべて求めよ。\\\\[ A(x) = \\\\begin{pmatrix} x & 1 \\\\\\\\ 2 & 2 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の手順で考えます。\n\n1. 正則行列の判定条件  \n   行列 $A(x)$ が正則であるための必要十分条件は、行列式が $0$ でないこと、すなわち $\\det A(x) \\ne 0$ である。\n\n2. 行列式の計算  \n   2×2 行列 $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ の行列式は $ad - bc$ である。  \n   よって\n   \\[\n   \\det A(x) = \\begin{vmatrix} x & 1 \\\\ 2 & 2 \\end{vmatrix} = x\\cdot 2 - 1\\cdot 2 = 2x - 2.\n   \\]\n\n3. 正則となる条件の導出  \n   \\[\n   \\det A(x) \\ne 0 \\;\\;\\Longleftrightarrow\\;\\; 2x - 2 \\ne 0 \\;\\;\\Longleftrightarrow\\;\\; x \\ne 1.\n   \\]\n\n結論：\n\\[\n\\boxed{x \\ne 1}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の上三角行列 $U$ の逆行列 $U^{-1}$ を求めよ。\\\\[ U = \\\\begin{pmatrix} 2 & 1 & 0 \\\\\\\\ 0 & 3 & -1 \\\\\\\\ 0 & 0 & 4 \\\\end{pmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の正方行列 $A$ とベクトル $\\\\mathbf{b}$ に対し、方程式 $A\\\\mathbf{x}=\\\\mathbf{b}$ の解 $\\\\mathbf{x}$ を求めよ（すなわち $\\\\mathbf{x}=A^{-1}\\\\mathbf{b}$ を計算せよ）。\\\\[ A = \\\\begin{pmatrix} 2 & 1 & -1 \\\\\\\\ 1 & 1 & 0 \\\\\\\\ 0 & 1 & 2 \\\\end{pmatrix},\\\\quad \\\\mathbf{b} = \\\\begin{pmatrix} 1 \\\\\\\\ 2 \\\\\\\\ 3 \\\\end{pmatrix} \\\\]",
+        "answer": "方程式系は\n\\[\n\\begin{cases}\n2x + y - z = 1,\\\\\nx + y = 2,\\\\\ny + 2z = 3.\n\\end{cases}\n\\]\n\n第2式より\n\\[\nx = 2 - y.\n\\]\n第3式より\n\\[\ny = 3 - 2z.\n\\]\nこれらを第1式に代入すると\n\\[\n2(2 - y) + y - z = 1 \\;\\;\\Longrightarrow\\;\\; 4 - y - z = 1 \\;\\;\\Longrightarrow\\;\\; y + z = 3.\n\\]\nさらに \\(y = 3 - 2z\\) を代入して\n\\[\n(3 - 2z) + z = 3 \\;\\;\\Longrightarrow\\;\\; -z = 0 \\;\\;\\Longrightarrow\\;\\; z = 0.\n\\]\nしたがって\n\\[\ny = 3 - 2\\cdot 0 = 3,\\qquad x = 2 - y = 2 - 3 = -1.\n\\]\n\nゆえに解ベクトルは\n\\[\n\\boxed{\\mathbf{x} =\n\\begin{pmatrix}\n-1\\\\[2pt]\n3\\\\[2pt]\n0\n\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の回転行列 $Q$ の逆行列 $Q^{-1}$ を求めよ。\\\\[ Q = \\\\begin{pmatrix} \\\\cos\\\\tfrac{\\\\pi}{6} & -\\\\sin\\\\tfrac{\\\\pi}{6} \\\\\\\\ \\\\sin\\\\tfrac{\\\\pi}{6} & \\\\cos\\\\tfrac{\\\\pi}{6} \\\\end{pmatrix} \\\\]",
+        "answer": "次の手順で求めます。\n\n1) 回転行列は直交行列なので、$Q^{-1} = Q^\\top$ が成り立つ。\n\\[\nQ^\\top = \\begin{pmatrix}\n\\cos\\tfrac{\\pi}{6} & \\sin\\tfrac{\\pi}{6} \\\\\n-\\sin\\tfrac{\\pi}{6} & \\cos\\tfrac{\\pi}{6}\n\\end{pmatrix}\n\\]\n\n2) 値を代入する（$\\cos\\tfrac{\\pi}{6}=\\tfrac{\\sqrt{3}}{2}$、$\\sin\\tfrac{\\pi}{6}=\\tfrac{1}{2}$）。\n\\[\nQ^{-1} = \\begin{pmatrix}\n\\frac{\\sqrt{3}}{2} & \\frac{1}{2} \\\\\n-\\frac{1}{2} & \\frac{\\sqrt{3}}{2}\n\\end{pmatrix}\n\\]\n\n最終回答\n\\[\n\\boxed{\n\\begin{pmatrix}\n\\frac{\\sqrt{3}}{2} & \\frac{1}{2} \\\\\n-\\frac{1}{2} & \\frac{\\sqrt{3}}{2}\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列 $A$ に対し、$(A^{\\\\top}A)^{-1}$ を求めよ。\\\\[ A = \\\\begin{pmatrix} 2 & -1 \\\\\\\\ 1 & 1 \\\\end{pmatrix} \\\\]",
+        "answer": "次の行列について $(A^{\\top}A)^{-1}$ を求めます。\n\n1) 転置行列を求める：\n\\[\nA^\\top=\\begin{pmatrix}2&1\\\\-1&1\\end{pmatrix}\n\\]\n\n2) 積 $A^\\top A$ を計算する：\n\\[\nA^\\top A\n=\\begin{pmatrix}2&1\\\\-1&1\\end{pmatrix}\\begin{pmatrix}2&-1\\\\1&1\\end{pmatrix}\n=\\begin{pmatrix}\n2\\cdot2+1\\cdot1 & 2\\cdot(-1)+1\\cdot1\\\\\n(-1)\\cdot2+1\\cdot1 & (-1)\\cdot(-1)+1\\cdot1\n\\end{pmatrix}\n=\\begin{pmatrix}5&-1\\\\-1&2\\end{pmatrix}\n\\]\n\n3) 逆行列のために行列式を計算：\n\\[\n\\det(A^\\top A)=5\\cdot2-(-1)\\cdot(-1)=10-1=9\n\\]\n\n4) 2×2 行列の逆行列の公式より：\n\\[\n(A^\\top A)^{-1}\n=\\frac{1}{\\det(A^\\top A)}\\begin{pmatrix}2&1\\\\1&5\\end{pmatrix}\n=\\frac{1}{9}\\begin{pmatrix}2&1\\\\1&5\\end{pmatrix}\n\\]\n\n\\[\n\\boxed{(A^\\top A)^{-1}=\\frac{1}{9}\\begin{pmatrix}2&1\\\\1&5\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の置換行列 $P$ の逆行列 $P^{-1}$ を求めよ。\\\\[ P = \\\\begin{pmatrix} 0 & 0 & 1 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ 1 & 0 & 0 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の手順で求めます。\n\n1) 転置行列をとる\n\\[ \nP^T=\\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 0 & 0\n\\end{pmatrix}=P\n\\]\n\n2) 積を計算して逆行列の条件を確認する（あるいは直接 \\(P^2\\) を計算する）\n\\[\nPP^T = P^2 \n= \\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 0 & 0\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & 1 & 0\\\\\n0 & 0 & 1\n\\end{pmatrix}\n= I_3\n\\]\nよって \\(P^{-1} = P^T\\)。ここでは \\(P^T=P\\) なので\n\\[\nP^{-1}=P\n\\]\n\n最終答案：\n\\[\n\\boxed{\nP^{-1}=\n\\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 0 & 0\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:\\mathbb{R}^3\\to\\mathbb{R}^2$ を $T(x,y,z)=(2x-y+3z,\\ x+4y-z)$ とする。標準基底に関する $T$ の行列表現を求めよ。",
+        "answer": "以下、標準基底に関する行列表現をstep by stepで求めます。\n\n1) 標準基底をとる\n\\[\ne_1=\\begin{pmatrix}1\\\\0\\\\0\\end{pmatrix},\\quad\ne_2=\\begin{pmatrix}0\\\\1\\\\0\\end{pmatrix},\\quad\ne_3=\\begin{pmatrix}0\\\\0\\\\1\\end{pmatrix}.\n\\]\n\n2) 各基底ベクトルの像を計算する\n\\[\nT(e_1)=T(1,0,0)=(2\\cdot1-0+0,\\ 1+0-0)=\\begin{pmatrix}2\\\\1\\end{pmatrix},\n\\]\n\\[\nT(e_2)=T(0,1,0)=(0-1+0,\\ 0+4-0)=\\begin{pmatrix}-1\\\\4\\end{pmatrix},\n\\]\n\\[\nT(e_3)=T(0,0,1)=(0-0+3,\\ 0+0-1)=\\begin{pmatrix}3\\\\-1\\end{pmatrix}.\n\\]\n\n3) これらを列に並べた行列が標準基底に関する行列表現\n\\[\n[T]_{\\text{std}}=\n\\begin{pmatrix}\n2 & -1 & 3\\\\\n1 & 4 & -1\n\\end{pmatrix}.\n\\]\n\n最終回答:\n\\[\n\\boxed{\n\\begin{pmatrix}\n2 & -1 & 3\\\\\n1 & 4 & -1\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列表現が \\n\\\\[\\nA=\\n\\\\begin{pmatrix}\\n1 & 2 & 0\\\\\\\\\\n0 & -1 & 3\\\\\\\\\\n2 & 1 & 1\\n\\\\end{pmatrix}\\n\\\\]\\nで与えられる線形写像 $T:\\\\mathbb{R}^3\\\\to\\\\mathbb{R}^3$ とベクトル \\n\\\\[\\n\\\\mathbf{v}=\\\\begin{pmatrix}1\\\\\\\\-1\\\\\\\\2\\\\end{pmatrix}\\n\\\\]\\nに対し、$T^2(\\\\mathbf{v})$ を求めよ。",
+        "answer": "以下、段階的に計算します。\n\n1) まず $T(\\mathbf v)=A\\mathbf v$ を求める。\n\\[\nA\\mathbf v\n=\\begin{pmatrix}\n1 & 2 & 0\\\\\n0 & -1 & 3\\\\\n2 & 1 & 1\n\\end{pmatrix}\n\\begin{pmatrix}\n1\\\\\n-1\\\\\n2\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1\\cdot 1+2\\cdot(-1)+0\\cdot 2\\\\\n0\\cdot 1+(-1)\\cdot(-1)+3\\cdot 2\\\\\n2\\cdot 1+1\\cdot(-1)+1\\cdot 2\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n-1\\\\\n7\\\\\n3\n\\end{pmatrix}.\n\\]\n\n2) 次に $T^2(\\mathbf v)=A\\big(T(\\mathbf v)\\big)=A(A\\mathbf v)$ を求める。\n\\[\nT^2(\\mathbf v)\n=\nA\\begin{pmatrix}\n-1\\\\\n7\\\\\n3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1 & 2 & 0\\\\\n0 & -1 & 3\\\\\n2 & 1 & 1\n\\end{pmatrix}\n\\begin{pmatrix}\n-1\\\\\n7\\\\\n3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1\\cdot(-1)+2\\cdot 7+0\\cdot 3\\\\\n0\\cdot(-1)+(-1)\\cdot 7+3\\cdot 3\\\\\n2\\cdot(-1)+1\\cdot 7+1\\cdot 3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n13\\\\\n2\\\\\n8\n\\end{pmatrix}.\n\\]\n\nしたがって、\n\\[\n\\boxed{\\begin{pmatrix}13\\\\2\\\\8\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "標準基底 $\\\\{\\\\mathbf{e}_1,\\\\mathbf{e}_2,\\\\mathbf{e}_3\\\\}$ に対し $T(\\\\mathbf{e}_1)=\\\\begin{pmatrix}1\\\\\\\\0\\\\\\\\2\\\\end{pmatrix},\\\\ T(\\\\mathbf{e}_2)=\\\\begin{pmatrix}0\\\\\\\\1\\\\\\\\-1\\\\end{pmatrix},\\\\ T(\\\\mathbf{e}_3)=\\\\begin{pmatrix}2\\\\\\\\-1\\\\\\\\0\\\\end{pmatrix}$ で定める線形写像 $T:\\\\mathbb{R}^3\\\\to\\\\mathbb{R}^3$ について、\\n\\\\[\\nT\\\\!\\\\left(\\\\begin{pmatrix}3\\\\\\\\-2\\\\\\\\1\\\\end{pmatrix}\\\\right)\\n\\\\]\\nを求めよ。",
+        "answer": "以下の通りに計算します。\n\n- ベクトルの分解：\n  \\[\n  \\begin{pmatrix}3\\\\-2\\\\1\\end{pmatrix}\n  = 3\\mathbf{e}_1 - 2\\mathbf{e}_2 + 1\\mathbf{e}_3\n  \\]\n\n- 線形性より：\n  \\[\n  T\\!\\left(\\begin{pmatrix}3\\\\-2\\\\1\\end{pmatrix}\\right)\n  = 3T(\\mathbf{e}_1) - 2T(\\mathbf{e}_2) + T(\\mathbf{e}_3)\n  \\]\n\n- 代入と計算：\n  \\[\n  3\\begin{pmatrix}1\\\\0\\\\2\\end{pmatrix}\n  -2\\begin{pmatrix}0\\\\1\\\\-1\\end{pmatrix}\n  +\\begin{pmatrix}2\\\\-1\\\\0\\end{pmatrix}\n  =\n  \\begin{pmatrix}3\\\\0\\\\6\\end{pmatrix}\n  +\n  \\begin{pmatrix}0\\\\-2\\\\2\\end{pmatrix}\n  +\n  \\begin{pmatrix}2\\\\-1\\\\0\\end{pmatrix}\n  =\n  \\begin{pmatrix}5\\\\-3\\\\8\\end{pmatrix}\n  \\]\n\n\\[\n\\boxed{\\begin{pmatrix}5\\\\-3\\\\8\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル空間 $P_2$ 上の線形写像 $D:P_2\\\\to P_2$ を微分 $D(p)=p'$ で定める。基底 $\\\\{1,x,x^2\\\\}$ に関する $D$ の行列表現を求めよ。",
+        "answer": "ステップ1: 基底と一般元\n- 基底を $B=\\{1,x,x^2\\}$ とする。一般の元は $p(x)=a+bx+cx^2$。\n- 微分作用素は $D(p)=p'$。したがって\n\\[\nD(p)=p'(x)=b+2cx.\n\\]\n\nステップ2: 基底ベクトルの像を求める\n- $D(1)=0$\n- $D(x)=1$\n- $D(x^2)=2x$\n\nステップ3: 各像を基底 $B$ での座標に直す\n- $D(1)=0 \\;\\Rightarrow\\; (0,0,0)^{\\mathsf T}$\n- $D(x)=1 \\;\\Rightarrow\\; (1,0,0)^{\\mathsf T}$\n- $D(x^2)=2x \\;\\Rightarrow\\; (0,2,0)^{\\mathsf T}$\n\nステップ4: これらを列に並べて行列表現を作る\n\\[\n[D]_B=\n\\begin{pmatrix}\n0 & 1 & 0\\\\\n0 & 0 & 2\\\\\n0 & 0 & 0\n\\end{pmatrix}.\n\\]\n\n最終回答:\n\\[\n\\boxed{\n\\begin{pmatrix}\n0 & 1 & 0\\\\\n0 & 0 & 2\\\\\n0 & 0 & 0\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:\\\\mathbb{R}^2\\\\to\\\\mathbb{R}^2$ と $S:\\\\mathbb{R}^2\\\\to\\\\mathbb{R}^2$ の標準基底に関する行列をそれぞれ\\n\\\\[\\nA=\\\\begin{pmatrix}1 & 0\\\\\\\\ 2 & 3\\\\end{pmatrix},\\\\quad B=\\\\begin{pmatrix}0 & 1\\\\\\\\ -1 & 2\\\\end{pmatrix}\\n\\\\]\\nとする。合成写像 $S\\\\circ T$ の標準基底に関する行列表現を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 合成写像の行列表現について  \n$T$ の行列を $A$、$S$ の行列を $B$ とすると、合成 $S\\circ T$ の行列は\n\\[\n[S\\circ T] = BA\n\\]\nとなる（先に $T$ を作用させ、その結果に $S$ を作用させるため）。\n\n2) 行列積の計算  \n\\[\nB=\\begin{pmatrix}0 & 1\\\\ -1 & 2\\end{pmatrix},\\quad\nA=\\begin{pmatrix}1 & 0\\\\ 2 & 3\\end{pmatrix}\n\\]\n\\[\nBA=\\begin{pmatrix}\n0 & 1\\\\\n-1 & 2\n\\end{pmatrix}\n\\begin{pmatrix}\n1 & 0\\\\\n2 & 3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n0\\cdot 1 + 1\\cdot 2 & 0\\cdot 0 + 1\\cdot 3\\\\\n-1\\cdot 1 + 2\\cdot 2 & -1\\cdot 0 + 2\\cdot 3\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2 & 3\\\\\n3 & 6\n\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}2 & 3\\\\ 3 & 6\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "線形写像 $T:\\\\mathbb{R}^4\\\\to\\\\mathbb{R}^3$ の標準基底に関する行列が\\n\\\\[\\n\\\\begin{pmatrix}\\n1 & 2 & 3 & 4\\\\\\\\\\n2 & 4 & 6 & 8\\\\\\\\\\n1 & 1 & 0 & 1\\n\\\\end{pmatrix}\\n\\\\]\\nで与えられているとき、$\\\\operatorname{rank}(T)$ を求めよ。",
+        "answer": "行列\n\\[\nA=\\begin{pmatrix}\n1 & 2 & 3 & 4\\\\\n2 & 4 & 6 & 8\\\\\n1 & 1 & 0 & 1\n\\end{pmatrix}\n\\]\nの階数を求める。\n\nまず行基本変形で階段形にする。\n\n1) 第2行から第1行の2倍を引き、第3行から第1行を引く：\n\\[\n\\begin{pmatrix}\n1 & 2 & 3 & 4\\\\\n0 & 0 & 0 & 0\\\\\n0 & -1 & -3 & -3\n\\end{pmatrix}\n\\]\n\n2) 第3行に -1 をかける：\n\\[\n\\begin{pmatrix}\n1 & 2 & 3 & 4\\\\\n0 & 0 & 0 & 0\\\\\n0 & 1 & 3 & 3\n\\end{pmatrix}\n\\]\n\n非零行は2本（第1行と第3行）なので、ピボットの数は2。本行列の行階数（＝列階数）より\n\\[\n\\operatorname{rank}(T)=\\operatorname{rank}(A)=2.\n\\]\n\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $\\\\mathbf{u}=\\\\begin{pmatrix}1\\\\\\\\-2\\\\\\\\2\\\\end{pmatrix}$ に張られる直線への正射影 $P:\\\\mathbb{R}^3\\\\to\\\\mathbb{R}^3$ の標準基底に関する行列表現を求めよ。ただし $P=\\\\dfrac{\\\\mathbf{u}\\\\mathbf{u}^\\\\mathsf{T}}{\\\\mathbf{u}\\\\cdot\\\\mathbf{u}}$ を用いてよい。",
+        "answer": "以下の手順で求めます。\n\n1) 定義\n与えられたベクトルは\n\\[\n\\mathbf{u}=\\begin{pmatrix}1\\\\-2\\\\2\\end{pmatrix}\n\\]\n正射影の行列表現は\n\\[\nP=\\frac{\\mathbf{u}\\mathbf{u}^\\mathsf{T}}{\\mathbf{u}\\cdot\\mathbf{u}}\n\\]\nで与えられる。\n\n2) 分母（内積）の計算\n\\[\n\\mathbf{u}\\cdot\\mathbf{u}=1^2+(-2)^2+2^2=1+4+4=9\n\\]\n\n3) 分子（外積）の計算\n\\[\n\\mathbf{u}\\mathbf{u}^\\mathsf{T}\n=\\begin{pmatrix}1\\\\-2\\\\2\\end{pmatrix}\\begin{pmatrix}1&-2&2\\end{pmatrix}\n=\\begin{pmatrix}\n1 & -2 & 2\\\\\n-2 & 4 & -4\\\\\n2 & -4 & 4\n\\end{pmatrix}\n\\]\n\n4) 割り算して行列を得る\n\\[\nP=\\frac{1}{9}\n\\begin{pmatrix}\n1 & -2 & 2\\\\\n-2 & 4 & -4\\\\\n2 & -4 & 4\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n\\frac{1}{9} & -\\frac{2}{9} & \\frac{2}{9}\\\\\n-\\frac{2}{9} & \\frac{4}{9} & -\\frac{4}{9}\\\\\n\\frac{2}{9} & -\\frac{4}{9} & \\frac{4}{9}\n\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\nP=\n\\begin{pmatrix}\n\\frac{1}{9} & -\\frac{2}{9} & \\frac{2}{9}\\\\\n-\\frac{2}{9} & \\frac{4}{9} & -\\frac{4}{9}\\\\\n\\frac{2}{9} & -\\frac{4}{9} & \\frac{4}{9}\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "法線ベクトル $\\\\mathbf{n}=\\\\begin{pmatrix}1\\\\\\\\2\\\\\\\\2\\\\end{pmatrix}$ に垂直な平面に関する鏡映 $H:\\\\mathbb{R}^3\\\\to\\\\mathbb{R}^3$ を\\n\\\\[\\nH(\\\\mathbf{x})=\\\\mathbf{x}-2\\\\,\\\\frac{\\\\mathbf{n}\\\\cdot\\\\mathbf{x}}{\\\\lVert\\\\mathbf{n}\\\\rVert^2}\\\\,\\\\mathbf{n}\\n\\\\]\\nで定める。$H\\\\!\\\\left(\\\\begin{pmatrix}3\\\\\\\\0\\\\\\\\6\\\\end{pmatrix}\\\\right)$ を求めよ。",
+        "answer": "以下の手順で計算します。\n\n1) 内積とノルムの2乗を計算する\n\\[\n\\mathbf{n}\\cdot\\mathbf{x}\n= \\begin{pmatrix}1\\\\2\\\\2\\end{pmatrix}\\cdot\\begin{pmatrix}3\\\\0\\\\6\\end{pmatrix}\n= 1\\cdot 3 + 2\\cdot 0 + 2\\cdot 6\n= 3 + 0 + 12\n= 15\n\\]\n\\[\n\\lVert \\mathbf{n}\\rVert^2\n= 1^2 + 2^2 + 2^2\n= 1 + 4 + 4\n= 9\n\\]\n\n2) 係数を求める\n\\[\n2\\,\\frac{\\mathbf{n}\\cdot\\mathbf{x}}{\\lVert \\mathbf{n}\\rVert^2}\n= 2\\cdot \\frac{15}{9}\n= \\frac{30}{9}\n= \\frac{10}{3}\n\\]\n\n3) 鏡映を適用する\n\\[\nH(\\mathbf{x})\n= \\mathbf{x} - \\frac{10}{3}\\,\\mathbf{n}\n= \\begin{pmatrix}3\\\\0\\\\6\\end{pmatrix}\n- \\frac{10}{3}\\begin{pmatrix}1\\\\2\\\\2\\end{pmatrix}\n= \\begin{pmatrix}\n3 - \\frac{10}{3}\\\\[2pt]\n0 - \\frac{20}{3}\\\\[2pt]\n6 - \\frac{20}{3}\n\\end{pmatrix}\n= \\begin{pmatrix}\n-\\frac{1}{3}\\\\[2pt]\n-\\frac{20}{3}\\\\[2pt]\n-\\frac{2}{3}\n\\end{pmatrix}\n\\]\n\n最終答案：\n\\[\n\\boxed{\\begin{pmatrix}\n-\\frac{1}{3}\\\\[2pt]\n-\\frac{20}{3}\\\\[2pt]\n-\\frac{2}{3}\n\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "基底 $\\\\mathcal{B}=\\\\left\\\\{\\\\begin{pmatrix}1\\\\\\\\1\\\\end{pmatrix},\\\\begin{pmatrix}1\\\\\\\\-1\\\\end{pmatrix}\\\\right\\\\}$ に関する行列が\\n\\\\[\\nA_{\\\\mathcal{B}}=\\\\begin{pmatrix}2 & 0\\\\\\\\ 0 & -1\\\\end{pmatrix}\\n\\\\]\\nである線形写像 $T:\\\\mathbb{R}^2\\\\to\\\\mathbb{R}^2$ について、標準基底への基底変換行列\\n\\\\[\\nP=\\\\begin{pmatrix}1 & 1\\\\\\\\ 1 & -1\\\\end{pmatrix}\\n\\\\]\\nを用いて、標準基底に関する $T$ の行列表現 $A_{\\\\text{std}}=P\\\\,A_{\\\\mathcal{B}}\\\\,P^{-1}$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) P の逆行列を求める\n\\[\n\\det P=\\begin{vmatrix}1&1\\\\[2pt]1&-1\\end{vmatrix}=-2,\\quad\nP^{-1}=\\frac1{-2}\\begin{pmatrix}-1&-1\\\\[2pt]-1&1\\end{pmatrix}\n=\\begin{pmatrix}\\tfrac12&\\tfrac12\\\\[2pt]\\tfrac12&-\\tfrac12\\end{pmatrix}.\n\\]\n\n2) まず \\(A_{\\mathcal B}P^{-1}\\) を計算\n\\[\nA_{\\mathcal B}P^{-1}\n=\n\\begin{pmatrix}2&0\\\\[2pt]0&-1\\end{pmatrix}\n\\begin{pmatrix}\\tfrac12&\\tfrac12\\\\[2pt]\\tfrac12&-\\tfrac12\\end{pmatrix}\n=\n\\begin{pmatrix}\n1 & 1\\\\[2pt]\n-\\tfrac12 & \\tfrac12\n\\end{pmatrix}.\n\\]\n\n3) 次に左から P を掛ける\n\\[\nA_{\\text{std}}=P\\,A_{\\mathcal B}P^{-1}\n=\n\\begin{pmatrix}1&1\\\\[2pt]1&-1\\end{pmatrix}\n\\begin{pmatrix}\n1 & 1\\\\[2pt]\n-\\tfrac12 & \\tfrac12\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n\\tfrac12 & \\tfrac32\\\\[2pt]\n\\tfrac32 & \\tfrac12\n\\end{pmatrix}.\n\\]\n\nよって、標準基底に関する行列表現は\n\\[\n\\boxed{\nA_{\\text{std}}=\n\\begin{pmatrix}\n\\tfrac12 & \\tfrac32\\\\[2pt]\n\\tfrac32 & \\tfrac12\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列表現が\\n\\\\[\\nA=\\\\begin{pmatrix}\\n1 & 0 & 2\\\\\\\\\\n0 & 1 & -1\\\\\\\\\\n0 & 0 & 2\\n\\\\end{pmatrix}\\n\\\\]\\nで与えられる可逆な線形写像 $T:\\\\mathbb{R}^3\\\\to\\\\mathbb{R}^3$ に対し、\\n\\\\[\\n\\\\mathbf{w}=\\\\begin{pmatrix}3\\\\\\\\-1\\\\\\\\4\\\\end{pmatrix}\\n\\\\]\\nについて $T^{-1}(\\\\mathbf{w})$ を求めよ。",
+        "answer": "求めたいのは $T^{-1}(\\mathbf{w})$ なので、$\\mathbf{x}=T^{-1}(\\mathbf{w})$ を満たす $\\mathbf{x}$ を\n\\[ A\\mathbf{x}=\\mathbf{w} \\]\nより求めます。ここで\n\\[ \nA=\\begin{pmatrix}\n1 & 0 & 2\\\\\n0 & 1 & -1\\\\\n0 & 0 & 2\n\\end{pmatrix},\\quad \n\\mathbf{w}=\\begin{pmatrix}3\\\\-1\\\\4\\end{pmatrix},\\quad\n\\mathbf{x}=\\begin{pmatrix}x_1\\\\x_2\\\\x_3\\end{pmatrix}.\n\\]\n\nこれより連立方程式は\n\\[\n\\begin{cases}\nx_1 + 2x_3 = 3,\\\\\nx_2 - x_3 = -1,\\\\\n2x_3 = 4.\n\\end{cases}\n\\]\n\n下から順に解く（後退代入）と、\n\\[\n2x_3=4 \\;\\Rightarrow\\; x_3=2,\n\\]\n\\[\nx_2 - x_3 = -1 \\;\\Rightarrow\\; x_2 - 2 = -1 \\;\\Rightarrow\\; x_2=1,\n\\]\n\\[\nx_1 + 2x_3 = 3 \\;\\Rightarrow\\; x_1 + 4 = 3 \\;\\Rightarrow\\; x_1 = -1.\n\\]\n\nしたがって、\n\\[\nT^{-1}(\\mathbf{w})=\\begin{pmatrix}-1\\\\1\\\\2\\end{pmatrix}.\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}-1\\\\[2pt]1\\\\[2pt]2\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A=\\begin{pmatrix}1 & -2 & 3 \\\\ 0 & 4 & -1\\end{pmatrix}$, $B=\\begin{pmatrix}2 & 0 & -1 \\\\ 5 & -3 & 2\\end{pmatrix}$ に対して、$A+2B$ を計算せよ。",
+        "answer": "以下の手順で計算します。\n\n1) まず $2B$ を求める。\n\\[\n2B = 2\\begin{pmatrix}2 & 0 & -1 \\\\ 5 & -3 & 2\\end{pmatrix}\n= \\begin{pmatrix}4 & 0 & -2 \\\\ 10 & -6 & 4\\end{pmatrix}\n\\]\n\n2) 次に $A + 2B$ を要素ごとに加える。\n\\[\nA + 2B\n= \\begin{pmatrix}1 & -2 & 3 \\\\ 0 & 4 & -1\\end{pmatrix}\n+ \\begin{pmatrix}4 & 0 & -2 \\\\ 10 & -6 & 4\\end{pmatrix}\n= \\begin{pmatrix}\n1+4 & -2+0 & 3+(-2) \\\\\n0+10 & 4+(-6) & -1+4\n\\end{pmatrix}\n= \\begin{pmatrix}\n5 & -2 & 1 \\\\\n10 & -2 & 3\n\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}5 & -2 & 1 \\\\ 10 & -2 & 3\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A=\\begin{pmatrix}1 & 2 & -1 \\\\ 0 & 3 & 4\\end{pmatrix}$ の転置 $A^{\\mathsf T}$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1. 行列を確認する。\n\\[\nA=\\begin{pmatrix}1 & 2 & -1 \\\\ 0 & 3 & 4\\end{pmatrix}\n\\]\n\n2. 転置の定義：$A^{\\mathsf T}$ は「行と列を入れ替える」。つまり、$A$ の第1行は $A^{\\mathsf T}$ の第1列に、$A$ の第2行は $A^{\\mathsf T}$ の第2列になる。\n\n3. 行を列に並べ替える。\n\\[\nA^{\\mathsf T}\n=\\begin{pmatrix}\n1 & 0 \\\\\n2 & 3 \\\\\n-1 & 4\n\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\nA^{\\mathsf T}\n=\\begin{pmatrix}\n1 & 0 \\\\\n2 & 3 \\\\\n-1 & 4\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "成分が $a_{ij}=i-2j$（$1\\le i\\le 3,\\,1\\le j\\le 2$）で定義される $3\\times 2$ 行列 $A=(a_{ij})$ を具体的に書け。",
+        "answer": "以下の定義に従って、各成分を順に計算します。行列は $3\\times 2$、成分は $a_{ij}=i-2j$（$1\\le i\\le 3,\\,1\\le j\\le 2$）です。\n\n- 列 $j=1$ のとき：$a_{i1}=i-2$\n  - $a_{11}=1-2=-1$\n  - $a_{21}=2-2=0$\n  - $a_{31}=3-2=1$\n\n- 列 $j=2$ のとき：$a_{i2}=i-4$\n  - $a_{12}=1-4=-3$\n  - $a_{22}=2-4=-2$\n  - $a_{32}=3-4=-1$\n\nしたがって行列 $A$ は\n\\[\nA=\\begin{pmatrix}\n-1 & -3\\\\\n0 & -2\\\\\n1 & -1\n\\end{pmatrix}\n\\]\n\n最終答案：\n\\[\n\\boxed{\n\\begin{pmatrix}\n-1 & -3\\\\\n0 & -2\\\\\n1 & -1\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "対角行列 $D=\\operatorname{diag}(1,-2,3,0)$ に対して、$D+2I_4$ を計算せよ。",
+        "answer": "以下のように計算します。\n\n1) 対角行列と単位行列を明示する：\n\\[\nD=\\begin{pmatrix}\n1&0&0&0\\\\\n0&-2&0&0\\\\\n0&0&3&0\\\\\n0&0&0&0\n\\end{pmatrix},\\quad\nI_4=\\begin{pmatrix}\n1&0&0&0\\\\\n0&1&0&0\\\\\n0&0&1&0\\\\\n0&0&0&1\n\\end{pmatrix}\n\\]\n\n2) $2I_4$ を計算する：\n\\[\n2I_4=\\begin{pmatrix}\n2&0&0&0\\\\\n0&2&0&0\\\\\n0&0&2&0\\\\\n0&0&0&2\n\\end{pmatrix}\n\\]\n\n3) 対角成分ごとに加える（ゼロ以外の成分は対角のみ）：\n\\[\nD+2I_4=\\begin{pmatrix}\n1+2&0&0&0\\\\\n0&-2+2&0&0\\\\\n0&0&3+2&0\\\\\n0&0&0&0+2\n\\end{pmatrix}\n=\\begin{pmatrix}\n3&0&0&0\\\\\n0&0&0&0\\\\\n0&0&5&0\\\\\n0&0&0&2\n\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}\n3&0&0&0\\\\\n0&0&0&0\\\\\n0&0&5&0\\\\\n0&0&0&2\n\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "標準基底行列 $E_{ij}$（$(i,j)$ 成分が $1$，それ以外が $0$）を用いて、$3E_{12}-E_{21}+2E_{33}$ を $3\\times 3$ の通常の行列表記で書け。",
+        "answer": "以下の標準基底行列を用いて計算します。\n\n1. 各標準基底行列\n\\[\nE_{12}=\\begin{pmatrix}\n0&1&0\\\\\n0&0&0\\\\\n0&0&0\n\\end{pmatrix},\\quad\nE_{21}=\\begin{pmatrix}\n0&0&0\\\\\n1&0&0\\\\\n0&0&0\n\\end{pmatrix},\\quad\nE_{33}=\\begin{pmatrix}\n0&0&0\\\\\n0&0&0\\\\\n0&0&1\n\\end{pmatrix}\n\\]\n\n2. 係数をかける\n\\[\n3E_{12}=\\begin{pmatrix}\n0&3&0\\\\\n0&0&0\\\\\n0&0&0\n\\end{pmatrix},\\quad\n-E_{21}=\\begin{pmatrix}\n0&0&0\\\\\n-1&0&0\\\\\n0&0&0\n\\end{pmatrix},\\quad\n2E_{33}=\\begin{pmatrix}\n0&0&0\\\\\n0&0&0\\\\\n0&0&2\n\\end{pmatrix}\n\\]\n\n3. 和をとる\n\\[\n3E_{12}-E_{21}+2E_{33}\n=\\begin{pmatrix}\n0&3&0\\\\\n-1&0&0\\\\\n0&0&2\n\\end{pmatrix}\n\\]\n\n最終回答:\n\\[\n\\boxed{\\begin{pmatrix}\n0&3&0\\\\\n-1&0&0\\\\\n0&0&2\n\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "列ベクトル $u=\\begin{pmatrix}1\\\\-1\\\\2\\end{pmatrix}$, $v=\\begin{pmatrix}0\\\\3\\\\4\\end{pmatrix}$, $w=\\begin{pmatrix}2\\\\2\\\\2\\end{pmatrix}$ から $A=[\\,u\\ v\\ w\\,]$ とするとき、成分 $A_{2,3}$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 列ベクトルから行列を作る\n\\[\nA=[\\,u\\ v\\ w\\,]\n=\\begin{pmatrix}\n1 & 0 & 2\\\\\n-1 & 3 & 2\\\\\n2 & 4 & 2\n\\end{pmatrix}\n\\]\n\n2) 成分の確認\n\\[\nA_{2,3}=\\text{（2行3列の成分）}=\\;2\n\\]\n\nしたがって、\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列の等式 $\\begin{pmatrix}x & 1 & 0 \\\\ 2 & 3 & -1\\end{pmatrix}=\\begin{pmatrix}2 & 1 & 0 \\\\ 2 & 3 & -1\\end{pmatrix}$ が成り立つとき、実数 $x$ を求めよ。",
+        "answer": "以下の行列等式を満たす実数 $x$ を求めます。\n\\[\n\\begin{pmatrix}x & 1 & 0 \\\\ 2 & 3 & -1\\end{pmatrix}\n=\n\\begin{pmatrix}2 & 1 & 0 \\\\ 2 & 3 & -1\\end{pmatrix}\n\\]\n\nステップ1：行列の等式の条件  \n同じ大きさの2つの行列が等しいためには、対応する全ての成分が等しい必要があります。すなわち、各成分について\n\\[\na_{ij} = b_{ij}\n\\]\nが成り立ちます。\n\nステップ2：対応成分の比較  \n与えられた2つの行列を比較すると、異なり得るのは左上の成分のみで、他の成分はすでに一致しています。よって\n\\[\nx = 2\n\\]\nとなります。\n\nステップ3：確認  \n$x=2$ を代入すると\n\\[\n\\begin{pmatrix}2 & 1 & 0 \\\\ 2 & 3 & -1\\end{pmatrix}\n=\n\\begin{pmatrix}2 & 1 & 0 \\\\ 2 & 3 & -1\\end{pmatrix}\n\\]\nが成り立ちます。\n\nしたがって、求める実数は\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$A\\in M_{2,3}(\\mathbb{R})$, $B\\in M_{3,2}(\\mathbb{R})$, $C\\in M_{2,2}(\\mathbb{R})$ とする。式 $AB+C^{\\mathsf T}$ が定義されるか判定し、定義されるならその行列のサイズ（行数と列数）を答えよ。",
+        "answer": "以下の手順で判定します。\n\n1) 行列のサイズ\n- $A\\in M_{2,3}(\\mathbb{R})$ は $2\\times 3$ 行列\n- $B\\in M_{3,2}(\\mathbb{R})$ は $3\\times 2$ 行列\n- $C\\in M_{2,2}(\\mathbb{R})$ は $2\\times 2$ 行列\n\n2) 積 $AB$ が定義されるか\n- 一般に、$A\\in M_{m,n}$ と $B\\in M_{n,p}$ なら $AB\\in M_{m,p}$\n- よって\n  \\[\n  A\\in M_{2,3},\\quad B\\in M_{3,2}\\ \\Rightarrow\\ AB\\in M_{2,2}\n  \\]\n\n3) 転置 $C^{\\mathsf T}$ のサイズ\n- 一般に、$C\\in M_{r,s}$ なら $C^{\\mathsf T}\\in M_{s,r}$\n- よって\n  \\[\n  C\\in M_{2,2}\\ \\Rightarrow\\ C^{\\mathsf T}\\in M_{2,2}\n  \\]\n\n4) 和 $AB+C^{\\mathsf T}$ の可否とサイズ\n- 行列の和はサイズが等しいとき定義される\n- $AB\\in M_{2,2}$ かつ $C^{\\mathsf T}\\in M_{2,2}$ より、和は定義され、そのサイズは\n  \\[\n  2\\times 2\n  \\]\n\n\\boxed{\\text{$AB+C^{\\mathsf T}$ は定義され、サイズは }2\\times 2\\text{ 行列}}",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$I_2$ を $2\\times 2$ 単位行列、$O$ を $2\\times 2$ 零行列とする。ブロック行列 $M=\\begin{pmatrix} I_2 & 2I_2 \\\\ O & I_2 \\end{pmatrix}+\\begin{pmatrix} O & I_2 \\\\ I_2 & O \\end{pmatrix}$ を通常の $4\\times 4$ 行列として明示的に計算せよ。",
+        "answer": "以下のように計算します。\n\n1) 定義\n\\[\nI_2=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix},\\quad O=\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\n\\]\n\n2) ブロック和の計算\n\\[\nM=\\begin{pmatrix} I_2 & 2I_2 \\\\ O & I_2 \\end{pmatrix}+\\begin{pmatrix} O & I_2 \\\\ I_2 & O \\end{pmatrix}\n= \\begin{pmatrix} I_2+O & 2I_2+I_2 \\\\ O+I_2 & I_2+O \\end{pmatrix}\n= \\begin{pmatrix} I_2 & 3I_2 \\\\ I_2 & I_2 \\end{pmatrix}\n\\]\n\n3) 通常の4×4行列に展開\n\\[\n\\boxed{\n\\begin{pmatrix}\n1 & 0 & 3 & 0 \\\\\n0 & 1 & 0 & 3 \\\\\n1 & 0 & 1 & 0 \\\\\n0 & 1 & 0 & 1\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $v=\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}$ から対角行列 $D=\\operatorname{diag}(v)$ を作るとき、$D-I_3$ を計算せよ。",
+        "answer": "以下の手順で計算します。\n\n1) ベクトルの確認  \n$v=\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}$\n\n2) 対角行列の作成  \n$v$ から作る対角行列 $D=\\operatorname{diag}(v)$ は\n\\[\nD=\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & 2 & 0\\\\\n0 & 0 & 3\n\\end{pmatrix}\n\\]\n\n3) 単位行列  \n\\[\nI_3=\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & 1 & 0\\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\]\n\n4) 差の計算  \n対角成分ごとに $1-1,\\,2-1,\\,3-1$ を引くので，\n\\[\nD-I_3\n=\\begin{pmatrix}\n1-1 & 0 & 0\\\\\n0 & 2-1 & 0\\\\\n0 & 0 & 3-1\n\\end{pmatrix}\n=\\begin{pmatrix}\n0 & 0 & 0\\\\\n0 & 1 & 0\\\\\n0 & 0 & 2\n\\end{pmatrix}\n\\]\n\n最終結果:\n\\[\n\\boxed{\\begin{pmatrix}\n0 & 0 & 0\\\\\n0 & 1 & 0\\\\\n0 & 0 & 2\n\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$2A-3B$．ただし $A=\\begin{pmatrix}1&-2\\\\3&0\\end{pmatrix},\\ B=\\begin{pmatrix}-1&4\\\\2&5\\end{pmatrix}$．",
+        "answer": "以下の手順で計算します。\n\n1. まず $2A$ を計算する：\n\\[\n2A = 2 \\begin{pmatrix}1 & -2 \\\\ 3 & 0\\end{pmatrix}\n= \\begin{pmatrix}2\\cdot 1 & 2\\cdot (-2) \\\\ 2\\cdot 3 & 2\\cdot 0\\end{pmatrix}\n= \\begin{pmatrix}2 & -4 \\\\ 6 & 0\\end{pmatrix}.\n\\]\n\n2. 次に $3B$ を計算する：\n\\[\n3B = 3 \\begin{pmatrix}-1 & 4 \\\\ 2 & 5\\end{pmatrix}\n= \\begin{pmatrix}3\\cdot (-1) & 3\\cdot 4 \\\\ 3\\cdot 2 & 3\\cdot 5\\end{pmatrix}\n= \\begin{pmatrix}-3 & 12 \\\\ 6 & 15\\end{pmatrix}.\n\\]\n\n3. 最後に $2A - 3B$ を成分ごとに引く：\n\\[\n2A - 3B\n= \\begin{pmatrix}2 & -4 \\\\ 6 & 0\\end{pmatrix}\n- \\begin{pmatrix}-3 & 12 \\\\ 6 & 15\\end{pmatrix}\n= \\begin{pmatrix}2 - (-3) & -4 - 12 \\\\ 6 - 6 & 0 - 15\\end{pmatrix}\n= \\begin{pmatrix}5 & -16 \\\\ 0 & -15\\end{pmatrix}.\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}5 & -16 \\\\ 0 & -15\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$AB$．ただし $A=\\begin{pmatrix}2&1\\\\0&-1\\end{pmatrix},\\ B=\\begin{pmatrix}3&4\\\\-2&5\\end{pmatrix}$．",
+        "answer": "行列積の定義に従って各成分を計算します。\n\n\\[\nAB=\\begin{pmatrix}2&1\\\\0&-1\\end{pmatrix}\\begin{pmatrix}3&4\\\\-2&5\\end{pmatrix}\n= \\begin{pmatrix}\n2\\cdot 3 + 1\\cdot(-2) & 2\\cdot 4 + 1\\cdot 5\\\\\n0\\cdot 3 + (-1)\\cdot(-2) & 0\\cdot 4 + (-1)\\cdot 5\n\\end{pmatrix}\n= \\begin{pmatrix}\n6-2 & 8+5\\\\\n0+2 & 0-5\n\\end{pmatrix}\n= \\begin{pmatrix}\n4 & 13\\\\\n2 & -5\n\\end{pmatrix}.\n\\]\n\n\\[\n\\boxed{\\begin{pmatrix}4&13\\\\2&-5\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$A^2$．ただし $A=\\begin{pmatrix}1&2&0\\\\0&1&3\\\\0&0&2\\end{pmatrix}$．",
+        "answer": "与えられた行列は\n\\[\nA=\\begin{pmatrix}1&2&0\\\\0&1&3\\\\0&0&2\\end{pmatrix}\n\\]\nなので、\n\\[\nA^2=A\\cdot A=\\begin{pmatrix}1&2&0\\\\0&1&3\\\\0&0&2\\end{pmatrix}\\begin{pmatrix}1&2&0\\\\0&1&3\\\\0&0&2\\end{pmatrix}\n\\]\n\n各成分を計算する：\n- $(A^2)_{11}=1\\cdot1+2\\cdot0+0\\cdot0=1$\n- $(A^2)_{12}=1\\cdot2+2\\cdot1+0\\cdot0=4$\n- $(A^2)_{13}=1\\cdot0+2\\cdot3+0\\cdot2=6$\n- $(A^2)_{21}=0\\cdot1+1\\cdot0+3\\cdot0=0$\n- $(A^2)_{22}=0\\cdot2+1\\cdot1+3\\cdot0=1$\n- $(A^2)_{23}=0\\cdot0+1\\cdot3+3\\cdot2=9$\n- $(A^2)_{31}=0\\cdot1+0\\cdot0+2\\cdot0=0$\n- $(A^2)_{32}=0\\cdot2+0\\cdot1+2\\cdot0=0$\n- $(A^2)_{33}=0\\cdot0+0\\cdot3+2\\cdot2=4$\n\nしたがって\n\\[\nA^2=\\begin{pmatrix}1&4&6\\\\0&1&9\\\\0&0&4\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}1&4&6\\\\0&1&9\\\\0&0&4\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$(A+B)^2$．ただし $A=\\begin{pmatrix}0&1\\\\-1&2\\end{pmatrix},\\ B=\\begin{pmatrix}3&0\\\\1&1\\end{pmatrix}$．",
+        "answer": "次の手順で計算します。\n\n1) まず、$A+B$ を求める。\n\\[\nA+B=\\begin{pmatrix}0&1\\\\-1&2\\end{pmatrix}+\\begin{pmatrix}3&0\\\\1&1\\end{pmatrix}\n=\\begin{pmatrix}3&1\\\\0&3\\end{pmatrix}\n\\]\n\n2) 続いて $(A+B)^2$ を計算する。\n\\[\n(A+B)^2=\\begin{pmatrix}3&1\\\\0&3\\end{pmatrix}\\begin{pmatrix}3&1\\\\0&3\\end{pmatrix}\n=\\begin{pmatrix}3\\cdot3+1\\cdot0 & 3\\cdot1+1\\cdot3\\\\[2pt]\n0\\cdot3+3\\cdot0 & 0\\cdot1+3\\cdot3\\end{pmatrix}\n=\\begin{pmatrix}9&6\\\\0&9\\end{pmatrix}\n\\]\n\n最終結果：\n\\[\n\\boxed{\\begin{pmatrix}9&6\\\\0&9\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$N^3$．ただし $N=\\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}$．",
+        "answer": "次の行列について $N^3$ を求めます：\n\\[\nN=\\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}.\n\\]\n\nステップ1：$N^2$ を計算する\n\\[\nN^2 = N\\cdot N\n= \\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}\n  \\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}\n= \\begin{pmatrix}0&0&1\\\\0&0&0\\\\0&0&0\\end{pmatrix}.\n\\]\n要素ごとの確認例：\n- $(1,3)$成分：$0\\cdot0+1\\cdot1+0\\cdot0=1$。\n- 他の成分は $0$ になる。\n\nステップ2：$N^3$ を計算する\n\\[\nN^3 = N^2\\cdot N\n= \\begin{pmatrix}0&0&1\\\\0&0&0\\\\0&0&0\\end{pmatrix}\n  \\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}\n= \\begin{pmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}.\n\\]\n\n最終結果：\n\\[\n\\boxed{\\begin{pmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$A(I_2-A)$．ただし $A=\\begin{pmatrix}2&-1\\\\1&0\\end{pmatrix},\\ I_2=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}$．",
+        "answer": "以下の順に計算します。\n\n1) まず、$I_2 - A$ を求める。\n\\[\nI_2 - A\n=\n\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\n-\n\\begin{pmatrix}2&-1\\\\1&0\\end{pmatrix}\n=\n\\begin{pmatrix}-1&1\\\\-1&1\\end{pmatrix}\n\\]\n\n2) 次に、$A(I_2 - A)$ を行列積で計算する。\n\\[\nA(I_2 - A)\n=\n\\begin{pmatrix}2&-1\\\\1&0\\end{pmatrix}\n\\begin{pmatrix}-1&1\\\\-1&1\\end{pmatrix}\n=\n\\begin{pmatrix}\n2(-1)+(-1)(-1) & 2(1)+(-1)(1) \\\\\n1(-1)+0(-1) & 1(1)+0(1)\n\\end{pmatrix}\n=\n\\begin{pmatrix}-1&1\\\\-1&1\\end{pmatrix}\n\\]\n\nしたがって、\n\\[\n\\boxed{\\begin{pmatrix}-1&1\\\\-1&1\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$D^5$．ただし $D=\\operatorname{diag}(2,-1,0)$．",
+        "answer": "次の対角行列の5乗を求めます。\n\\[\nD=\\operatorname{diag}(2,-1,0)\n\\]\n\n1. 対角行列の積は成分ごとに掛け算されるので、\n\\[\n\\operatorname{diag}(a_1,a_2,a_3)\\operatorname{diag}(b_1,b_2,b_3)=\\operatorname{diag}(a_1b_1,a_2b_2,a_3b_3)\n\\]\nよって、対角行列の冪は\n\\[\nD^n=\\operatorname{diag}(2^n,(-1)^n,0^n)\n\\]\nと書けます。\n\n2. $n=5$ を代入すると、\n\\[\nD^5=\\operatorname{diag}(2^5,(-1)^5,0^5)=\\operatorname{diag}(32,-1,0)\n\\]\n\nしたがって、\n\\[\n\\boxed{\nD^5=\n\\begin{pmatrix}\n32 & 0 & 0\\\\\n0 & -1 & 0\\\\\n0 & 0 & 0\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$3A^2-2A+I_2$．ただし $A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix},\\ I_2=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}$．",
+        "answer": "以下、step by step で計算します。\n\n1) まず $A^2$ を計算する：\n\\[\nA^2 = A A = \n\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}\n\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}\n=\n\\begin{pmatrix}\n1\\cdot1+2\\cdot0 & 1\\cdot2+2\\cdot1\\\\\n0\\cdot1+1\\cdot0 & 0\\cdot2+1\\cdot1\n\\end{pmatrix}\n=\n\\begin{pmatrix}1&4\\\\0&1\\end{pmatrix}.\n\\]\n\n2) 係数をかける：\n\\[\n3A^2 = 3\\begin{pmatrix}1&4\\\\0&1\\end{pmatrix} = \\begin{pmatrix}3&12\\\\0&3\\end{pmatrix}, \n\\quad\n-2A = -2\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix} = \\begin{pmatrix}-2&-4\\\\0&-2\\end{pmatrix}.\n\\]\n\n3) それらを足し合わせ、さらに $I_2$ を加える：\n\\[\n3A^2 - 2A + I_2\n=\n\\begin{pmatrix}3&12\\\\0&3\\end{pmatrix}\n+\n\\begin{pmatrix}-2&-4\\\\0&-2\\end{pmatrix}\n+\n\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\n=\n\\begin{pmatrix}2&8\\\\0&2\\end{pmatrix}.\n\\]\n\n最終結果：\n\\[\n\\boxed{\\begin{pmatrix}2&8\\\\0&2\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$AB-BA$．ただし $A=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix},\\ B=\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}$．",
+        "answer": "次の行列について $AB-BA$ を計算します。$A=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix},\\ B=\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}$\n\n1) まず $AB$ を計算する：\n\\[\nAB\n=\n\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}\n\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}\n=\n\\begin{pmatrix}\n0\\cdot 0 + 1\\cdot 1 & 0\\cdot 0 + 1\\cdot 0\\\\\n0\\cdot 0 + 0\\cdot 1 & 0\\cdot 0 + 0\\cdot 0\n\\end{pmatrix}\n=\n\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}\n\\]\n\n2) 次に $BA$ を計算する：\n\\[\nBA\n=\n\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}\n\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}\n=\n\\begin{pmatrix}\n0\\cdot 0 + 0\\cdot 0 & 0\\cdot 1 + 0\\cdot 0\\\\\n1\\cdot 0 + 0\\cdot 0 & 1\\cdot 1 + 0\\cdot 0\n\\end{pmatrix}\n=\n\\begin{pmatrix}0&0\\\\0&1\\end{pmatrix}\n\\]\n\n3) 差をとる：\n\\[\nAB-BA\n=\n\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}\n-\n\\begin{pmatrix}0&0\\\\0&1\\end{pmatrix}\n=\n\\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次を計算せよ：$A^4$．ただし $A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}$．",
+        "answer": "次の行列について $A^4$ を求めます。$A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}$\n\nステップ1：$A^2$ を計算する\n\\[\nA^2 = A\\cdot A\n= \\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\n  \\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\n= \\begin{pmatrix}\n0\\cdot 0 + 1\\cdot(-1) & 0\\cdot 1 + 1\\cdot 0 \\\\\n-1\\cdot 0 + 0\\cdot(-1) & -1\\cdot 1 + 0\\cdot 0\n\\end{pmatrix}\n= \\begin{pmatrix}-1&0\\\\0&-1\\end{pmatrix}\n= -I\n\\]\n\nステップ2：$A^4$ を計算する\n\\[\nA^4 = (A^2)^2 = (-I)^2 = I\n\\]\n\n最終結果：\n\\[\n\\boxed{\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行基本変形 $R_2 \\\\leftarrow R_2 + 4R_1$ に対応する $3\\\\times 3$ の基本行列 $E$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 行基本変形に対応する基本行列は、単位行列に同じ行操作を施して得る。すなわち、$E$ は $I_3$ に対して $R_2 \\leftarrow R_2 + 4R_1$ を行った行列。\n\n2) まず $3\\times 3$ の単位行列は\n\\[\nI_3=\\begin{pmatrix}\n1&0&0\\\\\n0&1&0\\\\\n0&0&1\n\\end{pmatrix}.\n\\]\n\n3) この $I_3$ に $R_2 \\leftarrow R_2 + 4R_1$ を適用すると、第1行はそのまま、第2行が\n\\[\n(0,1,0)+4\\cdot(1,0,0)=(4,1,0)\n\\]\nに変わる。よって\n\\[\nE=\\begin{pmatrix}\n1&0&0\\\\\n4&1&0\\\\\n0&0&1\n\\end{pmatrix}.\n\\]\n\n4) 確認：任意の $3\\times 3$ 行列 $A=(a_{ij})$ に対して\n\\[\nEA=\\begin{pmatrix}\na_{11}&a_{12}&a_{13}\\\\\n4a_{11}+a_{21}&4a_{12}+a_{22}&4a_{13}+a_{23}\\\\\na_{31}&a_{32}&a_{33}\n\\end{pmatrix},\n\\]\nすなわち第2行が $R_2+4R_1$ になっている。\n\n最終回答:\n\\[\n\\boxed{\\begin{pmatrix}\n1&0&0\\\\\n4&1&0\\\\\n0&0&1\n\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A$ に左から第1行と第3行を入れ替える基本行列 $E$ を掛けた $EA$ を計算せよ。\\\\[ A = \\\\begin{pmatrix} 1 & 2 & 3 \\\\\\\\ 0 & -1 & 4 \\\\\\\\ 5 & 1 & 0 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の手順で計算します。\n\n1. 基本行列の構成  \n   第1行と第3行を入れ替える基本行列 $E$ は、単位行列 $I_3$ の第1行と第3行を入れ替えたものです。\n   \\[\n   E\n   =\n   \\begin{pmatrix}\n   0 & 0 & 1\\\\\n   0 & 1 & 0\\\\\n   1 & 0 & 0\n   \\end{pmatrix}\n   \\]\n\n2. 左からの乗算の効果  \n   左から $E$ を掛けると行列 $A$ の行が対応して入れ替わります。具体的には\n   \\[\n   \\text{row}_1(EA)=\\text{row}_3(A),\\quad\n   \\text{row}_2(EA)=\\text{row}_2(A),\\quad\n   \\text{row}_3(EA)=\\text{row}_1(A).\n   \\]\n\n3. 実際の計算  \n   \\[\n   EA\n   =\n   \\begin{pmatrix}\n   0 & 0 & 1\\\\\n   0 & 1 & 0\\\\\n   1 & 0 & 0\n   \\end{pmatrix}\n   \\begin{pmatrix}\n   1 & 2 & 3\\\\\n   0 & -1 & 4\\\\\n   5 & 1 & 0\n   \\end{pmatrix}\n   =\n   \\begin{pmatrix}\n   5 & 1 & 0\\\\\n   0 & -1 & 4\\\\\n   1 & 2 & 3\n   \\end{pmatrix}.\n   \\]\n\n最終結果：\n\\[\n\\boxed{\n\\begin{pmatrix}\n5 & 1 & 0\\\\\n0 & -1 & 4\\\\\n1 & 2 & 3\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 \\\\[ E = \\\\begin{pmatrix} 1 & 0 & 0 \\\\\\\\ 0 & -3 & 0 \\\\\\\\ 0 & 0 & 1 \\\\end{pmatrix} \\\\] の逆行列 $E^{-1}$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1) 行列が対角行列であることを確認する  \n与えられた行列\n\\[\nE=\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & -3 & 0\\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\]\nは対角成分がそれぞれ $1, -3, 1$ の対角行列です。\n\n2) 対角行列の逆行列の性質を用いる  \n対角行列 $\\operatorname{diag}(d_1,d_2,d_3)$ の逆行列は、各対角成分が 0 でないとき\n\\[\n\\operatorname{diag}\\!\\left(\\frac{1}{d_1},\\frac{1}{d_2},\\frac{1}{d_3}\\right)\n\\]\nになります。ここでは $d_1=1,\\ d_2=-3,\\ d_3=1$ より\n\\[\nE^{-1}=\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & -\\frac{1}{3} & 0\\\\\n0 & 0 & 1\n\\end{pmatrix}.\n\\]\n\n3) 検算（任意）  \n\\[\nEE^{-1}=\n\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & -3 & 0\\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & -\\frac{1}{3} & 0\\\\\n0 & 0 & 1\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & 1 & 0\\\\\n0 & 0 & 1\n\\end{pmatrix}\n=I.\n\\]\n\n最終回答：\n\\[\n\\boxed{\nE^{-1}=\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & -\\frac{1}{3} & 0\\\\\n0 & 0 & 1\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$3\\\\times 3$ の基本行列 $E$ は行基本変形 $R_3 \\\\leftarrow R_3 + 2R_1$ に対応するものとする。$E^5$ を求めよ。",
+        "answer": "以下、step by step で解きます。\n\n1) 行基本変形 R3 ← R3 + 2R1 に対応する基本行列 E は、単位行列の第3行に第1行の2倍を加えたものなので\n\\[\nE=\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & 1 & 0\\\\\n2 & 0 & 1\n\\end{pmatrix}.\n\\]\n\n2) 行列\n\\[\nU=\\begin{pmatrix}\n0 & 0 & 0\\\\\n0 & 0 & 0\\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\]\nを用いると\n\\[\nE=I+2U.\n\\]\nこのとき \\(U^2=0\\)（非零成分が (3,1) のみなので積をとると全部 0 になる）である。\n\n3) 二項定理と \\(U^2=0\\) より\n\\[\nE^5=(I+2U)^5=\\sum_{k=0}^5 \\binom{5}{k}(2U)^k=I+5\\cdot(2U)=I+10U.\n\\]\n\n4) したがって\n\\[\nE^5=I+10U=\n\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & 1 & 0\\\\\n10 & 0 & 1\n\\end{pmatrix}.\n\\]\n\n\\[\n\\boxed{\n\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & 1 & 0\\\\\n10 & 0 & 1\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$3\\\\times 3$ 行列 $A$ は $\\\\det A = -3$ を満たすとする。第2行を $-2$ 倍する基本行列 $E$ に対し、$\\\\det(EA)$ を求めよ。",
+        "answer": "以下の性質を用います。\n\n- ある1行を $k$ 倍する基本行列の行列式は $k$。\n- 行列式は積に関して乗法的：$\\det(EA)=\\det(E)\\det(A)$。\n\nStep 1. 第2行を $-2$ 倍する基本行列 $E$ に対して\n\\[\n\\det(E) = -2.\n\\]\n\nStep 2. 与えられた $\\det(A)=-3$ と乗法性より\n\\[\n\\det(EA) = \\det(E)\\det(A) = (-2)\\times(-3) = 6.\n\\]\n\nゆえに\n\\[\n\\boxed{6}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A$ に右から第1列と第3列を入れ替える基本行列 $E$ を掛けた $AE$ を計算せよ。\\\\[ A = \\\\begin{pmatrix} 2 & -1 & 0 \\\\\\\\ 3 & 4 & 1 \\\\\\\\ -2 & 5 & 6 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の手順で求めます。\n\n1) 右から第1列と第3列を入れ替える基本行列は、単位行列の第1列と第3列を入れ替えた\n\\[\nE=\\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\]\nです。\n\n2) 行列の右からの積は列の並べ替えに対応するので、$AE$ は $A$ の第1列と第3列を入れ替えたものになります。すなわち\n\\[\nA=\\begin{pmatrix}\n2 & -1 & 0\\\\\n3 & 4 & 1\\\\\n-2 & 5 & 6\n\\end{pmatrix}\n= \\bigl[\\; \\underbrace{\\begin{pmatrix}2\\\\3\\\\-2\\end{pmatrix}}_{\\text{第1列}}\\;\n\\underbrace{\\begin{pmatrix}-1\\\\4\\\\5\\end{pmatrix}}_{\\text{第2列}}\\;\n\\underbrace{\\begin{pmatrix}0\\\\1\\\\6\\end{pmatrix}}_{\\text{第3列}} \\;\\bigr]\n\\]\nより\n\\[\nAE=\\bigl[\\;\\text{第3列}\\ \\ \\text{第2列}\\ \\ \\text{第1列}\\;\\bigr]\n=\\begin{pmatrix}\n0 & -1 & 2\\\\\n1 & 4 & 3\\\\\n6 & 5 & -2\n\\end{pmatrix}.\n\\]\n\n3) 確認として直接積をとっても\n\\[\nAE=\\begin{pmatrix}\n2 & -1 & 0\\\\\n3 & 4 & 1\\\\\n-2 & 5 & 6\n\\end{pmatrix}\n\\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 0 & 0\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n0 & -1 & 2\\\\\n1 & 4 & 3\\\\\n6 & 5 & -2\n\\end{pmatrix}\n\\]\nとなります。\n\n最終回答：\n\\[\n\\boxed{\n\\begin{pmatrix}\n0 & -1 & 2\\\\\n1 & 4 & 3\\\\\n6 & 5 & -2\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の $3\\\\times 3$ 行列 $A$ に対し、左から行基本変形 $R_2 \\\\leftarrow R_2 - 3R_1$ に対応する基本行列 $E$ を掛けた $EA$ を計算せよ。\\\\[ A = \\\\begin{pmatrix} 1 & 0 & 2 \\\\\\\\ 2 & 1 & -1 \\\\\\\\ 0 & 3 & 4 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の行基本変形は第2行を第1行で更新する操作 $R_2 \\leftarrow R_2 - 3R_1$ です。\n\n1) 対応する基本行列の構成\n単位行列 $I_3$ に同じ行基本変形を施すと基本行列が得られる：\n\\[\nE\n= \\begin{pmatrix}\n1 & 0 & 0 \\\\\n-3 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}.\n\\]\n\n2) 左から掛けると同じ行基本変形が $A$ に適用される\n$A$ の各行を $R_1,R_2,R_3$ とすると、$R_2' = R_2 - 3R_1$，他は不変：\n\\[\nR_2' = (2,\\,1,\\,-1) - 3(1,\\,0,\\,2)\n= (2-3,\\,1-0,\\,-1-6)\n= (-1,\\,1,\\,-7).\n\\]\nしたがって\n\\[\nEA = \\begin{pmatrix}\n1 & 0 & 2 \\\\\n-1 & 1 & -7 \\\\\n0 & 3 & 4\n\\end{pmatrix}.\n\\]\n\n（確認として積を直接計算しても同じ）\n\\[\nEA\n= \\begin{pmatrix}\n1 & 0 & 0 \\\\\n-3 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\begin{pmatrix}\n1 & 0 & 2 \\\\\n2 & 1 & -1 \\\\\n0 & 3 & 4\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1 & 0 & 2 \\\\\n-1 & 1 & -7 \\\\\n0 & 3 & 4\n\\end{pmatrix}.\n\\]\n\n最終回答：\n\\[\n\\boxed{\nEA = \\begin{pmatrix}\n1 & 0 & 2 \\\\\n-1 & 1 & -7 \\\\\n0 & 3 & 4\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の2つの基本行列の積 $E_2 E_1$ を計算せよ。\\\\[ E_1 = \\\\begin{pmatrix} 1 & 2 & 0 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ 0 & 0 & 1 \\\\end{pmatrix},\\\\quad E_2 = \\\\begin{pmatrix} 0 & 0 & 1 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ 1 & 0 & 0 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の積を計算します。\n\\[\nE_1=\\begin{pmatrix}\n1 & 2 & 0\\\\\n0 & 1 & 0\\\\\n0 & 0 & 1\n\\end{pmatrix},\\quad\nE_2=\\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\]\n\n行列積は $(E_2E_1)_{ij}=\\sum_{k=1}^3 (E_2)_{ik}(E_1)_{kj}$ で与えられます。行ごとに計算します。\n\n- 第1行（ベクトル $(0,0,1)$）:\n\\[\n\\begin{aligned}\n(1,1):&\\;0\\cdot 1+0\\cdot 0+1\\cdot 0=0,\\quad\n(1,2):\\;0\\cdot 2+0\\cdot 1+1\\cdot 0=0,\\quad\n(1,3):\\;0\\cdot 0+0\\cdot 0+1\\cdot 1=1\n\\end{aligned}\n\\]\nよって第1行は $(0,0,1)$。\n\n- 第2行（ベクトル $(0,1,0)$）:\n\\[\n\\begin{aligned}\n(2,1):&\\;0\\cdot 1+1\\cdot 0+0\\cdot 0=0,\\quad\n(2,2):\\;0\\cdot 2+1\\cdot 1+0\\cdot 0=1,\\quad\n(2,3):\\;0\\cdot 0+1\\cdot 0+0\\cdot 1=0\n\\end{aligned}\n\\]\nよって第2行は $(0,1,0)$。\n\n- 第3行（ベクトル $(1,0,0)$）:\n\\[\n\\begin{aligned}\n(3,1):&\\;1\\cdot 1+0\\cdot 0+0\\cdot 0=1,\\quad\n(3,2):\\;1\\cdot 2+0\\cdot 1+0\\cdot 0=2,\\quad\n(3,3):\\;1\\cdot 0+0\\cdot 0+0\\cdot 1=0\n\\end{aligned}\n\\]\nよって第3行は $(1,2,0)$。\n\nしたがって、\n\\[\nE_2E_1=\n\\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 2 & 0\n\\end{pmatrix}\n\\]\n\n最終答え：\n\\[\n\\boxed{\\begin{pmatrix}\n0 & 0 & 1\\\\\n0 & 1 & 0\\\\\n1 & 2 & 0\n\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$4\\\\times 4$ の第2行と第4行を入れ替える基本行列 $E$ の行列式 $\\\\det E$ を求めよ。",
+        "answer": "以下の手順で求めます。\n\n1. 基本行列 $E$ は、単位行列 $I_4$ の第2行と第4行を入れ替えた行列（置換行列）である。\n\n2. 単位行列の行列式は\n\\[\n\\det(I_4) = 1\n\\]\nである。\n\n3. 行列の2行を入れ替える操作は行列式の符号を反転させる。すなわち、ある行列 $A$ の2行を入れ替えて得た行列を $B$ とすると\n\\[\n\\det(B) = -\\det(A)\n\\]\nが成り立つ。\n\n4. よって $I_4$ の第2行と第4行を入れ替えて得られる $E$ の行列式は\n\\[\n\\det(E) = -\\det(I_4) = -1.\n\\]\n\n最終回答:\n\\[\n\\boxed{-1}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "列基本変形 $C_1 \\\\leftarrow C_1 - 3C_3$ に対応する $3\\\\times 3$ の基本行列 $F$ を求めよ。",
+        "answer": "以下の列基本変形は「右からの」乗算で実現されます。\n- 列基本変形 C1 ← C1 − 3C3 に対応する基本行列 F を求めます。\n\nステップ1：列操作は右からの乗算で実現\n- 任意の行列 A に対し、右から F をかけると\n  \\[\n  AF = \\big[\\,A f^{(1)},\\ A f^{(2)},\\ A f^{(3)}\\,\\big]\n  \\]\n  ここで \\(f^{(j)}\\) は \\(F\\) の第 \\(j\\) 列ベクトルです。\n\nステップ2：欲しい列の変換条件を列ベクトルで表す\n- 変形 C1 ← C1 − 3C3 より、\n  \\[\n  A f^{(1)} = C_1 - 3C_3 = A \\begin{bmatrix}1\\\\0\\\\-3\\end{bmatrix}\n  \\]\n  よって\n  \\[\n  f^{(1)}=\\begin{bmatrix}1\\\\0\\\\-3\\end{bmatrix}.\n  \\]\n- 他の列は不変なので\n  \\[\n  f^{(2)}=\\begin{bmatrix}0\\\\1\\\\0\\end{bmatrix},\\quad\n  f^{(3)}=\\begin{bmatrix}0\\\\0\\\\1\\end{bmatrix}.\n  \\]\n\nステップ3：F を組み立てて確認\n- 以上より\n  \\[\n  F=\\begin{pmatrix}\n  1 & 0 & 0\\\\\n  0 & 1 & 0\\\\\n  -3 & 0 & 1\n  \\end{pmatrix}.\n  \\]\n- 実際に\n  \\[\n  AF=\\big[A f^{(1)},A f^{(2)},A f^{(3)}\\big]\n    = \\big[C_1-3C_3,\\ C_2,\\ C_3\\big]\n  \\]\n  となり、所望の列操作を与えます。\n\n最終回答:\n\\[\n\\boxed{\n\\begin{pmatrix}\n1 & 0 & 0\\\\\n0 & 1 & 0\\\\\n-3 & 0 & 1\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の連立一次方程式をガウス消去法で解け。\\n\\\\[\\n\\\\begin{cases}\\n2x + y - z = 1\\\\\\\\\\nx - y + 2z = 4\\\\\\\\\\n3x + 2y + z = 7\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の拡大係数行列で与えられた連立一次方程式を解け。\\n\\\\[\\n\\\\left[\\\\begin{array}{ccc|c}\\n1 & 2 & 1 & 4\\\\\\\\\\n2 & 1 & -1 & 1\\\\\\\\\\n3 & 3 & 0 & 5\\n\\\\end{array}\\\\right]\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の連立一次方程式が無限に多くの解をもつような実数 $k$ をすべて求めよ。\\n\\\\[\\n\\\\begin{cases}\\nkx + 2y = 4\\\\\\\\\\n2x + 4y = 8\\n\\\\end{cases}\\n\\\\]",
+        "answer": "以下の手順で判断します。\n\n1) 無限に多くの解があるための必要条件は、係数行列の行列式が 0（2本の直線が平行または一致）であること。\n\\[ A=\\begin{pmatrix} k & 2 \\\\ 2 & 4 \\end{pmatrix},\\quad \\det A = k\\cdot 4 - 2\\cdot 2 = 4k-4 \\]\nよって\n\\[ \\det A = 0 \\iff 4k-4=0 \\iff k=1. \\]\n\n2) k=1 のときに実際に二つの式が同一（従属）で整合しているか確認する。\n\\[ k=1 \\Rightarrow \\begin{cases} x+2y=4 \\\\ 2x+4y=8 \\end{cases} \\]\n二つ目は一つ目の2倍で、右辺も対応しているので矛盾はなく、同一直線を表す。したがって解は無限に存在する。\n\n結論\n\\[\n\\boxed{k=1}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の拡大係数行列が表す連立一次方程式が解をもたないような実数 $k$ をすべて求めよ。\\n\\\\[\\n\\\\left[\\\\begin{array}{cc|c}\\n1 & -2 & 3\\\\\\\\\\n2 & -4 & k\\n\\\\end{array}\\\\right]\\n\\\\]",
+        "answer": "以下の拡大係数行列に対する連立一次方程式を考えます。\n\\[\n\\left[\\begin{array}{cc|c}\n1 & -2 & 3\\\\\n2 & -4 & k\n\\end{array}\\right]\n\\]\nこれは\n\\[\n\\begin{cases}\nx - 2y = 3\\\\\n2x - 4y = k\n\\end{cases}\n\\]\nを表します。\n\n行基本変形で解の有無を判定します。第2行から第1行の2倍を引きます（\\(R_2 \\to R_2 - 2R_1\\)）。\n\\[\n\\left[\\begin{array}{cc|c}\n1 & -2 & 3\\\\\n0 & \\ \\ 0 & k-6\n\\end{array}\\right]\n\\]\n\n第2行は方程式\n\\[\n0x + 0y = k - 6\n\\]\nを意味します。これは\n- \\(k - 6 \\neq 0\\)（すなわち \\(k \\neq 6\\)）ならば \\(0 = \\text{非零}\\) となり矛盾、よって解なし。\n- \\(k - 6 = 0\\)（すなわち \\(k = 6\\)）ならば恒等式で，第1行と同値なため無数解。\n\nしたがって、解をもたないのは\n\\[\n\\boxed{k \\ne 6}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行基本変形を用いて、次の拡大係数行列のRREF（既約行階段形）を求めよ。\\n\\\\[\\n\\\\left[\\\\begin{array}{ccc|c}\\n2 & -1 & 1 & 1\\\\\\\\\\n1 & 1 & -1 & 2\\\\\\\\\\n3 & 0 & 2 & 5\\n\\\\end{array}\\\\right]\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の連立一次方程式がただ一つの解をもつための実数 $s$ の条件を求めよ。\\n\\\\[\\n\\\\left\\\\{\\\\begin{aligned}\\nx + 2y + 3z &= 1\\\\\\\\\\n2x + 5y + sz &= 4\\\\\\\\\\n- x + y + 2z &= 0\\n\\\\end{aligned}\\\\right.\\n\\\\]",
+        "answer": "次の行列を係数行列とする。\n\\[\nA=\\begin{pmatrix}\n1 & 2 & 3\\\\\n2 & 5 & s\\\\\n-1 & 1 & 2\n\\end{pmatrix}\n\\]\nただ一つの解をもつ条件は、行列の行列式が 0 でないこと（可逆であること）である。\n\n行列式を第1行で展開して求める。\n\\[\n\\det A\n=1\\cdot\\det\\begin{pmatrix}5&s\\\\[2pt]1&2\\end{pmatrix}\n-2\\cdot\\det\\begin{pmatrix}2&s\\\\[-2pt]-1&2\\end{pmatrix}\n+3\\cdot\\det\\begin{pmatrix}2&5\\\\[-2pt]-1&1\\end{pmatrix}\n\\]\n\\[\n=1\\cdot(5\\cdot2 - s\\cdot1)\n-2\\cdot(2\\cdot2 - s\\cdot(-1))\n+3\\cdot(2\\cdot1 - 5\\cdot(-1))\n\\]\n\\[\n=(10 - s) - 2(4 + s) + 3(7)\n= (10 - s) - (8 + 2s) + 21\n= 23 - 3s\n\\]\n\nよって一意解が存在する条件は\n\\[\n\\det A \\neq 0 \\;\\;\\Longleftrightarrow\\;\\; 23 - 3s \\neq 0 \\;\\;\\Longleftrightarrow\\;\\; s \\neq \\frac{23}{3}.\n\\]\n\n\\[\n\\boxed{\\,s \\neq \\frac{23}{3}\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の連立一次方程式の解集合をパラメータ表示で求めよ。\\n\\\\[\\n\\\\begin{cases}\\nx + y + z = 2\\\\\\\\\\n2x - y + 3z = 5\\n\\\\end{cases}\\n\\\\]",
+        "answer": "以下、step by step で解きます。\n\n1) 連立方程式\n\\[\n\\begin{cases}\nx + y + z = 2 \\\\\n2x - y + 3z = 5\n\\end{cases}\n\\]\n\n2) 1つ目の式から $y$ を表す：\n\\[\ny = 2 - x - z\n\\]\n\n3) これを2つ目の式に代入：\n\\[\n2x - (2 - x - z) + 3z = 5\n\\]\n\\[\n2x - 2 + x + z + 3z = 5\n\\]\n\\[\n3x + 4z = 7\n\\]\n\\[\nx = \\frac{7 - 4z}{3}\n\\]\n\n4) さらに $y$ を求める：\n\\[\ny = 2 - \\frac{7 - 4z}{3} - z\n= \\frac{6}{3} - \\frac{7}{3} + \\frac{4z}{3} - \\frac{3z}{3}\n= \\frac{z - 1}{3}\n\\]\n\n5) パラメータ $t = z$ とおけば，\n\\[\nx = \\frac{7 - 4t}{3},\\quad y = \\frac{t - 1}{3},\\quad z = t\n\\]\n\n最終回答：\n\\[\n\\boxed{\\, (x, y, z) = \\left(\\frac{7 - 4t}{3},\\ \\frac{t - 1}{3},\\ t\\right)\\quad (t \\in \\mathbb{R}) \\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行基本変形を用いて、次の拡大係数行列を行階段形にせよ（結果の拡大係数行列を与えよ）。\\n\\\\[\\n\\\\left[\\\\begin{array}{ccc|c}\\n1 & 3 & -1 & 2\\\\\\\\\\n2 & 6 & 1 & 7\\\\\\\\\\n-1 & -3 & 2 & -1\\n\\\\end{array}\\\\right]\\n\\\\]",
+        "answer": "以下、行基本変形で行階段形にします。\n\n初期行列\n\\[\n\\left[\\begin{array}{ccc|c}\n1 & 3 & -1 & 2\\\\\n2 & 6 & 1 & 7\\\\\n-1 & -3 & 2 & -1\n\\end{array}\\right]\n\\]\n\n1) 第1列のピボット（$R_1$）で下を消去：$R_2 \\leftarrow R_2 - 2R_1,\\; R_3 \\leftarrow R_3 + R_1$\n\\[\n\\left[\\begin{array}{ccc|c}\n1 & 3 & -1 & 2\\\\\n0 & 0 & 3 & 3\\\\\n0 & 0 & 1 & 1\n\\end{array}\\right]\n\\]\n\n2) 第2行のピボットを1に正規化：$R_2 \\leftarrow \\frac{1}{3}R_2$\n\\[\n\\left[\\begin{array}{ccc|c}\n1 & 3 & -1 & 2\\\\\n0 & 0 & 1 & 1\\\\\n0 & 0 & 1 & 1\n\\end{array}\\right]\n\\]\n\n3) 第3行の下三角化：$R_3 \\leftarrow R_3 - R_2$\n\\[\n\\left[\\begin{array}{ccc|c}\n1 & 3 & -1 & 2\\\\\n0 & 0 & 1 & 1\\\\\n0 & 0 & 0 & 0\n\\end{array}\\right]\n\\]\n\n最終結果（行階段形）は\n\\[\n\\boxed{\n\\left[\\begin{array}{ccc|c}\n1 & 3 & -1 & 2\\\\\n0 & 0 & 1 & 1\\\\\n0 & 0 & 0 & 0\n\\end{array}\\right]\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の連立一次方程式の解の個数（0個, 1個, 無限個）を判定せよ。\\n\\\\[\\n\\\\begin{cases}\\nx + y + z = 1\\\\\\\\\\n2x + 2y + 2z = 3\\\\\\\\\\nx + y + z = 0\\n\\\\end{cases}\\n\\\\]",
+        "answer": "方程式を番号付けします。\n\\[ \n\\begin{cases}\n(1)\\ x + y + z = 1\\\\\n(2)\\ 2x + 2y + 2z = 3\\\\\n(3)\\ x + y + z = 0\n\\end{cases}\n\\]\n\nステップ1：式(1)と式(3)を比較します。両辺を引くと\n\\[\n\\bigl((x+y+z) - (x+y+z)\\bigr) = 1 - 0 \\;\\Rightarrow\\; 0 = 1\n\\]\nとなり、矛盾が生じます。\n\n参考：式(2)は $2(x+y+z)=3$、すなわち\n\\[\nx+y+z=\\frac{3}{2}\n\\]\nを意味し、式(1)や式(3)とも一致しません。\n\n以上より、この連立方程式は互いに矛盾しており解は存在しません。\n\n最終回答：\\boxed{0\\ \\text{個}}",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の同次連立一次方程式の一般解を求めよ。\\n\\\\[\\n\\\\left[\\\\begin{array}{ccc|c}\\n1 & -1 & 2 & 0\\\\\\\\\\n2 & 1 & -1 & 0\\\\\\\\\\n3 & 0 & 3 & 0\\n\\\\end{array}\\\\right]\\n\\\\]",
+        "answer": "方程式の未知数を $x,y,z$ とします。与えられた同次連立方程式の拡大行列を行基本変形で掃き出します。\n\n初期の拡大行列\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & -1 & 2 & 0\\\\\n2 & 1 & -1 & 0\\\\\n3 & 0 & 3 & 0\n\\end{array}\n\\right]\n\\]\n\n1) 第1列の消去（R2 ← R2 − 2R1, R3 ← R3 − 3R1）\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & -1 & 2 & 0\\\\\n0 & 3 & -5 & 0\\\\\n0 & 3 & -3 & 0\n\\end{array}\n\\right]\n\\]\n\n2) 第2列の消去（R3 ← R3 − R2）\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & -1 & 2 & 0\\\\\n0 & 3 & -5 & 0\\\\\n0 & 0 & 2 & 0\n\\end{array}\n\\right]\n\\]\n\n3) ピボットを1に正規化（R2 ← (1/3)R2, R3 ← (1/2)R3）\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & -1 & 2 & 0\\\\\n0 & 1 & -\\frac{5}{3} & 0\\\\\n0 & 0 & 1 & 0\n\\end{array}\n\\right]\n\\]\n\n4) 後退消去（R2 ← R2 + \\frac{5}{3}R3, R1 ← R1 − 2R3）\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & -1 & 0 & 0\\\\\n0 & 1 & 0 & 0\\\\\n0 & 0 & 1 & 0\n\\end{array}\n\\right]\n\\]\n\n5) さらに（R1 ← R1 + R2）\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & 0 & 0\\\\\n0 & 1 & 0 & 0\\\\\n0 & 0 & 1 & 0\n\\end{array}\n\\right]\n\\]\n\nよって、解は\n\\[\nx=0,\\quad y=0,\\quad z=0.\n\\]\n\n最終回答：\n\\[\n\\boxed{(x,y,z)=(0,0,0)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列を行基本変形で簡約化し，その簡約化された行列（RREF）を求めよ。\\\\[ A = \\\\begin{bmatrix} 1 & 2 & -1 \\\\\\\\ 2 & 4 & 0 \\\\\\\\ -1 & -2 & 1 \\\\end{bmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の拡大行列をRREFまで簡約化し，解ベクトル $(x,y,z)$ を求めよ。\\\\[ \\\\left[\\\\, \\\\begin{array}{ccc|c} 1 & 1 & 1 & 3 \\\\\\\\ 2 & -1 & 1 & 2 \\\\\\\\ 1 & 2 & -1 & 0 \\\\end{array} \\\\,\\\\right] \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "行列 $A$ に対し，次の順に行基本変形を施した後の行列を求めよ。操作：$R_2 \\\\leftarrow R_2 - 3R_1$, $R_3 \\\\leftarrow R_3 + 2R_2$, $R_1 \\\\leftrightarrow R_3$.\\\\[ A = \\\\begin{bmatrix} 1 & 0 & 2 \\\\\\\\ 3 & -1 & 4 \\\\\\\\ 2 & 1 & -1 \\\\end{bmatrix} \\\\]",
+        "answer": "はじめに\n\\[\nA=\\begin{bmatrix}\n1 & 0 & 2\\\\\n3 & -1 & 4\\\\\n2 & 1 & -1\n\\end{bmatrix}\n\\]\n\n1) 操作 $R_2 \\leftarrow R_2 - 3R_1$：\n\\[\nR_2 = \\begin{bmatrix}3 & -1 & 4\\end{bmatrix} - 3\\begin{bmatrix}1 & 0 & 2\\end{bmatrix}\n= \\begin{bmatrix}3-3 & -1-0 & 4-6\\end{bmatrix}\n= \\begin{bmatrix}0 & -1 & -2\\end{bmatrix}\n\\]\n更新後\n\\[\n\\begin{bmatrix}\n1 & 0 & 2\\\\\n0 & -1 & -2\\\\\n2 & 1 & -1\n\\end{bmatrix}\n\\]\n\n2) 操作 $R_3 \\leftarrow R_3 + 2R_2$（直前の $R_2$ を使用）：\n\\[\nR_3 = \\begin{bmatrix}2 & 1 & -1\\end{bmatrix} + 2\\begin{bmatrix}0 & -1 & -2\\end{bmatrix}\n= \\begin{bmatrix}2+0 & 1-2 & -1-4\\end{bmatrix}\n= \\begin{bmatrix}2 & -1 & -5\\end{bmatrix}\n\\]\n更新後\n\\[\n\\begin{bmatrix}\n1 & 0 & 2\\\\\n0 & -1 & -2\\\\\n2 & -1 & -5\n\\end{bmatrix}\n\\]\n\n3) 操作 $R_1 \\leftrightarrow R_3$（第1行と第3行を入れ替え）：\n\\[\n\\boxed{\n\\begin{bmatrix}\n2 & -1 & -5\\\\\n0 & -1 & -2\\\\\n1 & 0 & 2\n\\end{bmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "拡大行列 $(A\\\\mid I_3)$ を行基本変形で $(I_3\\\\mid A^{-1})$ に簡約化し，$A^{-1}$ を求めよ。\\\\[ A = \\\\begin{bmatrix} 1 & 2 & 1 \\\\\\\\ 0 & 1 & 2 \\\\\\\\ 2 & 1 & 0 \\\\end{bmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の行列をRREFに簡約化し，階数 $\\\\operatorname{rank}(A)$ とピボット列の番号を求めよ。\\\\[ A = \\\\begin{bmatrix} 1 & 2 & 3 & 1 \\\\\\\\ 2 & 4 & 7 & 3 \\\\\\\\ -1 & -2 & -4 & -2 \\\\end{bmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "パラメータ $a$ を含む次の拡大行列を行基本変形で簡約化し，連立方程式が整合的（解をもつ）となる $a$ の値をすべて求めよ。\\\\[ \\\\left[\\\\, \\\\begin{array}{ccc|c} 1 & 2 & 3 & 1 \\\\\\\\ 2 & 4 & 6 & a \\\\\\\\ 1 & 1 & 1 & 0 \\\\end{array} \\\\,\\\\right] \\\\]",
+        "answer": "拡大行列\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 2 & 3 & 1 \\\\\n2 & 4 & 6 & a \\\\\n1 & 1 & 1 & 0\n\\end{array}\n\\right]\n\\]\nに対し，行基本変形を行います。\n\nまず\n\\[\nR_2 \\leftarrow R_2 - 2R_1,\\quad R_3 \\leftarrow R_3 - R_1\n\\]\nより\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 2 & 3 & 1 \\\\\n0 & 0 & 0 & a-2 \\\\\n0 & -1 & -2 & -1\n\\end{array}\n\\right].\n\\]\n\n次に，ピボットを作るため\n\\[\nR_2 \\leftrightarrow R_3,\\quad R_2 \\leftarrow -R_2\n\\]\nとして\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 2 & 3 & 1 \\\\\n0 & 1 & 2 & 1 \\\\\n0 & 0 & 0 & a-2\n\\end{array}\n\\right].\n\\]\n\nさらに第2行を用いて第1行を消去し\n\\[\nR_1 \\leftarrow R_1 - 2R_2\n\\]\nより\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & -1 & -1 \\\\\n0 & 1 & 2 & 1 \\\\\n0 & 0 & 0 & a-2\n\\end{array}\n\\right].\n\\]\n\n最後の行は\n\\[\n0= a-2\n\\]\nを意味するので，連立方程式が整合的（解をもつ）であるための必要十分条件は\n\\[\na=2\n\\]\nです。\n\n参考：\\(a=2\\) のときの解は，\\(x_3=t\\) とおくと\n\\[\nx_1 = -1 + t,\\quad x_2 = 1 - 2t,\\quad x_3 = t\\quad (t\\in\\mathbb{R})\n\\]\nとなります。\n\n最終回答：\n\\[\n\\boxed{a=2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の拡大行列をRREFに簡約化し，一般解をパラメータ表示で求めよ。\\\\[ \\\\left[\\\\, \\\\begin{array}{ccc|c} 1 & -2 & 1 & 0 \\\\\\\\ 2 & -4 & 2 & 0 \\\\\\\\ -1 & 2 & -1 & 0 \\\\end{array} \\\\,\\\\right] \\\\]",
+        "answer": "以下の拡大行列を段階的に行基本変形します。\n\n初期行列\n\\[\n\\left[\\begin{array}{ccc|c}\n1 & -2 & 1 & 0 \\\\\n2 & -4 & 2 & 0 \\\\\n-1 & 2 & -1 & 0\n\\end{array}\\right]\n\\]\n\n第1列のピボットは第1行にあるので、それを用いて下の成分を消去する。\n\\[\nR_2 \\leftarrow R_2 - 2R_1,\\quad R_3 \\leftarrow R_3 + R_1\n\\]\n\nすると\n\\[\n\\left[\\begin{array}{ccc|c}\n1 & -2 & 1 & 0 \\\\\n0 & 0 & 0 & 0 \\\\\n0 & 0 & 0 & 0\n\\end{array}\\right]\n\\]\nこれで既にRREF（行最簡約形）である。\n\n対応する方程式は\n\\[\nx_1 - 2x_2 + x_3 = 0\n\\]\n自由変数を $x_2 = s,\\ x_3 = t$ とおくと\n\\[\nx_1 = 2s - t\n\\]\nしたがって一般解は\n\\[\n(x_1,x_2,x_3) = (2s - t,\\ s,\\ t) = s(2,1,0) + t(-1,0,1),\\quad s,t\\in\\mathbb{R}.\n\\]\n\n\\[\n\\boxed{\n\\begin{aligned}\n\\text{RREF} &= \\left[\\begin{array}{ccc|c}\n1 & -2 & 1 & 0 \\\\\n0 & 0 & 0 & 0 \\\\\n0 & 0 & 0 & 0\n\\end{array}\\right],\\\\\n\\text{一般解} &= (x_1,x_2,x_3) = (2s - t,\\ s,\\ t) = s(2,1,0) + t(-1,0,1),\\quad s,t\\in\\mathbb{R}.\n\\end{aligned}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列 $A$ と初等行列 $E_1, E_2$ に対し，$E_2 E_1 A$ を計算せよ。\\\\[ A = \\\\begin{bmatrix} 1 & 2 & 0 \\\\\\\\ 0 & 1 & 3 \\\\\\\\ 2 & -1 & 1 \\\\end{bmatrix},\\\\quad E_1 = \\\\begin{bmatrix} 1 & 0 & 0 \\\\\\\\ -2 & 1 & 0 \\\\\\\\ 0 & 0 & 1 \\\\end{bmatrix},\\\\quad E_2 = \\\\begin{bmatrix} 0 & 0 & 1 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ 1 & 0 & 0 \\\\end{bmatrix} \\\\]",
+        "answer": "次の手順で計算します。\n\n1) まず $E_1A$ を計算する（$E_1$ は第2行に「第1行の $-2$ 倍を加える」操作）:\n\\[\nE_1A\n=\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n-2 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n\\begin{bmatrix}\n1 & 2 & 0 \\\\\n0 & 1 & 3 \\\\\n2 & -1 & 1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1 & 2 & 0 \\\\\n-2 & -3 & 3 \\\\\n2 & -1 & 1\n\\end{bmatrix}.\n\\]\n\n2) 次に $E_2(E_1A)$ を計算する（$E_2$ は第1行と第3行を入れ替える操作）:\n\\[\nE_2(E_1A)\n=\n\\begin{bmatrix}\n0 & 0 & 1 \\\\\n0 & 1 & 0 \\\\\n1 & 0 & 0\n\\end{bmatrix}\n\\begin{bmatrix}\n1 & 2 & 0 \\\\\n-2 & -3 & 3 \\\\\n2 & -1 & 1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2 & -1 & 1 \\\\\n-2 & -3 & 3 \\\\\n1 & 2 & 0\n\\end{bmatrix}.\n\\]\n\nしたがって，\n\\[\n\\boxed{\nE_2E_1A\n=\n\\begin{bmatrix}\n2 & -1 & 1 \\\\\n-2 & -3 & 3 \\\\\n1 & 2 & 0\n\\end{bmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列を行基本変形でRREFに簡約化し，そのRREFを答えよ。\\\\[ A = \\\\begin{bmatrix} 1 & 2 & 3 \\\\\\\\ 0 & 1 & 4 \\\\\\\\ 2 & 5 & 11 \\\\\\\\ -1 & -1 & -1 \\\\end{bmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の行列を行基本変形で簡約化し，すべての列にピボットが立つ（可逆である）ための $k$ の条件を求めよ。\\\\[ A = \\\\begin{bmatrix} 1 & k & 1 \\\\\\\\ 2 & 2 & 2 \\\\\\\\ 1 & 1 & k \\\\end{bmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の行列 $A$ の階数 $\\mathrm{rank}(A)$ を求めよ。\\n\\\\[\\nA=\\\\begin{pmatrix}\\n1&2&3\\\\\\\\\\n2&4&6\\\\\\\\\\n1&1&0\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "以下の行基本変形で階数を求めます。\n\n初期行列\n\\[\nA=\\begin{pmatrix}\n1&2&3\\\\\n2&4&6\\\\\n1&1&0\n\\end{pmatrix}\n\\]\n\n- 行変形1：$R_2 \\leftarrow R_2 - 2R_1,\\quad R_3 \\leftarrow R_3 - R_1$\n\\[\n\\begin{pmatrix}\n1&2&3\\\\\n0&0&0\\\\\n0&-1&-3\n\\end{pmatrix}\n\\]\n\n- 行変形2：$R_2 \\leftrightarrow R_3$\n\\[\n\\begin{pmatrix}\n1&2&3\\\\\n0&-1&-3\\\\\n0&0&0\n\\end{pmatrix}\n\\]\n\n非零行は2本なので、\n\\[\n\\mathrm{rank}(A)=2\n\\]\n\n最終回答：\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の対角行列 $D$ の階数を求めよ。\\n\\\\[\\nD=\\\\begin{pmatrix}\\n1&0&0&0\\\\\\\\\\n0&0&0&0\\\\\\\\\\n0&0&-2&0\\\\\\\\\\n0&0&0&3\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "以下の対角行列の階数を求めます。\n\\[\nD=\\begin{pmatrix}\n1&0&0&0\\\\\n0&0&0&0\\\\\n0&0&-2&0\\\\\n0&0&0&3\n\\end{pmatrix}\n\\]\n\nステップ1：対角行列の階数の性質  \n対角行列\n\\[\nD=\\mathrm{diag}(d_1,d_2,\\dots,d_n)\n\\]\nの階数は、ゼロでない対角成分の個数に等しい。\n\\[\n\\mathrm{rank}(D)=\\left|\\{\\,i \\mid d_i \\neq 0\\,\\}\\right|\n\\]\n\nステップ2：本行列の非零対角成分を数える  \n対角成分は\n\\[\n1,\\;0,\\;-2,\\;3\n\\]\nであり、ゼロでないものは\n\\[\n1,\\;-2,\\;3\n\\]\nの3つ。\n\n結論：\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A, B$ が次のとき、積 $AB$ の階数を求めよ。\\n\\\\[\\nA=\\\\begin{pmatrix}\\n1&1&0\\\\\\\\\\n0&1&1\\n\\\\end{pmatrix},\\\\quad\\nB=\\\\begin{pmatrix}\\n1&-1\\\\\\\\\\n1&-1\\\\\\\\\\n0&0\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "次の手順で求めます。\n\n1) 次元の確認\n$A\\in M_{2\\times 3},\\ B\\in M_{3\\times 2}$ より、積 $AB\\in M_{2\\times 2}$。\n\n2) 積の計算\n\\[\nAB\n=\n\\begin{pmatrix}\n1&1&0\\\\\n0&1&1\n\\end{pmatrix}\n\\begin{pmatrix}\n1&-1\\\\\n1&-1\\\\\n0&0\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1\\cdot1+1\\cdot1+0\\cdot0 & 1\\cdot(-1)+1\\cdot(-1)+0\\cdot0\\\\\n0\\cdot1+1\\cdot1+1\\cdot0 & 0\\cdot(-1)+1\\cdot(-1)+1\\cdot0\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n2&-2\\\\\n1&-1\n\\end{pmatrix}.\n\\]\n\n3) 階数の判定\n第2行は第1行の $\\tfrac{1}{2}$ 倍である（$\\begin{pmatrix}1&-1\\end{pmatrix}=\\tfrac12\\begin{pmatrix}2&-2\\end{pmatrix}$）ので、行は一次従属。\nよって\n\\[\n\\operatorname{rank}(AB)=1.\n\\]\n\n確認として、$B$ の列は比例しており $\\operatorname{rank}(B)=1$、従って $\\operatorname{rank}(AB)\\le 1$ かつ $AB\\neq O$ より階数は 1 で一致します。\n\n最終答え：\n\\[\n\\boxed{1}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ブロック対角行列 $A=\\\\mathrm{diag}(B,C)$ の階数を求めよ。ただし\\n\\\\[\\nB=\\\\begin{pmatrix}\\n1&2\\\\\\\\\\n2&4\\n\\\\end{pmatrix},\\\\quad\\nC=\\\\begin{pmatrix}\\n1&0\\\\\\\\\\n0&1\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "考え方の流れ\n1) ブロック対角行列の基本性質\nブロック対角行列の階数は，各対角ブロックの階数の和に等しい：\n\\[\n\\rank(\\mathrm{diag}(B,C))=\\rank(B)+\\rank(C).\n\\]\n\n2) B の階数\n行基本変形をすると\n\\[\nB=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}\n\\xrightarrow{\\,R_2\\leftarrow R_2-2R_1\\,}\n\\begin{pmatrix}1&2\\\\0&0\\end{pmatrix},\n\\]\n非零行が 1 本なので\n\\[\n\\rank(B)=1.\n\\]\n\n3) C の階数\n\\[\nC=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}=I_2\n\\]\nは単位行列なので\n\\[\n\\rank(C)=2.\n\\]\n\n4) A の階数\n\\[\n\\rank(A)=\\rank(B)+\\rank(C)=1+2=3.\n\\]\n\n最終回答：\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の上三角行列 $A$ の階数を求めよ。\\n\\\\[\\nA=\\\\begin{pmatrix}\\n2&1&-1\\\\\\\\\\n0&3&4\\\\\\\\\\n0&0&5\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "以下、step by stepで考えます。\n\n1. 行列 $A$ は上三角行列である。上三角行列（あるいは階段行列）では、階数は対角成分のうち $0$ でないものの個数（ピボットの数）に等しい。\n\n2. 対角成分は\n\\[\n2,\\; 3,\\; 5\n\\]\nであり、いずれも $0$ ではない。\n\n3. よってピボットは3つ存在するため、階数は $3$。確認として行列式も\n\\[\n\\det A = 2\\cdot 3 \\cdot 5 = 30 \\neq 0\n\\]\nより可逆であり、したがって階数は最大の $3$ である。\n\n最終回答：\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $u=\\\\begin{pmatrix}1\\\\\\\\2\\\\\\\\3\\\\end{pmatrix}$, $v=\\\\begin{pmatrix}2\\\\\\\\-1\\\\\\\\0\\\\end{pmatrix}$ に対して、行列 $A=uv^\\\\mathsf{T}$ の階数を求めよ。",
+        "answer": "以下、step by step で示します。\n\n1. 行列の定義\n\\[\nu=\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix},\\quad\nv=\\begin{pmatrix}2\\\\-1\\\\0\\end{pmatrix},\\quad\nA=uv^\\mathsf{T}\n\\]\n\n2. 外積の具体計算\n\\[\nv^\\mathsf{T}=(2,\\,-1,\\,0),\\quad\nA=uv^\\mathsf{T}=\n\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}\n\\begin{pmatrix}2 & -1 & 0\\end{pmatrix}\n=\n\\begin{pmatrix}\n2 & -1 & 0\\\\\n4 & -2 & 0\\\\\n6 & -3 & 0\n\\end{pmatrix}\n\\]\n\n3. ランクの評価（列空間の次元）\n- 第 \\(j\\) 列は \\(v_j u\\)（すなわち \\(u\\) の倍数）なので、全ての列は同一直線上にある。\n- ただし \\(v=(2,-1,0)^\\mathsf{T}\\) は零ベクトルではないため、少なくとも1本はゼロでない列がある。\n- よって \\(\\operatorname{rank}(A)\\le 1\\) かつ \\(\\operatorname{rank}(A)\\ge 1\\) から、\n\\[\n\\operatorname{rank}(A)=1.\n\\]\n\n最終回答：\n\\[\n\\boxed{1}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の拡大係数行列 $M$ の階数 $\\\\mathrm{rank}(M)$ を求めよ。\\n\\\\[\\nM=\\\\begin{pmatrix}\\n1&2&3&1\\\\\\\\\\n2&4&6&2\\\\\\\\\\n0&1&1&0\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "次の行基本変形で階数を求めます。\n\n与えられた拡大係数行列\n\\[\nM=\\begin{pmatrix}\n1&2&3&1\\\\\n2&4&6&2\\\\\n0&1&1&0\n\\end{pmatrix}\n\\]\n\n1) 第2行から第1行の2倍を引く：\n\\[\nR_2 \\leftarrow R_2 - 2R_1 \\quad\\Rightarrow\\quad\n\\begin{pmatrix}\n1&2&3&1\\\\\n0&0&0&0\\\\\n0&1&1&0\n\\end{pmatrix}\n\\]\n\n2) 第2行と第3行を入れ替える：\n\\[\nR_2 \\leftrightarrow R_3 \\quad\\Rightarrow\\quad\n\\begin{pmatrix}\n1&2&3&1\\\\\n0&1&1&0\\\\\n0&0&0&0\n\\end{pmatrix}\n\\]\n\n3) 第1行から第2行の2倍を引く：\n\\[\nR_1 \\leftarrow R_1 - 2R_2 \\quad\\Rightarrow\\quad\n\\begin{pmatrix}\n1&0&1&1\\\\\n0&1&1&0\\\\\n0&0&0&0\n\\end{pmatrix}\n\\]\n\n非零行は2本なので、階数は\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$a,b,c$ は相異なる実数とする。次の行列の階数を求めよ。\\n\\\\[\\nV=\\\\begin{pmatrix}\\n1&a&a^2\\\\\\\\\\n1&b&b^2\\\\\\\\\\n1&c&c^2\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "行列\n\\[\nV=\\begin{pmatrix}\n1&a&a^2\\\\\n1&b&b^2\\\\\n1&c&c^2\n\\end{pmatrix}\n\\]\nの階数は、行列式が 0 かどうかで判定できます。行基本変形で行列式を計算します。\n\nまず\n\\[\nR_2 \\leftarrow R_2 - R_1,\\quad R_3 \\leftarrow R_3 - R_1\n\\]\nとすると\n\\[\n\\det V=\\det\\begin{pmatrix}\n1&a&a^2\\\\\n0&b-a&b^2-a^2\\\\\n0&c-a&c^2-a^2\n\\end{pmatrix}.\n\\]\nここで\n\\[\nb^2-a^2=(b-a)(b+a),\\quad c^2-a^2=(c-a)(c+a)\n\\]\nなので、第2行から $(b-a)$、第3行から $(c-a)$ をくくり出すと\n\\[\n\\det V=(b-a)(c-a)\\,\\det\\begin{pmatrix}\n1&a&a^2\\\\\n0&1&b+a\\\\\n0&1&c+a\n\\end{pmatrix}.\n\\]\nさらに\n\\[\nR_3 \\leftarrow R_3 - R_2\n\\]\nにより\n\\[\n\\det V=(b-a)(c-a)\\,\\det\\begin{pmatrix}\n1&a&a^2\\\\\n0&1&b+a\\\\\n0&0&c-b\n\\end{pmatrix}=(b-a)(c-a)(c-b).\n\\]\n$a,b,c$ は相異なる実数なので\n\\[\n(b-a)\\neq 0,\\quad (c-a)\\neq 0,\\quad (c-b)\\neq 0\n\\]\nより\n\\[\n\\det V=(b-a)(c-a)(c-b)\\neq 0.\n\\]\nしたがって $V$ は正則であり、階数は 3 です。\n\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "行列 $A$ が次で与えられるとき、転置 $A^\\\\mathsf{T}$ の階数を求めよ。\\n\\\\[\\nA=\\\\begin{pmatrix}\\n1&0&1&2\\\\\\\\\\n2&1&3&4\\\\\\\\\\n3&1&4&6\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "以下の性質を用いる: 転置で階数は不変、すなわち $\\mathrm{rank}(A^\\mathsf{T})=\\mathrm{rank}(A)$。\n\nよって $A$ を行基本変形して階数を求める。\n\n1) 行基本変形\n\\[\nA=\n\\begin{pmatrix}\n1&0&1&2\\\\\n2&1&3&4\\\\\n3&1&4&6\n\\end{pmatrix}\n\\xrightarrow{\\,R_2\\leftarrow R_2-2R_1,\\; R_3\\leftarrow R_3-3R_1\\,}\n\\begin{pmatrix}\n1&0&1&2\\\\\n0&1&1&0\\\\\n0&1&1&0\n\\end{pmatrix}\n\\]\n\n\\[\n\\xrightarrow{\\,R_3\\leftarrow R_3-R_2\\,}\n\\begin{pmatrix}\n1&0&1&2\\\\\n0&1&1&0\\\\\n0&0&0&0\n\\end{pmatrix}\n\\]\n\n2) 階数の判定  \n上の階段行列には非零行が 2 本あるので\n\\[\n\\mathrm{rank}(A)=2.\n\\]\nしたがって\n\\[\n\\mathrm{rank}(A^\\mathsf{T})=\\mathrm{rank}(A)=2.\n\\]\n\n最終答案:\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列 $A$ の階数を求めよ（列ベクトルの一次独立性を用いてよい）。\\n\\\\[\\nA=\\\\begin{pmatrix}\\n1&0&1&0\\\\\\\\\\n0&1&1&0\\\\\\\\\\n1&1&2&0\\\\\\\\\\n0&0&0&1\\n\\\\end{pmatrix}\\n\\\\]",
+        "answer": "以下の列ベクトルを考える：\n\\[\nc_1=\\begin{pmatrix}1\\\\0\\\\1\\\\0\\end{pmatrix},\\quad\nc_2=\\begin{pmatrix}0\\\\1\\\\1\\\\0\\end{pmatrix},\\quad\nc_3=\\begin{pmatrix}1\\\\1\\\\2\\\\0\\end{pmatrix},\\quad\nc_4=\\begin{pmatrix}0\\\\0\\\\0\\\\1\\end{pmatrix}.\n\\]\n\n1) まず第3列は\n\\[\nc_3=c_1+c_2\n\\]\nである。したがって、$\\{c_1,c_2,c_3\\}$ の張る空間は $\\{c_1,c_2\\}$ の張る空間と同じであり、独立度は高々2である。\n\n2) $c_1,c_2$ が一次独立であることを確かめる。もし\n\\[\n\\alpha c_1+\\beta c_2=0\n\\]\nなら、成分で見ると\n\\[\n\\begin{cases}\n\\alpha=0\\\\\n\\beta=0\n\\end{cases}\n\\]\nが従う（第1成分と第2成分から）。よって $\\alpha=\\beta=0$ であり、$c_1,c_2$ は一次独立。したがって\n\\[\n\\operatorname{rank}[c_1,c_2,c_3]=2.\n\\]\n\n3) 次に $c_4$ を考える。$\\{c_1,c_2\\}$ の任意の一次結合は第4成分が常に $0$ であるが、$c_4$ の第4成分は $1$ である。ゆえに\n\\[\nc_4 \\notin \\operatorname{span}\\{c_1,c_2\\},\n\\]\nすなわち $\\{c_1,c_2,c_4\\}$ は一次独立である。\n\n4) 以上より、独立な列ベクトルが3本存在し、また $c_3$ は $c_1,c_2$ の一次結合なので4本独立にはなりえない。したがって\n\\[\n\\operatorname{rank}(A)=3.\n\\]\n\n最終回答：\n\\[\n\\boxed{3}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "掃き出し法を用いて次の連立一次方程式を解け。\\n\\\\[\\n\\\\begin{cases}\\nx + 2y - z = 4 \\\\\\\\\\n2x - y + 3z = 1 \\\\\\\\\\n3x + y + 2z = 7\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "掃き出し法で解集合を求めよ（必要に応じて自由変数を用いて表せ）。\\n\\\\[\\n\\\\begin{cases}\\nx + y + z = 2 \\\\\\\\\\n2x + 2y + 2z = 4 \\\\\\\\\\nx - y + z = 0\\n\\\\end{cases}\\n\\\\]",
+        "answer": "はじめに拡大係数行列を作ります。\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 2\\\\\n2 & 2 & 2 & 4\\\\\n1 & -1 & 1 & 0\n\\end{array}\n\\right]\n\\]\n\n行基本変形で掃き出します。\n- 第2行に「第2行 − 2×第1行」、第3行に「第3行 − 第1行」を施す:\n\\[\nR_2 \\leftarrow R_2 - 2R_1,\\quad R_3 \\leftarrow R_3 - R_1\n\\]\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 2\\\\\n0 & 0 & 0 & 0\\\\\n0 & -2 & 0 & -2\n\\end{array}\n\\right]\n\\]\n\n- 第2行と第3行を交換:\n\\[\nR_2 \\leftrightarrow R_3\n\\]\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 2\\\\\n0 & -2 & 0 & -2\\\\\n0 & 0 & 0 & 0\n\\end{array}\n\\right]\n\\]\n\n- 第2行を −1/2 倍してピボットを 1 にする:\n\\[\nR_2 \\leftarrow -\\tfrac{1}{2} R_2\n\\]\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 2\\\\\n0 & 1 & 0 & 1\\\\\n0 & 0 & 0 & 0\n\\end{array}\n\\right]\n\\]\n\n- 上の 1 の列を掃き出すため、第1行から第2行を引く:\n\\[\nR_1 \\leftarrow R_1 - R_2\n\\]\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & 1 & 1\\\\\n0 & 1 & 0 & 1\\\\\n0 & 0 & 0 & 0\n\\end{array}\n\\right]\n\\]\n\nこの行列は既約な階段形です。対応する方程式は\n\\[\n\\begin{cases}\nx + z = 1\\\\\ny = 1\n\\end{cases}\n\\]\nとなり、$z$ が自由変数です。$z = t$ とおくと\n\\[\nx = 1 - t,\\quad y = 1,\\quad z = t \\quad (t \\in \\mathbb{R})\n\\]\nよって解集合は\n\\[\n\\boxed{\\{(x,y,z) = (1 - t,\\; 1,\\; t)\\mid t\\in\\mathbb{R}\\}}\n\\]\nあるいはベクトル表示で\n\\[\n\\boxed{(x,y,z) = (1,1,0) + t\\,(-1,0,1)\\ (t\\in\\mathbb{R})}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "掃き出し法により解の有無を判定し、存在する場合は解を求めよ。\\n\\\\[\\n\\\\begin{cases}\\nx + y + z = 1 \\\\\\\\\\n2x + 2y + 2z = 3 \\\\\\\\\\nx - y + z = 0\\n\\\\end{cases}\\n\\\\]",
+        "answer": "以下、掃き出し法（ガウス消去法）で判定します。\n\n1) 拡大係数行列にする\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 1\\\\\n2 & 2 & 2 & 3\\\\\n1 & -1 & 1 & 0\n\\end{array}\n\\right]\n\\]\n\n2) 第2行から第1行の2倍を引く（R2 ← R2 − 2R1）\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 1\\\\\n0 & 0 & 0 & 1\\\\\n1 & -1 & 1 & 0\n\\end{array}\n\\right]\n\\]\n\n3) 第2行は方程式に直すと\n\\[\n0x + 0y + 0z = 1 \\quad\\Rightarrow\\quad 0 = 1\n\\]\nとなり矛盾が生じる。\n\nしたがって、この連立方程式は解を持たない。\n\n\\[\n\\boxed{\\text{解は存在しない}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "パラメータ $a$ を含む次の連立一次方程式について、掃き出し法で解の有無と個数を判定し、可能なら解を求めよ。\\n\\\\[\\n\\\\begin{cases}\\na x + y + z = 1 \\\\\\\\\\nx + a y + z = 1 \\\\\\\\\\nx + y + a z = 1\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "掃き出し法を用いて次の $4$ 元連立一次方程式を解け。\\n\\\\[\\n\\\\begin{cases}\\n\\\\tfrac{1}{2}x + y - \\\\tfrac{1}{3}z + w = 1 \\\\\\\\\\nx - \\\\tfrac{1}{2}y + z - \\\\tfrac{1}{4}w = 0 \\\\\\\\\\n\\\\tfrac{3}{2}x + \\\\tfrac{1}{2}y + \\\\tfrac{2}{3}z + \\\\tfrac{3}{4}w = 2 \\\\\\\\\\n- x + 2y - z + 2w = -1\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "次の拡大係数行列を掃き出し法で行基本変形して、対応する連立一次方程式の解を求めよ。\\n\\\\[\\n\\\\left[\\n\\\\begin{array}{ccc|c}\\n1 & 2 & -1 & 3 \\\\\\\\\\n2 & 5 & 2 & 7 \\\\\\\\\\n3 & 8 & 1 & 10\\n\\\\end{array}\\n\\\\right]\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "小数係数は分数に直してよい。掃き出し法で次の連立一次方程式を解け。\\n\\\\[\\n\\\\begin{cases}\\n0.5\\\\,x + 1.5\\\\,y - z = 2 \\\\\\\\\\nx - 0.5\\\\,y + 2z = -1 \\\\\\\\\\n-1.5\\\\,x + y + 0.5\\\\,z = 0\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "掃き出し法で次の連立一次方程式の全解（パラメータ表示）を求めよ。\\n\\\\[\\n\\\\begin{cases}\\nx + y + z = 1 \\\\\\\\\\n2x - y + 3z = 4\\n\\\\end{cases}\\n\\\\]",
+        "answer": "次の連立方程式を掃き出し法で解く。\n\n\\[ \n\\begin{cases}\nx + y + z = 1 \\\\\n2x - y + 3z = 4\n\\end{cases}\n\\]\n\n拡大係数行列を作る：\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 1 \\\\\n2 & -1 & 3 & 4\n\\end{array}\n\\right]\n\\]\n\n行基本変形を行う：\n- 第2行 ← 第2行 − 2×第1行\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 1 \\\\\n0 & -3 & 1 & 2\n\\end{array}\n\\right]\n\\]\n- 第2行 ← (−1/3)×第2行\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 1 & 1 & 1 \\\\\n0 & 1 & -\\frac{1}{3} & -\\frac{2}{3}\n\\end{array}\n\\right]\n\\]\n- 第1行 ← 第1行 − 第2行\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & \\frac{4}{3} & \\frac{5}{3} \\\\\n0 & 1 & -\\frac{1}{3} & -\\frac{2}{3}\n\\end{array}\n\\right]\n\\]\n\nよって、階段形から\n\\[\n\\begin{cases}\nx + \\frac{4}{3}z = \\frac{5}{3} \\\\\ny - \\frac{1}{3}z = -\\frac{2}{3}\n\\end{cases}\n\\]\n自由変数を $z = t$ とおくと、\n\\[\nx = \\frac{5}{3} - \\frac{4}{3}t,\\quad\ny = -\\frac{2}{3} + \\frac{1}{3}t,\\quad\nz = t \\quad (t \\in \\mathbb{R})\n\\]\n\n最終解（パラメータ表示）：\n\\[\n\\boxed{\\,x = \\frac{5-4t}{3},\\quad y = \\frac{t-2}{3},\\quad z = t \\quad (t\\in \\mathbb{R})\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "掃き出し法で次の連立一次方程式の一般解を求めよ。\\n\\\\[\\n\\\\begin{cases}\\nx + y + z + w = 0 \\\\\\\\\\n2x - y + 3z + 2w = 1 \\\\\\\\\\n- x + 4y - z + w = 2\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "掃き出し法（必要なら行の入れ替えを用いる）で次の連立一次方程式を解け。\\n\\\\[\\n\\\\begin{cases}\\n0\\\\cdot x + y + z = 1 \\\\\\\\\\nx + 0\\\\cdot y + z = 2 \\\\\\\\\\nx + y + 0\\\\cdot z = 3\\n\\\\end{cases}\\n\\\\]",
+        "answer": "連立方程式\n\\[\n\\begin{cases}\n0\\cdot x + y + z = 1 \\\\\nx + 0\\cdot y + z = 2 \\\\\nx + y + 0\\cdot z = 3\n\\end{cases}\n\\]\nに対し、拡大係数行列を作る：\n\\[\n\\left[\n\\begin{array}{ccc|c}\n0 & 1 & 1 & 1 \\\\\n1 & 0 & 1 & 2 \\\\\n1 & 1 & 0 & 3\n\\end{array}\n\\right]\n\\]\n\n先頭のピボットを作るために行を入れ替える（$R_1 \\leftrightarrow R_2$）：\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & 1 & 2 \\\\\n0 & 1 & 1 & 1 \\\\\n1 & 1 & 0 & 3\n\\end{array}\n\\right]\n\\]\n\n1列目の下をゼロにする（$R_3 \\leftarrow R_3 - R_1$）：\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & 1 & 2 \\\\\n0 & 1 & 1 & 1 \\\\\n0 & 1 & -1 & 1\n\\end{array}\n\\right]\n\\]\n\n2列目の下をゼロにする（$R_3 \\leftarrow R_3 - R_2$）：\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & 1 & 2 \\\\\n0 & 1 & 1 & 1 \\\\\n0 & 0 & -2 & 0\n\\end{array}\n\\right]\n\\]\n\n3列目のピボットを1に正規化（$R_3 \\leftarrow -\\tfrac{1}{2} R_3$）：\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & 1 & 2 \\\\\n0 & 1 & 1 & 1 \\\\\n0 & 0 & 1 & 0\n\\end{array}\n\\right]\n\\]\n\n上を掃き出す（$R_1 \\leftarrow R_1 - R_3$, $R_2 \\leftarrow R_2 - R_3$）：\n\\[\n\\left[\n\\begin{array}{ccc|c}\n1 & 0 & 0 & 2 \\\\\n0 & 1 & 0 & 1 \\\\\n0 & 0 & 1 & 0\n\\end{array}\n\\right]\n\\]\n\nよって\n\\[\nx=2,\\quad y=1,\\quad z=0.\n\\]\n\n最終回答：\\boxed{(x,y,z)=(2,1,0)}",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列の逆行列 $A^{-1}$ を求めよ。$A=\\begin{pmatrix}3&-1\\\\5&2\\end{pmatrix}$",
+        "answer": "以下の手順で求めます。\n\n1) 行列式を求める\n\\[\n\\det A = \n\\begin{vmatrix}\n3 & -1\\\\\n5 & 2\n\\end{vmatrix}\n= 3\\cdot 2 - (-1)\\cdot 5 = 6 + 5 = 11\n\\]\n\n2) 2×2行列の逆行列の公式を用いる\n$A=\\begin{pmatrix}a & b\\\\ c & d\\end{pmatrix}$ に対して\n\\[\nA^{-1}=\\frac{1}{ad-bc}\\begin{pmatrix}d & -b\\\\ -c & a\\end{pmatrix}\n\\]\nなので、$a=3,\\, b=-1,\\, c=5,\\, d=2$ を代入すると\n\\[\nA^{-1}=\\frac{1}{11}\\begin{pmatrix}2 & 1\\\\ -5 & 3\\end{pmatrix}\n\\]\n\n最終回答：\n\\[\n\\boxed{A^{-1}=\\frac{1}{11}\\begin{pmatrix}2 & 1\\\\ -5 & 3\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "パラメータ $a$ に対して行列 $A$ の逆行列 $A^{-1}$ を求めよ（必要なら $a$ への条件も示せ）。$A=\\begin{pmatrix}a&2\\\\1&a\\end{pmatrix}$",
+        "answer": "以下、step by stepで求めます。\n\n1) 行列の逆行列の存在条件（行列式）\n\\[\n\\det(A)=\\begin{vmatrix}a&2\\\\1&a\\end{vmatrix}=a\\cdot a - 2\\cdot 1 = a^2-2\n\\]\nよって $a^2-2\\neq 0$、すなわち $a\\neq \\pm\\sqrt{2}$ のときに限り逆行列が存在します。\n\n2) 余因子行列（2×2の公式）\n\\[\n\\operatorname{adj}(A)=\\begin{pmatrix}a&-2\\\\-1&a\\end{pmatrix}\n\\]\n\n3) 逆行列の公式 $A^{-1}=\\dfrac{1}{\\det(A)}\\operatorname{adj}(A)$\n\\[\nA^{-1}=\\frac{1}{a^2-2}\\begin{pmatrix}a&-2\\\\-1&a\\end{pmatrix}\n\\]\n\nしたがって、$a\\neq \\pm\\sqrt{2}$ のとき\n\\[\n\\boxed{\\,A^{-1}=\\dfrac{1}{a^2-2}\\begin{pmatrix}a&-2\\\\-1&a\\end{pmatrix}\\,}\n\\]\n$a=\\pm\\sqrt{2}$ のときは逆行列は存在しません。",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の $3\\\\times3$ 行列の逆行列 $A^{-1}$ を求めよ。$A=\\begin{pmatrix}1&2&0\\\\0&1&-1\\\\2&1&1\\end{pmatrix}$",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "上三角行列 $U$ の逆行列 $U^{-1}$ を求めよ。$U=\\begin{pmatrix}2&1&0\\\\0&3&-2\\\\0&0&4\\end{pmatrix}$",
+        "answer": "方針: 逆行列の各列は、連立方程式 $U x_i = e_i$（標準基底ベクトル）を順に解くことで得られます。上三角行列なので後退代入で解けます。\n\n1列目（$Ux_1=e_1$）\n\\[\nU\\begin{pmatrix}a\\\\ b\\\\ c\\end{pmatrix}=\\begin{pmatrix}1\\\\ 0\\\\ 0\\end{pmatrix}\n\\Rightarrow\n\\begin{cases}\n4c=0 \\Rightarrow c=0\\\\\n3b-2c=0 \\Rightarrow b=0\\\\\n2a+b=1 \\Rightarrow 2a=1 \\Rightarrow a=\\tfrac12\n\\end{cases}\n\\]\nしたがって\n\\[\nx_1=\\begin{pmatrix}\\tfrac12\\\\ 0\\\\ 0\\end{pmatrix}.\n\\]\n\n2列目（$Ux_2=e_2$）\n\\[\nU\\begin{pmatrix}d\\\\ e\\\\ f\\end{pmatrix}=\\begin{pmatrix}0\\\\ 1\\\\ 0\\end{pmatrix}\n\\Rightarrow\n\\begin{cases}\n4f=0 \\Rightarrow f=0\\\\\n3e-2f=1 \\Rightarrow 3e=1 \\Rightarrow e=\\tfrac13\\\\\n2d+e=0 \\Rightarrow 2d+\\tfrac13=0 \\Rightarrow d=-\\tfrac16\n\\end{cases}\n\\]\nしたがって\n\\[\nx_2=\\begin{pmatrix}-\\tfrac16\\\\ \\tfrac13\\\\ 0\\end{pmatrix}.\n\\]\n\n3列目（$Ux_3=e_3$）\n\\[\nU\\begin{pmatrix}g\\\\ h\\\\ k\\end{pmatrix}=\\begin{pmatrix}0\\\\ 0\\\\ 1\\end{pmatrix}\n\\Rightarrow\n\\begin{cases}\n4k=1 \\Rightarrow k=\\tfrac14\\\\\n3h-2k=0 \\Rightarrow 3h-\\tfrac12=0 \\Rightarrow h=\\tfrac16\\\\\n2g+h=0 \\Rightarrow 2g+\\tfrac16=0 \\Rightarrow g=-\\tfrac1{12}\n\\end{cases}\n\\]\nしたがって\n\\[\nx_3=\\begin{pmatrix}-\\tfrac1{12}\\\\ \\tfrac16\\\\ \\tfrac14\\end{pmatrix}.\n\\]\n\n以上より、逆行列は\n\\[\n\\boxed{\nU^{-1}=\n\\begin{pmatrix}\n\\tfrac12 & -\\tfrac16 & -\\tfrac1{12}\\\\\n0 & \\tfrac13 & \\tfrac16\\\\\n0 & 0 & \\tfrac14\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "置換行列 $P$ の逆行列 $P^{-1}$ を求めよ。$P=\\begin{pmatrix}0&1&0\\\\0&0&1\\\\1&0&0\\end{pmatrix}$",
+        "answer": "手順\n\n1. 置換行列の性質より、各行（列）が標準基底の並べ替えになっているため直交行列であり、逆行列は転置に等しい。\n   \\[\n   P^{-1} = P^T\n   \\]\n   ここで\n   \\[\n   P=\\begin{pmatrix}0&1&0\\\\0&0&1\\\\1&0&0\\end{pmatrix}\n   \\]\n\n2. 転置を計算する。\n   \\[\n   P^T=\\begin{pmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{pmatrix}\n   \\]\n\n3. 検算として積を確かめる。\n   \\[\n   PP^T=\n   \\begin{pmatrix}0&1&0\\\\0&0&1\\\\1&0&0\\end{pmatrix}\n   \\begin{pmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{pmatrix}\n   =\n   \\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&1\\end{pmatrix}=I\n   \\]\n   よって確かに $P^{-1}=P^T$。\n\n最終回答:\n\\[\n\\boxed{P^{-1}=\\begin{pmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$(AB)^{-1}$ を求めよ。$A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix},\\\\ B=\\begin{pmatrix}2&0\\\\1&3\\end{pmatrix}$",
+        "answer": "次の性質を用います：$(AB)^{-1} = B^{-1}A^{-1}$。\n\nステップ1：$A^{-1}$ を求める  \n$A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$ の行列式は $1\\cdot1-2\\cdot0=1$ なので、\n\\[\nA^{-1}=\\begin{pmatrix}1&-2\\\\0&1\\end{pmatrix}.\n\\]\n\nステップ2：$B^{-1}$ を求める  \n$B=\\begin{pmatrix}2&0\\\\1&3\\end{pmatrix}$ の行列式は $2\\cdot3-0\\cdot1=6$ なので、\n\\[\nB^{-1}=\\frac{1}{6}\\begin{pmatrix}3&0\\\\-1&2\\end{pmatrix}.\n\\]\n\nステップ3：$(AB)^{-1}=B^{-1}A^{-1}$ を計算  \n\\[\n(AB)^{-1}=B^{-1}A^{-1}\n=\\frac{1}{6}\\begin{pmatrix}3&0\\\\-1&2\\end{pmatrix}\n\\begin{pmatrix}1&-2\\\\0&1\\end{pmatrix}\n=\\frac{1}{6}\\begin{pmatrix}3&-6\\\\-1&4\\end{pmatrix}\n=\\begin{pmatrix}\\tfrac12&-1\\\\[2pt]-\\tfrac16&\\tfrac23\\end{pmatrix}.\n\\]\n\n（確認）$AB$ 自体を先に計算して逆行列を取っても一致します：\n\\[\nAB=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}\\begin{pmatrix}2&0\\\\1&3\\end{pmatrix}\n=\\begin{pmatrix}4&6\\\\1&3\\end{pmatrix},\\quad\n(AB)^{-1}=\\frac{1}{6}\\begin{pmatrix}3&-6\\\\-1&4\\end{pmatrix}.\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}\\tfrac12&-1\\\\[2pt]-\\tfrac16&\\tfrac23\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$(A^T)^{-1}$ を求めよ。$A=\\begin{pmatrix}1&0&2\\\\0&2&1\\\\1&1&1\\end{pmatrix}$",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "ブロック対角行列 $M$ の逆行列 $M^{-1}$ を求めよ。$M=\\begin{pmatrix}2&1&0&0\\\\1&1&0&0\\\\0&0&3&0\\\\0&0&0&2\\end{pmatrix}$",
+        "answer": "以下の行列はブロック対角行列なので、ブロックごとに逆行列を求めればよいです。\n\n1) ブロックの分解  \n\\[ \nM=\\begin{pmatrix}\n2&1&0&0\\\\\n1&1&0&0\\\\\n0&0&3&0\\\\\n0&0&0&2\n\\end{pmatrix}\n=\n\\begin{pmatrix}\nA&0\\\\\n0&B\n\\end{pmatrix},\\quad\nA=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},\\ \nB=\\begin{pmatrix}3&0\\\\0&2\\end{pmatrix}.\n\\]\n\nブロック対角行列の逆行列は\n\\[\nM^{-1}=\\begin{pmatrix}A^{-1}&0\\\\0&B^{-1}\\end{pmatrix}.\n\\]\n\n2) 上左ブロック A の逆行列  \n行列の公式より\n\\[\n\\det(A)=2\\cdot1-1\\cdot1=1,\\quad\nA^{-1}=\\frac{1}{\\det(A)}\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}\n=\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}.\n\\]\n\n3) 右下ブロック B の逆行列  \n対角行列の逆は対角成分の逆数：\n\\[\nB^{-1}=\\begin{pmatrix}\\frac{1}{3}&0\\\\0&\\frac{1}{2}\\end{pmatrix}.\n\\]\n\n4) まとめ  \n\\[\nM^{-1}=\n\\begin{pmatrix}\n1 & -1 & 0 & 0\\\\\n-1 & 2 & 0 & 0\\\\\n0 & 0 & \\frac{1}{3} & 0\\\\\n0 & 0 & 0 & \\frac{1}{2}\n\\end{pmatrix}.\n\\]\n\n最終回答：\n\\[\n\\boxed{\n\\begin{pmatrix}\n1 & -1 & 0 & 0\\\\\n-1 & 2 & 0 & 0\\\\\n0 & 0 & \\frac{1}{3} & 0\\\\\n0 & 0 & 0 & \\frac{1}{2}\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "回転行列 $R$ の逆行列 $R^{-1}$ を求めよ（角度は $\\\\pi/6$）。$R=\\begin{pmatrix}\\\\cos(\\\\pi/6)&-\\\\sin(\\\\pi/6)\\\\\\\\ \\\\sin(\\\\pi/6)&\\\\cos(\\\\pi/6)\\\\end{pmatrix}$",
+        "answer": "以下の手順で求めます。\n\n1) 回転行列は直交行列なので、逆行列は転置に等しい。\n\\[\nR^{-1} = R^{\\mathsf{T}},\\quad \\text{つまり } R^{\\mathsf{T}}R = I\n\\]\n\n2) 与えられた行列の転置をとる。\n\\[\nR^{\\mathsf{T}}=\\begin{pmatrix}\n\\cos(\\pi/6) & \\sin(\\pi/6)\\\\\n-\\sin(\\pi/6) & \\cos(\\pi/6)\n\\end{pmatrix}\n\\]\n\n3) 三角関数の値を代入する（$\\cos(\\pi/6)=\\sqrt{3}/2,\\ \\sin(\\pi/6)=1/2$）。\n\\[\nR^{-1}= \\begin{pmatrix}\n\\sqrt{3}/2 & 1/2\\\\\n-1/2 & \\sqrt{3}/2\n\\end{pmatrix}\n\\]\n\n最終回答:\n\\[\n\\boxed{\n\\begin{pmatrix}\n\\frac{\\sqrt{3}}{2} & \\frac{1}{2}\\\\\n-\\frac{1}{2} & \\frac{\\sqrt{3}}{2}\n\\end{pmatrix}\n}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "ベクトル $u,v$ に対し $I+uv^T$ の逆行列を求めよ。$u=\\begin{pmatrix}1\\\\\\\\1\\end{pmatrix},\\\\ v=\\begin{pmatrix}2\\\\\\\\-1\\end{pmatrix},\\\\ I=\\begin{pmatrix}1&0\\\\\\\\0&1\\end{pmatrix}$",
+        "answer": "以下の rank-1 更新の逆行列（Sherman–Morrison 公式）を用います：\n\\[\n(I+uv^T)^{-1} \\;=\\; I - \\frac{uv^T}{1+v^Tu}\\quad\\text{（ただし }1+v^Tu\\neq 0\\text{）}.\n\\]\n\n1) まず \\(uv^T\\) を計算：\n\\[\nu=\\begin{pmatrix}1\\\\1\\end{pmatrix},\\quad v=\\begin{pmatrix}2\\\\-1\\end{pmatrix}\n\\]\n\\[\nuv^T=\\begin{pmatrix}1\\\\1\\end{pmatrix}\\begin{pmatrix}2&-1\\end{pmatrix}\n=\\begin{pmatrix}2&-1\\\\2&-1\\end{pmatrix}.\n\\]\n\n2) 次に \\(v^Tu\\) を計算：\n\\[\nv^Tu=\\begin{pmatrix}2&-1\\end{pmatrix}\\begin{pmatrix}1\\\\1\\end{pmatrix}=2-1=1\n\\quad\\Rightarrow\\quad 1+v^Tu=2\\neq 0.\n\\]\n\n3) 公式に代入：\n\\[\n(I+uv^T)^{-1}\n= I - \\frac{1}{2}\\,uv^T\n= \\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\n-\\frac{1}{2}\\begin{pmatrix}2&-1\\\\2&-1\\end{pmatrix}\n=\\begin{pmatrix}0&\\tfrac{1}{2}\\\\-1&\\tfrac{3}{2}\\end{pmatrix}.\n\\]\n\n（確認）\\(I+uv^T\\) は\n\\[\nI+uv^T=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\n+\\begin{pmatrix}2&-1\\\\2&-1\\end{pmatrix}\n=\\begin{pmatrix}3&-1\\\\2&0\\end{pmatrix},\n\\]\n\\[\n\\begin{pmatrix}3&-1\\\\2&0\\end{pmatrix}\n\\begin{pmatrix}0&\\tfrac{1}{2}\\\\-1&\\tfrac{3}{2}\\end{pmatrix}\n=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}.\n\\]\n\n最終回答：\n\\[\n\\boxed{\\begin{pmatrix}0&\\tfrac{1}{2}\\\\-1&\\tfrac{3}{2}\\end{pmatrix}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の2次の行列式を計算せよ：\\\\[ \\\\det \\\\begin{pmatrix} 3 & -2 \\\\\\\\ 5 & 7 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の手順で計算します。\n\n1. 2次の行列式の公式：\n\\[\n\\det\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc\n\\]\n\n2. 与えられた行列に代入：\n\\[\n\\det\\begin{pmatrix} 3 & -2 \\\\ 5 & 7 \\end{pmatrix} = 3\\cdot 7 - (-2)\\cdot 5\n\\]\n\n3. 各積を計算：\n\\[\n3\\cdot 7 = 21,\\quad (-2)\\cdot 5 = -10\n\\]\n\n4. 差をとる：\n\\[\n\\det = 21 - (-10) = 21 + 10 = 31\n\\]\n\n最終回答：\n\\[\n\\boxed{31}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の2次の行列式を計算せよ：\\\\[ \\\\det \\\\begin{pmatrix} \\\\frac{1}{3} & 2 \\\\\\\\ -4 & \\\\frac{5}{2} \\\\end{pmatrix} \\\\]",
+        "answer": "次の行列式を計算します。\n\n- 2次の行列式の公式は、$A=\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ に対して\n  \\[\n  \\det(A) = ad - bc\n  \\]\n  です。\n\n- 今回は $a=\\frac{1}{3}$, $b=2$, $c=-4$, $d=\\frac{5}{2}$ なので、\n  \\[\n  \\det \\begin{pmatrix} \\frac{1}{3} & 2 \\\\ -4 & \\frac{5}{2} \\end{pmatrix}\n  = \\left(\\frac{1}{3}\\right)\\left(\\frac{5}{2}\\right) - (2)(-4)\n  \\]\n\n- それぞれ計算すると、\n  \\[\n  \\left(\\frac{1}{3}\\right)\\left(\\frac{5}{2}\\right) = \\frac{5}{6}, \\quad (2)(-4) = -8\n  \\]\n\n- よって、\n  \\[\n  \\frac{5}{6} - (-8) = \\frac{5}{6} + 8 = \\frac{5}{6} + \\frac{48}{6} = \\frac{53}{6}\n  \\]\n\n最終結果：\n\\[\n\\boxed{\\frac{53}{6}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の2次の行列式を計算せよ（$a$ を用いて表せ）：\\\\[ \\\\det \\\\begin{pmatrix} a & 2 \\\\\\\\ 3 & a-1 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の2次の行列式を計算します。\n\n1) 2×2行列の行列式は、一般に $\\det \\begin{pmatrix} p & q \\\\ r & s \\end{pmatrix} = ps - qr$。\n\n2) 今回は $p=a,\\ q=2,\\ r=3,\\ s=a-1$ なので、\n\\[\n\\det \\begin{pmatrix} a & 2 \\\\ 3 & a-1 \\end{pmatrix}\n= a(a-1) - 2\\cdot 3\n\\]\n\n3) 展開して整理すると、\n\\[\na(a-1) - 6 = a^2 - a - 6\n\\]\n（因数分解すると $(a-3)(a+2)$）\n\n最終答:\n\\[\n\\boxed{a^2 - a - 6}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の2次の行列式を計算せよ：\\\\[ \\\\det \\\\begin{pmatrix} 0 & 6 \\\\\\\\ -8 & 5 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の行列式を計算します。\n\\[\n\\det \\begin{pmatrix} 0 & 6 \\\\ -8 & 5 \\end{pmatrix}\n\\]\n\n1. 2次の行列式の公式を用いる：\n\\[\n\\det \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc\n\\]\n\n2. この行列に対して $a=0,\\ b=6,\\ c=-8,\\ d=5$ とおく。\n\n3. 公式に代入して計算する：\n\\[\n0\\cdot 5 - 6\\cdot(-8) = 0 - (-48) = 48\n\\]\n\n最終結果：\n\\[\n\\boxed{48}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の2次の行列式を計算せよ（$\\\\theta$ は実数）：\\\\[ \\\\det \\\\begin{pmatrix} \\\\cos\\\\theta & \\\\sin\\\\theta \\\\\\\\ -\\\\sin\\\\theta & \\\\cos\\\\theta \\\\end{pmatrix} \\\\]",
+        "answer": "次の行列の行列式を計算します。\n\\[\n\\det \\begin{pmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{pmatrix}\n\\]\n\n- 2次の行列 $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ の行列式は\n\\[\n\\det = ad - bc\n\\]\n- ここで $a=\\cos\\theta,\\ b=\\sin\\theta,\\ c=-\\sin\\theta,\\ d=\\cos\\theta$ を代入すると\n\\[\n\\det = \\cos\\theta\\cdot\\cos\\theta - \\sin\\theta\\cdot(-\\sin\\theta)\n= \\cos^2\\theta + \\sin^2\\theta\n\\]\n- 三角恒等式 $\\cos^2\\theta + \\sin^2\\theta = 1$ より\n\\[\n\\det = 1\n\\]\n\n最終答案：\n\\[\n\\boxed{1}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の3次の行列式を計算せよ：\\\\[ \\\\det \\\\begin{pmatrix} 1 & 2 & 3 \\\\\\\\ 0 & 4 & -1 \\\\\\\\ 2 & -3 & 5 \\\\end{pmatrix} \\\\]",
+        "answer": "ステップ1：第1行で余因子展開する\n\\[\n\\det \\begin{pmatrix}\n1 & 2 & 3 \\\\\n0 & 4 & -1 \\\\\n2 & -3 & 5\n\\end{pmatrix}\n= 1 \\cdot \\det \\begin{pmatrix} 4 & -1 \\\\ -3 & 5 \\end{pmatrix}\n- 2 \\cdot \\det \\begin{pmatrix} 0 & -1 \\\\ 2 & 5 \\end{pmatrix}\n+ 3 \\cdot \\det \\begin{pmatrix} 0 & 4 \\\\ 2 & -3 \\end{pmatrix}.\n\\]\n\nステップ2：2×2の行列式を計算\n\\[\n\\det \\begin{pmatrix} 4 & -1 \\\\ -3 & 5 \\end{pmatrix} = 4\\cdot 5 - (-1)(-3) = 20 - 3 = 17,\n\\]\n\\[\n\\det \\begin{pmatrix} 0 & -1 \\\\ 2 & 5 \\end{pmatrix} = 0\\cdot 5 - (-1)\\cdot 2 = 0 - (-2) = 2,\n\\]\n\\[\n\\det \\begin{pmatrix} 0 & 4 \\\\ 2 & -3 \\end{pmatrix} = 0\\cdot (-3) - 4\\cdot 2 = 0 - 8 = -8.\n\\]\n\nステップ3：まとめる\n\\[\n\\det = 1\\cdot 17 - 2\\cdot 2 + 3\\cdot (-8) = 17 - 4 - 24 = -11.\n\\]\n\n\\[\n\\boxed{-11}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の3次の行列式を余因子展開（第1列）により計算せよ：\\\\[ \\\\det \\\\begin{pmatrix} 4 & 0 & 2 \\\\\\\\ 0 & 5 & -1 \\\\\\\\ 0 & 3 & 6 \\\\end{pmatrix} \\\\]",
+        "answer": "求める行列式を第1列で余因子展開します。\n\nまず、与えられた行列を\n\\[\nA=\\begin{pmatrix}\n4 & 0 & 2 \\\\\n0 & 5 & -1 \\\\\n0 & 3 & 6\n\\end{pmatrix}\n\\]\nとする。\n\n第1列での余因子展開より\n\\[\n\\det A\n= a_{11}C_{11} + a_{21}C_{21} + a_{31}C_{31}\n= 4\\,C_{11} + 0\\cdot C_{21} + 0\\cdot C_{31}.\n\\]\n\nしたがって必要なのは $C_{11}$ のみ。余因子は $C_{11}=(-1)^{1+1}\\det M_{11}=\\det M_{11}$ で、余小行列は\n\\[\nM_{11}=\n\\begin{pmatrix}\n5 & -1 \\\\\n3 & 6\n\\end{pmatrix}.\n\\]\n\nよって\n\\[\n\\det M_{11} = 5\\cdot 6 - (-1)\\cdot 3 = 30 + 3 = 33.\n\\]\n\n以上より\n\\[\n\\det A = 4 \\cdot 33 = 132.\n\\]\n\n\\[\n\\boxed{132}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の上三角行列の3次の行列式を計算せよ：\\\\[ \\\\det \\\\begin{pmatrix} 2 & -1 & 3 \\\\\\\\ 0 & 4 & 5 \\\\\\\\ 0 & 0 & -2 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の行列を考える：\n\\[\nA=\\begin{pmatrix}\n2 & -1 & 3 \\\\\n0 & 4 & 5 \\\\\n0 & 0 & -2\n\\end{pmatrix}\n\\]\n\n手順:\n1) 上三角行列の性質より、行列式は対角成分の積で与えられる：\n\\[\n\\det A = \\prod_{i=1}^3 a_{ii} = a_{11}\\,a_{22}\\,a_{33}\n\\]\n\n2) 対角成分を掛け合わせる：\n\\[\n\\det A = 2 \\cdot 4 \\cdot (-2) = 8 \\cdot (-2) = -16\n\\]\n\n最終結果：\n\\[\n\\boxed{-16}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の3次の行列式を計算せよ（$a$ を用いて表せ）：\\\\[ \\\\det \\\\begin{pmatrix} a & 1 & 0 \\\\\\\\ 2 & a & 1 \\\\\\\\ 0 & 3 & a-2 \\\\end{pmatrix} \\\\]",
+        "answer": "次の行列式を第1行で展開します（第1行に 0 があるので計算が楽です）。\n\n\\[\n\\det \\begin{pmatrix}\na & 1 & 0\\\\\n2 & a & 1\\\\\n0 & 3 & a-2\n\\end{pmatrix}\n= a \\cdot \\det \\begin{pmatrix} a & 1\\\\ 3 & a-2 \\end{pmatrix}\n- 1 \\cdot \\det \\begin{pmatrix} 2 & 1\\\\ 0 & a-2 \\end{pmatrix}\n+ 0 \\cdot \\det(\\cdots)\n\\]\n\n小行列の行列式を計算すると，\n\\[\n\\det \\begin{pmatrix} a & 1\\\\ 3 & a-2 \\end{pmatrix}\n= a(a-2) - 3 = a^2 - 2a - 3,\n\\quad\n\\det \\begin{pmatrix} 2 & 1\\\\ 0 & a-2 \\end{pmatrix}\n= 2(a-2) - 0 = 2a - 4\n\\]\n\nしたがって，\n\\[\n\\det = a(a^2 - 2a - 3) - (2a - 4)\n= a^3 - 2a^2 - 3a - 2a + 4\n= a^3 - 2a^2 - 5a + 4\n\\]\n\n最終結果：\n\\[\n\\boxed{\\,a^3 - 2a^2 - 5a + 4\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の3次の行列式を計算せよ：\\\\[ \\\\det \\\\begin{pmatrix} \\\\frac{1}{2} & -1 & 0 \\\\\\\\ 2 & \\\\frac{3}{4} & 1 \\\\\\\\ 0 & -2 & 5 \\\\end{pmatrix} \\\\]",
+        "answer": "次の行列式を1行目で余因子展開して計算します。\n\n\\[\n\\det \\begin{pmatrix}\n\\frac{1}{2} & -1 & 0 \\\\\n2 & \\frac{3}{4} & 1 \\\\\n0 & -2 & 5\n\\end{pmatrix}\n= \\frac{1}{2}\\,\\det \\begin{pmatrix} \\frac{3}{4} & 1 \\\\ -2 & 5 \\end{pmatrix}\n- (-1)\\,\\det \\begin{pmatrix} 2 & 1 \\\\ 0 & 5 \\end{pmatrix}\n+ 0\\cdot \\det \\begin{pmatrix} 2 & \\frac{3}{4} \\\\ 0 & -2 \\end{pmatrix}\n\\]\n\n小行列の行列式を計算します。\n\n\\[\n\\det \\begin{pmatrix} \\frac{3}{4} & 1 \\\\ -2 & 5 \\end{pmatrix}\n= \\frac{3}{4}\\cdot 5 - 1\\cdot(-2) = \\frac{15}{4} + 2 = \\frac{23}{4}\n\\]\n\n\\[\n\\det \\begin{pmatrix} 2 & 1 \\\\ 0 & 5 \\end{pmatrix}\n= 2\\cdot 5 - 1\\cdot 0 = 10\n\\]\n\nしたがって\n\n\\[\n\\det = \\frac{1}{2}\\cdot \\frac{23}{4} + 10 = \\frac{23}{8} + 10 = \\frac{23}{8} + \\frac{80}{8} = \\frac{103}{8}\n\\]\n\n\\[\n\\boxed{\\frac{103}{8}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "3×3正方行列$A$は$\\det(A)=5$を満たす。行基本変形$R_3 \\\\leftarrow R_3 + 2R_1$で得られる行列$A'$について、$\\\\det(A')$を求めよ。",
+        "answer": "以下のように考えます。\n\n1. 行基本変形として $R_3 \\leftarrow R_3 + 2R_1$ を行う。行列の行を $(r_1, r_2, r_3)$ とすると、変形後の第3行は $r_3' = r_3 + 2r_1$ となる。\n\n2. 行列式の多重線形性より、\n\\[\n\\det(r_1, r_2, r_3') = \\det(r_1, r_2, r_3 + 2r_1) = \\det(r_1, r_2, r_3) + 2\\det(r_1, r_2, r_1).\n\\]\n\n3. 交代性（同じ行が2つあると行列式は0）より、\n\\[\n\\det(r_1, r_2, r_1) = 0.\n\\]\n\n4. よって、\n\\[\n\\det(A') = \\det(A) = 5.\n\\]\n\n最終回答：\n\\[\n\\boxed{5}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$3\\\\times 3$行列$A$が$\\\\det(A)=3$のとき、$\\\\det(2A)$を求めよ。",
+        "answer": "以下の性質を使います。\n\n1. $n \\times n$ 行列 $A$ に対して、スカラー $c$ による拡大は\n   \\[\n   \\det(cA) = c^n \\det(A)\n   \\]\n   が成り立つ。これは、全体を $c$ 倍することは各行（または各列）を $c$ 倍することに等しく、行列式は各行（列）について一次であるため、合計で $c^n$ 倍されるため。\n\n2. 本問は $n=3$, $c=2$, かつ $\\det(A)=3$ なので\n   \\[\n   \\det(2A) = 2^3 \\det(A) = 8 \\cdot 3 = 24.\n   \\]\n\n最終結果：\n\\[\n\\boxed{24}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$3\\\\times 3$行列$A,B$が$\\\\det(A)=-4,\\\\ \\\\det(B)=5$を満たすとき、$\\\\det\\\\!\\\\bigl(A^{-1}B^{\\\\mathsf T}\\\\bigr)$を求めよ。",
+        "answer": "次の性質を使います。\n- $\\det(XY)=\\det(X)\\det(Y)$\n- $\\det(A^{-1})=\\dfrac{1}{\\det(A)}$\n- $\\det(B^{\\mathsf T})=\\det(B)$\n\nよって\n\\[\n\\det\\!\\bigl(A^{-1}B^{\\mathsf T}\\bigr)\n= \\det(A^{-1})\\,\\det(B^{\\mathsf T})\n= \\frac{1}{\\det(A)}\\,\\det(B)\n= \\frac{1}{-4}\\cdot 5\n= -\\frac{5}{4}.\n\\]\n\n最終答案：\n\\[\n\\boxed{-\\frac{5}{4}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列式を$t$の式として計算せよ。\\n\\\\[\\\\det\\\\begin{pmatrix} t & 1 & 1 \\\\\\\\ 1 & t & 1 \\\\\\\\ 1 & 1 & t \\\\end{pmatrix}\\\\]",
+        "answer": "求める行列式を $D(t)$ とおく。\n\\[\nD(t)=\\det\\begin{pmatrix} t & 1 & 1 \\\\ 1 & t & 1 \\\\ 1 & 1 & t \\end{pmatrix}\n\\]\n\n行基本変形で簡単化する。\n- 第2行に「第2行−第1行」、第3行に「第3行−第1行」を施す：\n\\[\n\\begin{vmatrix}\nt & 1 & 1\\\\\n1-t & t-1 & 0\\\\\n1-t & 0 & t-1\n\\end{vmatrix}\n\\]\n- 第2行・第3行はそれぞれ $(t-1)$ を因数にもつので、$(t-1)^2$ をくくり出す：\n\\[\nD(t)=(t-1)^2 \\det\\begin{pmatrix}\nt & 1 & 1\\\\\n-1 & 1 & 0\\\\\n-1 & 0 & 1\n\\end{pmatrix}\n\\]\n\n残りの 3×3 行列の行列式を余因子展開（第1行）で計算する：\n\\[\n\\det\\begin{pmatrix}\nt & 1 & 1\\\\\n-1 & 1 & 0\\\\\n-1 & 0 & 1\n\\end{pmatrix}\n= t\\det\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\n-1\\det\\begin{pmatrix}-1&0\\\\-1&1\\end{pmatrix}\n+1\\det\\begin{pmatrix}-1&1\\\\-1&0\\end{pmatrix}\n\\]\n\\[\n= t -(-1) + 1 = t+2\n\\]\n\n以上より、\n\\[\nD(t)=(t-1)^2(t+2)\n\\]\n\n最終回答：\n\\[\n\\boxed{(t-1)^2(t+2)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$4\\\\times 4$行列$A$は$\\\\det(A)=-2$を満たす。$A$の第1列と第4列を1回入れ替えて得られる行列$B$の$\\\\det(B)$を求めよ。",
+        "answer": "以下の性質を用いて、順を追って考えます。\n\n1. 与えられている条件は\n   \\[\n   \\det(A) = -2\n   \\]\n   です。\n\n2. 行列の列（または行）を2本入れ替えると、行列式は符号が反転します。すなわち、1回の列交換により\n   \\[\n   \\det(\\text{交換後}) = -\\,\\det(\\text{交換前})\n   \\]\n   となります。\n\n3. 第1列と第4列を1回入れ替えて得られる行列を \\(B\\) とすると、\n   \\[\n   \\det(B) = -\\,\\det(A) = -(-2) = 2\n   \\]\n\nしたがって、最終的な答えは\n\\[\n\\boxed{2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の上三角行列の行列式を求めよ。\\n\\\\[\\\\det\\\\begin{pmatrix} 1 & -2 & 5 & 0 \\\\\\\\ 0 & 3 & -1 & 7 \\\\\\\\ 0 & 0 & 4 & -1 \\\\\\\\ 0 & 0 & 0 & 2 \\\\end{pmatrix}\\\\]",
+        "answer": "以下の上三角行列の行列式を求めます。\n\\[\nA=\\begin{pmatrix}\n1 & -2 & 5 & 0 \\\\\n0 & 3 & -1 & 7 \\\\\n0 & 0 & 4 & -1 \\\\\n0 & 0 & 0 & 2\n\\end{pmatrix}\n\\]\n\n- ステップ1：行列が上三角行列であることを確認する（主対角線より下はすべて 0）。\n- ステップ2：上三角行列（および下三角行列）の行列式は対角成分の積に等しいという性質を用いる。\n  \\[\n  \\det A = a_{11}a_{22}a_{33}a_{44}\n  \\]\n- ステップ3：対角成分を代入して計算する。\n  \\[\n  \\det A = 1 \\cdot 3 \\cdot 4 \\cdot 2\n  \\]\n- ステップ4：積を順に計算する。\n  \\[\n  1\\cdot 3 = 3,\\quad 3\\cdot 4 = 12,\\quad 12\\cdot 2 = 24\n  \\]\n\nしたがって、\n\\[\n\\boxed{24}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$4\\\\times 4$行列$A,B$について$\\\\det(A)=-2,\\\\ \\\\det(B)=5$が与えられている。$\\\\det\\\\!\\\\bigl((A^{\\\\mathsf T})^{2}B^{-1}A\\\\bigr)$を求めよ。",
+        "answer": "以下の性質を使います。\n- 行列式の乗法性：$\\det(XY)=\\det(X)\\det(Y)$\n- 転置で行列式は不変：$\\det(A^{\\mathsf T})=\\det(A)$\n- 逆行列の行列式：$\\det(B^{-1})=\\dfrac{1}{\\det(B)}$\n\n求める量は積の行列式なので、\n\\[\n\\det\\!\\bigl((A^{\\mathsf T})^{2}B^{-1}A\\bigr)\n= \\det\\!\\bigl((A^{\\mathsf T})^{2}\\bigr)\\,\\det(B^{-1})\\,\\det(A).\n\\]\n\nまず、\n\\[\n\\det\\!\\bigl((A^{\\mathsf T})^{2}\\bigr)\n= \\bigl(\\det(A^{\\mathsf T})\\bigr)^2\n= \\bigl(\\det(A)\\bigr)^2\n= (-2)^2 = 4.\n\\]\n\n次に、\n\\[\n\\det(B^{-1})=\\frac{1}{\\det(B)}=\\frac{1}{5}.\n\\]\n\n最後に $\\det(A)=-2$ を用いて、\n\\[\n\\det\\!\\bigl((A^{\\mathsf T})^{2}B^{-1}A\\bigr)\n= 4 \\cdot \\frac{1}{5} \\cdot (-2)\n= -\\frac{8}{5}.\n\\]\n\nしたがって、\n\\[\n\\boxed{-\\frac{8}{5}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の行列式を計算せよ。\\n\\\\[\\\\det\\\\begin{pmatrix} 1 & 5 & 4 \\\\\\\\ 2 & 7 & 5 \\\\\\\\ 3 & 9 & 6 \\\\end{pmatrix}\\\\]",
+        "answer": "次の行列式を第1行で展開して計算します。\n\n\\[\n\\det\\begin{pmatrix}\n1 & 5 & 4\\\\\n2 & 7 & 5\\\\\n3 & 9 & 6\n\\end{pmatrix}\n= 1\\,(7\\cdot 6 - 5\\cdot 9) - 5\\,(2\\cdot 6 - 5\\cdot 3) + 4\\,(2\\cdot 9 - 7\\cdot 3)\n\\]\n\n各項を計算すると\n\n\\[\n1\\,(42-45) = -3,\\quad -5\\,(12-15) = 15,\\quad 4\\,(18-21) = -12\n\\]\n\nよって\n\n\\[\n-3 + 15 - 12 = 0\n\\]\n\n（確認）列ベクトルに関係があり、$C_3 = C_2 - C_1$ なので列が一次従属であり、行列式は確かに 0 です。\n\n\\[\n\\boxed{0}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の$3\\\\times 3$行列の行列式を$a,b,c$で表せ。\\n\\\\[\\\\det\\\\begin{pmatrix} 1 & 1 & 1 \\\\\\\\ a & b & c \\\\\\\\ a^{2} & b^{2} & c^{2} \\\\end{pmatrix}\\\\]",
+        "answer": "次の行列式を $D$ とおく。\n\\[\nD=\\det\\begin{pmatrix} 1 & 1 & 1 \\\\ a & b & c \\\\ a^{2} & b^{2} & c^{2} \\end{pmatrix}\n\\]\n\n- 列基本変形で $C_2 \\leftarrow C_2 - C_1,\\; C_3 \\leftarrow C_3 - C_1$ とする（行列式は不変）。\n\\[\nD=\\det\\begin{pmatrix} 1 & 0 & 0 \\\\ a & b-a & c-a \\\\ a^{2} & b^{2}-a^{2} & c^{2}-a^{2} \\end{pmatrix}\n\\]\n\n- 第2列・第3列からそれぞれ $(b-a)$, $(c-a)$ を因数としてくくる。\n\\[\nD=(b-a)(c-a)\\,\\det\\begin{pmatrix} 1 & 0 & 0 \\\\ a & 1 & 1 \\\\ a^{2} & b+a & c+a \\end{pmatrix}\n\\]\n\n- 第1行で展開する。\n\\[\nD=(b-a)(c-a)\\,\\det\\begin{pmatrix} 1 & 1 \\\\ a+b & a+c \\end{pmatrix}\n\\]\n\n- 2×2 行列式を計算する。\n\\[\n\\det\\begin{pmatrix} 1 & 1 \\\\ a+b & a+c \\end{pmatrix}=(a+c)-(a+b)=c-b\n\\]\n\nしたがって、\n\\[\nD=(b-a)(c-a)(c-b)\n\\]\n\n最終回答：\n\\[\n\\boxed{(b-a)(c-a)(c-b)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "$3\\\\times 3$正方行列$A$が$\\\\det(A)=2$を満たすとき、余因子行列$\\\\operatorname{adj}(A)$の行列式$\\\\det(\\\\operatorname{adj}(A))$を求めよ。",
+        "answer": "以下の性質を用います。\n\n- 余因子行列（随伴行列）について、任意の正方行列 $A$ に対し\n  \\[\n  A\\,\\operatorname{adj}(A) = \\operatorname{adj}(A)\\,A = \\det(A)\\,I_n\n  \\]\n  が成り立つ。\n\n- $\\det(A)\\neq 0$ のとき $A$ は可逆で、したがって\n  \\[\n  \\operatorname{adj}(A) = \\det(A)\\,A^{-1}\n  \\]\n  と書ける。\n\n- 行列式の性質として、$\\det(cB)=c^n\\det(B)$（$n\\times n$行列）、および $\\det(A^{-1})=\\dfrac{1}{\\det(A)}$。\n\n手順:\n1) 本問では $n=3$、$\\det(A)=2\\neq 0$ なので $A$ は可逆で、\n\\[\n\\operatorname{adj}(A)=\\det(A)\\,A^{-1}=2\\,A^{-1}\n\\]\n2) 両辺の行列式をとると\n\\[\n\\det(\\operatorname{adj}(A))=\\det(2\\,A^{-1})=2^{3}\\,\\det(A^{-1})\n\\]\n3) $\\det(A^{-1})=\\dfrac{1}{\\det(A)}$ より\n\\[\n\\det(\\operatorname{adj}(A))=2^{3}\\cdot \\frac{1}{2}=2^{2}=4\n\\]\n\nゆえに、\n\\[\n\\boxed{4}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "余因子展開を用いて、第2行に沿って次の行列の行列式を計算せよ。\\n\\\\[ A=\\\\begin{pmatrix} 2 & 0 & 1 \\\\\\\\ 0 & 3 & 0 \\\\\\\\ 4 & -1 & 2 \\\\end{pmatrix} \\\\]",
+        "answer": "第2行に沿って余因子展開を行います。\n\nまず、余因子展開の式は\n\\[\n\\det A = a_{21}C_{21} + a_{22}C_{22} + a_{23}C_{23}\n\\]\nです。ここで \\(C_{ij}=(-1)^{i+j}M_{ij}\\)、\\(M_{ij}\\) は第 \\(i\\) 行第 \\(j\\) 列を除いた小行列の行列式です。\n\n- 第1項（\\(j=1\\)）:\n\\[\nM_{21}=\\det\\begin{pmatrix}0 & 1 \\\\ -1 & 2\\end{pmatrix}=0\\cdot 2-1\\cdot(-1)=1,\\quad\nC_{21}=(-1)^{2+1}M_{21}=-1\n\\]\n\\[\na_{21}C_{21}=0\\cdot(-1)=0\n\\]\n\n- 第2項（\\(j=2\\)）:\n\\[\nM_{22}=\\det\\begin{pmatrix}2 & 1 \\\\ 4 & 2\\end{pmatrix}=2\\cdot 2-1\\cdot 4=0,\\quad\nC_{22}=(-1)^{2+2}M_{22}=0\n\\]\n\\[\na_{22}C_{22}=3\\cdot 0=0\n\\]\n\n- 第3項（\\(j=3\\)）:\n\\[\nM_{23}=\\det\\begin{pmatrix}2 & 0 \\\\ 4 & -1\\end{pmatrix}=2\\cdot(-1)-0\\cdot 4=-2,\\quad\nC_{23}=(-1)^{2+3}M_{23}=(-1)\\cdot(-2)=2\n\\]\n\\[\na_{23}C_{23}=0\\cdot 2=0\n\\]\n\n以上より、\n\\[\n\\det A = 0+0+0=0\n\\]\n\n最終回答：\n\\[\n\\boxed{0}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "余因子展開を用いて、第1列に沿って次の4\\\\times4行列の行列式を計算せよ。\\n\\\\[ B=\\\\begin{pmatrix} 1 & 2 & 0 & 0 \\\\\\\\ 0 & 3 & 4 & 0 \\\\\\\\ 0 & 0 & 5 & 6 \\\\\\\\ 7 & 0 & 0 & 8 \\\\end{pmatrix} \\\\]",
+        "answer": "以下、第一列に沿って余因子展開で計算します。\n\n1) 余因子展開の式\n\\[\n\\det B=\\sum_{i=1}^{4} a_{i1}C_{i1}\n= a_{11}C_{11}+a_{21}C_{21}+a_{31}C_{31}+a_{41}C_{41}\n\\]\n第一列は $(1,0,0,7)^T$ なので、非零項は第1項と第4項のみ。\n\n2) 第1項（i=1）\n\\[\nC_{11} = (-1)^{1+1}\\det\\begin{pmatrix} 3 & 4 & 0 \\\\ 0 & 5 & 6 \\\\ 0 & 0 & 8 \\end{pmatrix}\n= \\det\\begin{pmatrix} 3 & 4 & 0 \\\\ 0 & 5 & 6 \\\\ 0 & 0 & 8 \\end{pmatrix}\n\\]\nこの3×3は上三角行列なので、\n\\[\n\\det = 3\\cdot 5\\cdot 8 = 120\n\\]\nゆえに\n\\[\na_{11}C_{11} = 1 \\cdot 120 = 120\n\\]\n\n3) 第4項（i=4）\n\\[\nC_{41} = (-1)^{4+1}\\det\\begin{pmatrix} 2 & 0 & 0 \\\\ 3 & 4 & 0 \\\\ 0 & 5 & 6 \\end{pmatrix}\n= -\\det\\begin{pmatrix} 2 & 0 & 0 \\\\ 3 & 4 & 0 \\\\ 0 & 5 & 6 \\end{pmatrix}\n\\]\nこの3×3は下三角行列なので，\n\\[\n\\det = 2\\cdot 4\\cdot 6 = 48\n\\]\nゆえに\n\\[\na_{41}C_{41} = 7 \\cdot (-48) = -336\n\\]\n\n4) 合計\n\\[\n\\det B = 120 + 0 + 0 - 336 = -216\n\\]\n\n最終結果：\n\\[\n\\boxed{-216}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の4\\\\times4行列に対して、余因子 $C_{2,3}$ を求めよ。\\n\\\\[ C=\\\\begin{pmatrix} 1 & -1 & 2 & 0 \\\\\\\\ 0 & 3 & 1 & 4 \\\\\\\\ 2 & 0 & -1 & 5 \\\\\\\\ 1 & 2 & 0 & -2 \\\\end{pmatrix} \\\\]",
+        "answer": "以下の手順で求めます。\n\n1) 余因子の定義\n\\[\nC_{i,j}=(-1)^{i+j}\\,M_{i,j},\\quad M_{i,j}=\\det(\\text{行 }i\\text{ と列 }j\\text{ を除いた小行列})\n\\]\n\nここでは $i=2,\\ j=3$ なので、$(-1)^{2+3}=(-1)^5=-1$。\n\n2) 小行列の作成（第2行と第3列を削除）\n\\[\nA=\n\\begin{pmatrix}\n1 & -1 & 0\\\\\n2 & 0 & 5\\\\\n1 & 2 & -2\n\\end{pmatrix}\n\\]\n\n3) 小行列の行列式の計算\n\\[\n\\det A\n= 1\\det\\begin{pmatrix}0&5\\\\2&-2\\end{pmatrix}\n-(-1)\\det\\begin{pmatrix}2&5\\\\1&-2\\end{pmatrix}\n+0\\det\\begin{pmatrix}2&0\\\\1&2\\end{pmatrix}\n\\]\n\\[\n= 1(0\\cdot(-2)-5\\cdot2)-(-1)(2\\cdot(-2)-5\\cdot1)+0\n= (-10)-(+9)= -19\n\\]\n\n4) 余因子の計算\n\\[\nC_{2,3}=(-1)^{5}\\,M_{2,3}=(-1)\\times(-19)=19\n\\]\n\n最終回答：\n\\[\n\\boxed{19}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の3\\\\times3行列に対して、小行列式 $M_{3,1}$ を求めよ。\\n\\\\[ D=\\\\begin{pmatrix} 4 & 1 & -2 \\\\\\\\ 0 & 3 & 5 \\\\\\\\ -1 & 2 & 1 \\\\end{pmatrix} \\\\]",
+        "answer": "ステップ1：小行列式 $M_{3,1}$ は、第3行と第1列を除いた部分行列の行列式です。よって対象となる $2\\times2$ 行列は\n\\[\n\\begin{pmatrix}\n1 & -2\\\\\n3 & 5\n\\end{pmatrix}\n\\]\n\nステップ2：その行列式を計算します。\n\\[\nM_{3,1}=\\det\\begin{pmatrix}\n1 & -2\\\\\n3 & 5\n\\end{pmatrix}\n= 1\\cdot 5 - (-2)\\cdot 3 = 5 + 6 = 11\n\\]\n\n最終回答：\n\\[\n\\boxed{11}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "次の3\\\\times3行列の随伴行列 $\\\\mathrm{adj}(A)$ を、余因子を用いて求めよ。\\n\\\\[ A=\\\\begin{pmatrix} 1 & 2 & 3 \\\\\\\\ 0 & 1 & 4 \\\\\\\\ 5 & 6 & 0 \\\\end{pmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "余因子展開に基づく随伴行列を用いて、次の行列の逆行列 $A^{-1}$ を求めよ（$\\\\det A \\\\ne 0$ として計算せよ）。\\n\\\\[ A=\\\\begin{pmatrix} 1 & 0 & 2 \\\\\\\\ 0 & 1 & 1 \\\\\\\\ 1 & 1 & 1 \\\\end{pmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "第3列に沿う余因子展開を用いて、次の行列の行列式を $a$ の式として計算せよ。\\n\\\\[ E=\\\\begin{pmatrix} a & 1 & 0 \\\\\\\\ 2 & a & 0 \\\\\\\\ 3 & 4 & 1 \\\\end{pmatrix} \\\\]",
+        "answer": "以下、 第3列に沿う余因子展開で計算します。\n\nまず、余因子展開の式は\n\\[\n\\det E = \\sum_{i=1}^3 (-1)^{i+3} E_{i3}\\,\\det M_{i3}\n\\]\nです。ここで第3列の成分は $E_{13}=0,\\ E_{23}=0,\\ E_{33}=1$ なので、最初の2項は消えます。\n\nよって\n\\[\n\\det E = (-1)^{3+3}\\cdot 1 \\cdot \\det\\begin{pmatrix} a & 1 \\\\ 2 & a \\end{pmatrix}\n= \\det\\begin{pmatrix} a & 1 \\\\ 2 & a \\end{pmatrix}.\n\\]\n\n2×2行列の行列式を計算すると\n\\[\n\\det\\begin{pmatrix} a & 1 \\\\ 2 & a \\end{pmatrix} = a\\cdot a - 2\\cdot 1 = a^2 - 2.\n\\]\n\nしたがって\n\\[\n\\boxed{a^2 - 2}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "余因子展開を用いて、第3行に沿って次の5\\\\times5行列の行列式を計算せよ。\\n\\\\[ F=\\\\begin{pmatrix} 1 & 0 & 0 & 0 & 0 \\\\\\\\ 0 & 1 & 0 & 2 & 0 \\\\\\\\ 0 & 0 & 2 & 0 & 1 \\\\\\\\ 0 & 3 & 0 & 1 & 0 \\\\\\\\ 0 & 0 & 0 & 0 & 1 \\\\end{pmatrix} \\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "余因子展開を用いて、次の行列の行列式を計算せよ。\\n\\\\[ G=\\\\begin{pmatrix} 1 & 2 & 3 \\\\\\\\ 2 & 4 & 6 \\\\\\\\ 0 & 1 & 1 \\\\end{pmatrix} \\\\]",
+        "answer": "余因子展開を第3行で行います。\n\nまず、行列式は\n\\[\n\\det G=\\sum_{j=1}^{3}(-1)^{3+j}a_{3j}\\det(M_{3j})\n\\]\nここで $M_{3j}$ は第3行第 $j$ 列を除いた小行列です。\n\n- 第3行第1列（$j=1$）:\n\\[\na_{31}=0 \\quad\\Rightarrow\\quad (-1)^{4}\\,a_{31}\\,\\det(M_{31})=0\n\\]\n\n- 第3行第2列（$j=2$）:\n\\[\n(-1)^{5}\\,a_{32}\\,\\det(M_{32})\n= -1 \\cdot 1 \\cdot \\det\\begin{pmatrix}1 & 3\\\\ 2 & 6\\end{pmatrix}\n= - \\bigl(1\\cdot 6 - 3\\cdot 2\\bigr)\n= - (6-6)=0\n\\]\n\n- 第3行第3列（$j=3$）:\n\\[\n(-1)^{6}\\,a_{33}\\,\\det(M_{33})\n= +1 \\cdot 1 \\cdot \\det\\begin{pmatrix}1 & 2\\\\ 2 & 4\\end{pmatrix}\n= \\bigl(1\\cdot 4 - 2\\cdot 2\\bigr)\n= 4-4=0\n\\]\n\n以上より\n\\[\n\\det G = 0+0+0=0\n\\]\n\n最終回答:\n\\[\n\\boxed{0}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "余因子展開を用いて、次の $a$ を含む行列の行列式を計算せよ。\\n\\\\[ H=\\\\begin{pmatrix} 1 & a & 0 \\\\\\\\ 0 & 1 & a \\\\\\\\ a & 0 & 1 \\\\end{pmatrix} \\\\]",
+        "answer": "次の行列の行列式を1行目で余因子展開して求めます。\n\\[\nH=\\begin{pmatrix} 1 & a & 0 \\\\ 0 & 1 & a \\\\ a & 0 & 1 \\end{pmatrix},\\quad\n\\det H = \\sum_{j=1}^3 a_{1j}C_{1j} = a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}.\n\\]\n\n- 小行列式と余因子\n  - 行列要素と符号: $C_{1j}=(-1)^{1+j}M_{1j}$\n\n1) $M_{11}$ と $C_{11}$:\n\\[\nM_{11}=\\det \\begin{pmatrix} 1 & a \\\\ 0 & 1 \\end{pmatrix}=1\\cdot 1-a\\cdot 0=1,\\quad\nC_{11}=(-1)^{1+1}M_{11}=1.\n\\]\n\n2) $M_{12}$ と $C_{12}$:\n\\[\nM_{12}=\\det \\begin{pmatrix} 0 & a \\\\ a & 1 \\end{pmatrix}=0\\cdot 1-a\\cdot a=-a^2,\\quad\nC_{12}=(-1)^{1+2}M_{12}=-(-a^2)=a^2.\n\\]\n\n3) $M_{13}$ と $C_{13}$:\n\\[\nM_{13}=\\det \\begin{pmatrix} 0 & 1 \\\\ a & 0 \\end{pmatrix}=0\\cdot 0-1\\cdot a=-a,\\quad\nC_{13}=(-1)^{1+3}M_{13}=(-a).\n\\]\nただし $a_{13}=0$ なのでこの項の寄与は $0\\cdot C_{13}=0$。\n\n- よって\n\\[\n\\det H = 1\\cdot C_{11} + a\\cdot C_{12} + 0\\cdot C_{13} = 1 + a\\cdot a^2 = 1+a^3.\n\\]\n\n最終結果：\n\\[\n\\boxed{\\,1+a^3\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "クラーメルの公式を用いて、次の連立一次方程式の解 $(x,y)$ を求めよ。\\n\\\\[\\n\\\\begin{cases}\\n3x+2y=7\\\\\\\\\\n5x-y=4\\n\\\\end{cases}\\n\\\\]",
+        "answer": "以下、クラーメルの公式で順に求めます。\n\n1) 係数行列と定数ベクトル\n\\[\nA=\\begin{pmatrix}3&2\\\\[2pt]5&-1\\end{pmatrix},\\quad \\mathbf{b}=\\begin{pmatrix}7\\\\[2pt]4\\end{pmatrix}\n\\]\n\n2) 行列式を計算\n\\[\n\\det A=\\begin{vmatrix}3&2\\\\[2pt]5&-1\\end{vmatrix}=3\\cdot(-1)-2\\cdot5=-3-10=-13\n\\]\n\n3) x用の行列式\n\\[\nA_x=\\begin{pmatrix}7&2\\\\[2pt]4&-1\\end{pmatrix},\\quad\n\\det A_x=\\begin{vmatrix}7&2\\\\[2pt]4&-1\\end{vmatrix}=7\\cdot(-1)-2\\cdot4=-7-8=-15\n\\]\n\n4) y用の行列式\n\\[\nA_y=\\begin{pmatrix}3&7\\\\[2pt]5&4\\end{pmatrix},\\quad\n\\det A_y=\\begin{vmatrix}3&7\\\\[2pt]5&4\\end{vmatrix}=3\\cdot4-7\\cdot5=12-35=-23\n\\]\n\n5) クラーメルの公式で解\n\\[\nx=\\frac{\\det A_x}{\\det A}=\\frac{-15}{-13}=\\frac{15}{13},\\quad\ny=\\frac{\\det A_y}{\\det A}=\\frac{-23}{-13}=\\frac{23}{13}\n\\]\n\n最終結果：\n\\[\n\\boxed{(x,y)=\\left(\\frac{15}{13},\\,\\frac{23}{13}\\right)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "クラーメルの公式を用いて、次の連立一次方程式の解 $(x,y)$ を求めよ。\\n\\\\[\\n\\\\begin{cases}\\n\\\\tfrac{1}{2}x+\\\\tfrac{1}{3}y=1\\\\\\\\\\n2x-3y=-1\\n\\\\end{cases}\\n\\\\]",
+        "answer": "以下、クラーメルの公式で解きます。\n\n1) 係数行列、未知数ベクトル、定数ベクトルをおく\n\\[\nA=\\begin{pmatrix}\\tfrac12 & \\tfrac13 \\\\ 2 & -3\\end{pmatrix},\\quad\n\\mathbf{x}=\\begin{pmatrix}x\\\\y\\end{pmatrix},\\quad\n\\mathbf{b}=\\begin{pmatrix}1\\\\-1\\end{pmatrix}\n\\]\n\n2) 行列式を計算\n\\[\n\\Delta=\\det A=\\left(\\tfrac12\\right)(-3)-\\left(\\tfrac13\\right)(2)\n=-\\tfrac{3}{2}-\\tfrac{2}{3}=-\\tfrac{13}{6}\n\\]\nよって解は一意に存在。\n\n3) x の分子の行列式\n\\[\nA_x=\\begin{pmatrix}1 & \\tfrac13 \\\\ -1 & -3\\end{pmatrix},\\quad\n\\Delta_x=\\det A_x=1\\cdot(-3)-\\left(\\tfrac13\\right)(-1)\n=-3+\\tfrac13=-\\tfrac{8}{3}\n\\]\n\n4) y の分子の行列式\n\\[\nA_y=\\begin{pmatrix}\\tfrac12 & 1 \\\\ 2 & -1\\end{pmatrix},\\quad\n\\Delta_y=\\det A_y=\\left(\\tfrac12\\right)(-1)-1\\cdot 2\n=-\\tfrac12-2=-\\tfrac{5}{2}\n\\]\n\n5) クラーメルの公式で求める\n\\[\nx=\\frac{\\Delta_x}{\\Delta}\n=\\frac{-\\tfrac{8}{3}}{-\\tfrac{13}{6}}\n=\\frac{8}{3}\\cdot\\frac{6}{13}\n=\\frac{16}{13},\n\\quad\ny=\\frac{\\Delta_y}{\\Delta}\n=\\frac{-\\tfrac{5}{2}}{-\\tfrac{13}{6}}\n=\\frac{5}{2}\\cdot\\frac{6}{13}\n=\\frac{15}{13}\n\\]\n\n最終答:\n\\[\n\\boxed{\\left(x,\\;y\\right)=\\left(\\tfrac{16}{13},\\;\\tfrac{15}{13}\\right)}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "クラーメルの公式を用いて、次の連立一次方程式の $x$ の値を求めよ。\\n\\\\[\\n\\\\begin{cases}\\n4x-y=9\\\\\\\\\\n-2x+5y=3\\n\\\\end{cases}\\n\\\\]",
+        "answer": "以下、クラーメルの公式で段階的に求めます。\n\n1) 連立方程式を行列で表す\n\\[\n\\begin{pmatrix}\n4 & -1\\\\\n-2 & 5\n\\end{pmatrix}\n\\begin{pmatrix}\nx\\\\\ny\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n9\\\\\n3\n\\end{pmatrix}\n\\]\n係数行列を \\(A\\)、右辺ベクトルを \\(\\mathbf{b}\\) とする。\n\n2) 係数行列の行列式を計算\n\\[\n\\Delta = \\det(A) = \n\\begin{vmatrix}\n4 & -1\\\\\n-2 & 5\n\\end{vmatrix}\n= 4\\cdot 5 - (-1)\\cdot(-2) = 20 - 2 = 18\n\\]\n\n3) 第1列を \\(\\mathbf{b}\\) に置き換えた行列の行列式（\\(x\\) 用）を計算\n\\[\n\\Delta_x =\n\\begin{vmatrix}\n9 & -1\\\\\n3 & 5\n\\end{vmatrix}\n= 9\\cdot 5 - (-1)\\cdot 3 = 45 - (-3) = 48\n\\]\n\n4) クラーメルの公式で \\(x\\) を求める\n\\[\nx = \\frac{\\Delta_x}{\\Delta} = \\frac{48}{18} = \\frac{8}{3}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\frac{8}{3}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "クラーメルの公式を用いて、次の連立一次方程式の解 $(x,y,z)$ を求めよ。\\n\\\\[\\n\\\\begin{cases}\\nx+2y-z=4\\\\\\\\\\n3x-y+2z=5\\\\\\\\\\n2x+y+z=6\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "クラーメルの公式を用いて、次の連立一次方程式の解 $(x,y,z)$ を求めよ。\\n\\\\[\\n\\\\begin{cases}\\n\\\\tfrac{1}{2}x+\\\\tfrac{1}{3}y-z=1\\\\\\\\\\n2x-\\\\tfrac{1}{2}y=3\\\\\\\\\\nx+\\\\tfrac{1}{4}z=2\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "パラメータ $a$ に対し、クラーメルの公式を用いて次の連立一次方程式の解 $(x,y)$ を $a$ の式で求めよ（ただし $a^2+a-1\\\\neq0$ とする）。\\n\\\\[\\n\\\\begin{cases}\\nax+y=1\\\\\\\\\\nx+(a+1)y=2\\n\\\\end{cases}\\n\\\\]",
+        "answer": "以下、クラーメルの公式で解きます。\n\n1) 係数行列と行列式\n\\[\nA=\\begin{pmatrix} a & 1 \\\\ 1 & a+1 \\end{pmatrix},\\quad\n\\Delta=\\det A = a(a+1)-1 = a^2+a-1\n\\]\n問題の条件より $\\,\\Delta\\neq 0\\,$ なので一意解が存在します。\n\n2) 分子の行列式\n\\[\n\\Delta_x=\\det\\begin{pmatrix} 1 & 1 \\\\ 2 & a+1 \\end{pmatrix}\n= 1\\cdot(a+1)-1\\cdot 2 = a-1\n\\]\n\\[\n\\Delta_y=\\det\\begin{pmatrix} a & 1 \\\\ 1 & 2 \\end{pmatrix}\n= a\\cdot 2 - 1\\cdot 1 = 2a-1\n\\]\n\n3) クラーメルの公式より\n\\[\nx=\\frac{\\Delta_x}{\\Delta}=\\frac{a-1}{a^2+a-1},\\quad\ny=\\frac{\\Delta_y}{\\Delta}=\\frac{2a-1}{a^2+a-1}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\,\\left(x,y\\right)=\\left(\\frac{a-1}{a^2+a-1},\\ \\frac{2a-1}{a^2+a-1}\\right)\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "クラーメルの公式により、次の連立一次方程式が一意解をもつためのパラメータ $k$ の条件を求めよ。\\n\\\\[\\n\\\\begin{cases}\\n(k-1)x+2y=3\\\\\\\\\\n4x+(2k+1)y=-1\\n\\\\end{cases}\\n\\\\]",
+        "answer": "次の連立一次方程式\n\\[\n\\begin{cases}\n(k-1)x+2y=3\\\\\n4x+(2k+1)y=-1\n\\end{cases}\n\\]\nがクラメルの公式により一意解をもつための条件は、係数行列の行列式が 0 でないこと。\n\n- 係数行列と行列式\n\\[\nA=\\begin{pmatrix}k-1 & 2\\\\ 4 & 2k+1\\end{pmatrix},\\quad\n\\det A=(k-1)(2k+1)-2\\cdot 4\n\\]\n\\[\n\\det A=(k-1)(2k+1)-8=2k^2 - k - 1 - 8=2k^2 - k - 9\n\\]\n\n- 一意解の条件\n\\[\n\\det A\\ne 0 \\;\\;\\Longleftrightarrow\\;\\; 2k^2-k-9\\ne 0\n\\]\n\\[\n2k^2-k-9=0 \\;\\Longrightarrow\\; k=\\frac{1\\pm\\sqrt{1+72}}{4}=\\frac{1\\pm\\sqrt{73}}{4}\n\\]\n\nしたがって除外すべき値を除いた条件は\n\\[\n\\boxed{\\,k\\ne \\frac{1+\\sqrt{73}}{4},\\;\\; k\\ne \\frac{1-\\sqrt{73}}{4}\\,}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "クラーメルの公式を用いて、次の連立一次方程式の $z$ の値のみを求めよ。\\n\\\\[\\n\\\\begin{cases}\\n2x-y+3z=7\\\\\\\\\\nx+4y+2z=-2\\\\\\\\\\ny+5z=9\\n\\\\end{cases}\\n\\\\]",
+        "answer": "次の連立方程式について、クラーメルの公式で z のみを求めます。\n\\[\n\\begin{cases}\n2x-y+3z=7\\\\\nx+4y+2z=-2\\\\\ny+5z=9\n\\end{cases}\n\\]\n\n1) 係数行列と定数ベクトル\n\\[\nA=\\begin{pmatrix}\n2 & -1 & 3\\\\\n1 & 4 & 2\\\\\n0 & 1 & 5\n\\end{pmatrix},\\quad\n\\mathbf{b}=\\begin{pmatrix}\n7\\\\\n-2\\\\\n9\n\\end{pmatrix}\n\\]\n\n2) 分母の行列式\n\\[\nD=\\det(A)=\n\\begin{vmatrix}\n2 & -1 & 3\\\\\n1 & 4 & 2\\\\\n0 & 1 & 5\n\\end{vmatrix}\n=2\\begin{vmatrix}4&2\\\\1&5\\end{vmatrix}\n-(-1)\\begin{vmatrix}1&2\\\\0&5\\end{vmatrix}\n+3\\begin{vmatrix}1&4\\\\0&1\\end{vmatrix}\n=2(18)+1(5)+3(1)=44\n\\]\n\n3) z 用の分子の行列式（第3列を定数で置換）\n\\[\nA_z=\\begin{pmatrix}\n2 & -1 & 7\\\\\n1 & 4 & -2\\\\\n0 & 1 & 9\n\\end{pmatrix},\\quad\nD_z=\\det(A_z)=\n\\begin{vmatrix}\n2 & -1 & 7\\\\\n1 & 4 & -2\\\\\n0 & 1 & 9\n\\end{vmatrix}\n\\]\n\\[\nD_z\n=2\\begin{vmatrix}4&-2\\\\1&9\\end{vmatrix}\n-(-1)\\begin{vmatrix}1&-2\\\\0&9\\end{vmatrix}\n+7\\begin{vmatrix}1&4\\\\0&1\\end{vmatrix}\n=2(38)+1(9)+7(1)=92\n\\]\n\n4) クラーメルの公式より\n\\[\nz=\\frac{D_z}{D}=\\frac{92}{44}=\\frac{23}{11}\n\\]\n\n最終回答：\\boxed{\\frac{23}{11}}",
+        "finish_reason": "stop",
+        "error": ""
+    },
+    {
+        "question": "複素数係数に対するクラーメルの公式を用いて、次の連立一次方程式の解 $(x,y)$ を求めよ（$i^2=-1$）。\\n\\\\[\\n\\\\begin{cases}\\n(1+i)x+y=2\\\\\\\\\\nx+(2-i)y=1+i\\n\\\\end{cases}\\n\\\\]",
+        "answer": "",
+        "finish_reason": "length",
+        "error": ""
+    },
+    {
+        "question": "クラーメルの公式を用いて、パラメータ $t$ に対する次の連立一次方程式の $x$ を $t$ の式で求めよ。\\n\\\\[\\n\\\\begin{cases}\\n2x+3y=t\\\\\\\\\\nx-2y=5\\n\\\\end{cases}\\n\\\\]",
+        "answer": "以下の連立方程式にクラーメルの公式を適用して、x を t の式で求めます。\n\\[\n\\begin{cases}\n2x+3y=t\\\\\nx-2y=5\n\\end{cases}\n\\]\n\n1. 係数行列と右辺ベクトルを置く\n\\[\nA=\\begin{pmatrix}2&3\\\\1&-2\\end{pmatrix},\\quad \\mathbf{x}=\\begin{pmatrix}x\\\\y\\end{pmatrix},\\quad \\mathbf{b}=\\begin{pmatrix}t\\\\5\\end{pmatrix}\n\\]\n\n2. 行列式を計算\n\\[\n\\det(A)=\\begin{vmatrix}2&3\\\\1&-2\\end{vmatrix}=2(-2)-3\\cdot1=-7\n\\]\n\n3. x のために第1列を右辺に置き換えた行列を作る\n\\[\nA_x=\\begin{pmatrix}t&3\\\\5&-2\\end{pmatrix}\n\\]\n\n4. その行列式を計算\n\\[\n\\det(A_x)=\\begin{vmatrix}t&3\\\\5&-2\\end{vmatrix}=t(-2)-3\\cdot5=-2t-15\n\\]\n\n5. クラーメルの公式で x を求める\n\\[\nx=\\frac{\\det(A_x)}{\\det(A)}=\\frac{-2t-15}{-7}=\\frac{2t+15}{7}\n\\]\n\n最終回答：\n\\[\n\\boxed{\\displaystyle x=\\frac{2t+15}{7}}\n\\]",
+        "finish_reason": "stop",
+        "error": ""
+    }
+]
