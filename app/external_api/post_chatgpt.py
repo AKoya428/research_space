@@ -82,3 +82,14 @@ class GPTHandler:
                 await client.close()
 
         return asyncio.run(run_all())
+
+    @classmethod
+    def simple_post_list(
+        cls,
+        prompts: list,
+        *,
+        max_token: int = None,
+    ):
+        """chatGPTにリクエストを送信する"""
+        results = cls.post_list(prompts, max_token=max_token)
+        return [r.content for r in results]

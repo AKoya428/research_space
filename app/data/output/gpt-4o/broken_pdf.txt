@@ -1,0 +1,16 @@
+root@a26ec41586c7:/app# python merge_pdf.py 
+EOF marker not found
+壊れた PDF: gpt-4o_failed_no417.pdf -> Stream has ended unexpectedly
+EOF marker not found
+壊れた PDF: gpt-4o_failed_no440.pdf -> Stream has ended unexpectedly
+EOF marker not found
+壊れた PDF: gpt-4o_failed_no443.pdf -> Stream has ended unexpectedly
+EOF marker not found
+壊れた PDF: gpt-4o_failed_no465.pdf -> Stream has ended unexpectedly
+正常な PDF をまとめました: ./data/output/gpt_4o_failed.pdf
+
+壊れた PDF ファイル一覧:
+gpt-4o_failed_no417.pdf
+gpt-4o_failed_no440.pdf
+gpt-4o_failed_no443.pdf
+gpt-4o_failed_no465.pdf

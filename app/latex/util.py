@@ -1,12 +1,59 @@
 from pathlib import Path
 import shutil
 import subprocess
-import os
+import re
 
 
-def fix_llms_latex(text: str) -> str:
+def fix_llm_answer_for_latex2(text: str) -> str:
     """LLMが成形するlatexをレンダリング可能な形に修正する"""
     return text.replace("\\\\", "\\")
+
+
+def fix_llm_answer_for_latex3(text: str) -> str:
+    """
+    行列内はそのままにして、その他の部分で \\ を \ に置換
+    """
+    # 行列パターン
+    matrix_pattern = re.compile(r"(\\begin\{pmatrix\}.*?\\end\{pmatrix\})", re.DOTALL)
+
+    # split すると行列部分は消えるので、capture group を使って findall で後で復元
+    segments = matrix_pattern.split(text)
+
+    result = []
+    for i, seg in enumerate(segments):
+        if i % 2 == 1:
+            # 奇数番目は行列部分 → そのまま
+            result.append(seg)
+        else:
+            # 偶数番目は行列以外 → 置換
+            result.append(seg.replace("\\\\", "\\"))
+
+    return "".join(result)
+
+
+def fix_llm_answer_for_latex(text: str) -> str:
+    """
+    pmatrix / vmatrix（行列・行列式）内はそのままにして、
+    その他の部分で \\ を \ に置換
+    """
+    matrix_pattern = re.compile(
+        r"(\\begin\{(?:pmatrix|vmatrix|bmatrix|Bmatrix|matrix)\}.*?"
+        r"\\end\{(?:pmatrix|vmatrix|bmatrix|Bmatrix|matrix)\})",
+        re.DOTALL,
+    )
+
+    segments = matrix_pattern.split(text)
+
+    result = []
+    for i, seg in enumerate(segments):
+        if i % 2 == 1:
+            # 行列 or 行列式部分
+            result.append(seg)
+        else:
+            # それ以外
+            result.append(seg.replace("\\\\", "\\"))
+
+    return "".join(result)
 
 
 def export_as_pdf(
@@ -42,18 +89,18 @@ def export_as_pdf(
 
 
 def basic_template(input: str) -> str:
-    """latexのテンプレートを返す"""
     latex = f"""
-    \\documentclass{{article}}
-    \\usepackage{{amsmath}}
-    \\usepackage{{fontspec}}  % LuaLaTeXでフォント指定可能
-    \\setmainfont{{IPAexMincho}}   % 明朝
-    \\setsansfont{{IPAexGothic}}   % ゴシック
-    \\usepackage[a4paper,margin=25mm]{{geometry}}
+\\documentclass{{ltjsarticle}}
+\\usepackage{{amsmath}}
+\\usepackage{{fontspec}}
+\\setmainfont{{IPAexMincho}}
+\\setsansfont{{IPAexGothic}}
+\\usepackage[a4paper,margin=25mm]{{geometry}}
 
-    \\begin{{document}}
+\\begin{{document}}
 
-    {input}
-    \\end{{document}}
-    """
+{input}
+
+\\end{{document}}
+"""
     return latex
