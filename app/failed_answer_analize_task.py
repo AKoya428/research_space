@@ -9,13 +9,14 @@ with open(jsonl_file, encoding="utf-8") as f:
 data_slices = [data[i : i + 5] for i in range(0, len(data), 5)]
 
 results = []
-for _, s in enumerate(data_slices):
-    if s[0]["exact_match"]:
-        results.append(s[0])
+for s in data_slices:
+    for d in s:
+        if d["exact_match"]:
+            results.append(s[0])
+            break
 
-results = results[:5]
-
-output_file = "./data/output/failed_analyze_task15/test_data.jsonl"
+print(f"len: {len(results)}")
+output_file = "./data/output/failed_analyze_task15/benchmark_base_data.jsonl"
 with open(output_file, "w", encoding="utf-8") as f:
     for item in results:
         f.write(json.dumps(item, ensure_ascii=False) + "\n")

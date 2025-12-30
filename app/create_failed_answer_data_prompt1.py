@@ -51,7 +51,7 @@ def prompt2(problem, answer, failed_answer):
     return prompt
 
 
-jsonl_file = "./data/output/failed_analyze_task15/test_data.jsonl"
+jsonl_file = "./data/output/failed_analyze_task15/benchmark_base_data.jsonl"
 failed_types = ["定義の概念誤り", "計算間違い", "論理の誤り"]
 results = []
 
@@ -95,6 +95,6 @@ D: {data["doc"]["options"]["D"]}
     ]
     results.extend(save_objs)
 save_as_jsonl(
-    "./data/output/failed_analyze_task15/prompt1.jsonl",
+    "./data/output/analyze_answer_benchmark/solved_data_base.jsonl",
     results,
 )
