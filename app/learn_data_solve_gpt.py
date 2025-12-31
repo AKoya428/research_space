@@ -1,6 +1,7 @@
+import copy
 import os
 
-from core.util import load_jsonl
+from core.util import load_jsonl, save_as_jsonl
 from external_api.post_chatgpt import GPTHandler
 
 
@@ -32,11 +33,18 @@ for root, dirs, files in os.walk(base_dir):
             )
 all_files.sort()
 
-for input_file in all_files:
+for input_file in all_files[1:5]:
     datas = load_jsonl(input_file)
-    save_list = []
+    save_list = copy.deepcopy(datas)
+    prompts = [prompt(d['question'], d['options']) for d in datas]
+    results = GPTHandler.simple_post_list(prompts, max_token=4096)
 
-    GPTHandler.simple_post_list(prompt, max_token=4096)
+    for asave, p in zip(save_list, prompts):
+        asave['prompt'] = p
+    for asave, result in zip(save_list, results):
+        asave['gpt_answer'] = result
 
     base = os.path.splitext(os.path.basename(input_file))[0]
-    output_file_path = f"./data/input/exclude_learn_data/{base}.jsonl"
+    output_file_path = f"./data/output/learn_data/{base}.jsonl"
+    save_as_jsonl(output_file_path, save_list)
+    print(f"save: {output_file_path}")

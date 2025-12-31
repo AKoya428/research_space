@@ -5,7 +5,9 @@ WORKDIR /app
 COPY /app /app
 
 RUN apt-get update && apt-get install -y \
-    texlive-full \
+    texlive-base \
+    texlive-latex-base \
+    texlive-lang-japanese \
     fonts-ipaexfont \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
