@@ -92,4 +92,5 @@ class GPTHandler:
     ):
         """chatGPTにリクエストを送信する"""
         results = cls.post_list(prompts, max_token=max_token)
+        print(f"generated: {len(prompts)}")
         return [r.content for r in results]

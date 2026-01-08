@@ -14,7 +14,8 @@ def fix_llm_answer_for_latex3(text: str) -> str:
     行列内はそのままにして、その他の部分で \\ を \ に置換
     """
     # 行列パターン
-    matrix_pattern = re.compile(r"(\\begin\{pmatrix\}.*?\\end\{pmatrix\})", re.DOTALL)
+    matrix_pattern = re.compile(
+        r"(\\begin\{pmatrix\}.*?\\end\{pmatrix\})", re.DOTALL)
 
     # split すると行列部分は消えるので、capture group を使って findall で後で復元
     segments = matrix_pattern.split(text)
@@ -78,6 +79,14 @@ def export_as_pdf(
         capture_output=True,
         text=True,
     )
+
+    if result.returncode != 0:
+        print("=== lualatex stdout ===")
+        print(result.stdout)
+
+        print("=== lualatex stderr ===")
+        print(result.stderr)
+
     try:
         shutil.move(
             f"{build_path}.pdf",

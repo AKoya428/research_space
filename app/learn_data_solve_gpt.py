@@ -33,7 +33,7 @@ for root, dirs, files in os.walk(base_dir):
             )
 all_files.sort()
 
-for input_file in all_files[1:5]:
+for input_file in all_files[52:65]:
     datas = load_jsonl(input_file)
     save_list = copy.deepcopy(datas)
     prompts = [prompt(d['question'], d['options']) for d in datas]
